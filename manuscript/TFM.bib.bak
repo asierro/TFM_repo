@@ -1,0 +1,46 @@
+% Encoding: UTF-8
+
+@Article{Moreno199,
+  author    = {Moreno, C{\'e}sar and Vilas-Varela, Manuel and Kretz, Bernhard and Garcia-Lekue, Aran and Costache, Marius V. and Paradinas, Markos and Panighel, Mirko and Ceballos, Gustavo and Valenzuela, Sergio O. and Pe{\~n}a, Diego and Mugarza, Aitor},
+  journal   = {Science},
+  title     = {Bottom-up synthesis of multifunctional nanoporous graphene},
+  year      = {2018},
+  issn      = {0036-8075},
+  number    = {6385},
+  pages     = {199--203},
+  volume    = {360},
+  abstract  = {Nanosize pores in graphene can make its electronic properties more favorable for transistor applications and may also be useful for molecular separations. Moreno et al. used Ullmann coupling to polymerize a dibromo-substituted diphenylbianthracene on a gold surface (see the Perspective by Sinitskii). Cyclodehydrogenation of the resulting polymer produced graphene nanoribbons, and cross-coupling of these structures created a nanoporous graphene sheet with pore sizes of about 1 nanometer. Scanning tunneling spectroscopy revealed an electronic structure in which semiconductor bands with an energy gap of 1 electron volt coexist with localized states created by the pores.Science, this issue p. 199; see also p. 154Nanosize pores can turn semimetallic graphene into a semiconductor and, from being impermeable, into the most efficient molecular-sieve membrane. However, scaling the pores down to the nanometer, while fulfilling the tight structural constraints imposed by applications, represents an enormous challenge for present top-down strategies. Here we report a bottom-up method to synthesize nanoporous graphene comprising an ordered array of pores separated by ribbons, which can be tuned down to the 1-nanometer range. The size, density, morphology, and chemical composition of the pores are defined with atomic precision by the design of the molecular precursors. Our electronic characterization further reveals a highly anisotropic electronic structure, where orthogonal one-dimensional electronic bands with an energy gap of \~{}1 electron volt coexist with confined pore states, making the nanoporous graphene a highly versatile semiconductor for simultaneous sieving and electrical sensing of molecular species.},
+  doi       = {10.1126/science.aar2009},
+  eprint    = {https://science.sciencemag.org/content/360/6385/199.full.pdf},
+  publisher = {American Association for the Advancement of Science},
+  url       = {https://science.sciencemag.org/content/360/6385/199},
+}
+
+@Article{doi:10.1021/acs.nanolett.8b04616,
+  author  = {Calogero, Gaetano and Papior, Nick R. and Kretz, Bernhard and Garcia-Lekue, Aran and Frederiksen, Thomas and Brandbyge, Mads},
+  journal = {Nano Letters},
+  title   = {Electron Transport in Nanoporous Graphene: Probing the Talbot Effect},
+  year    = {2019},
+  number  = {1},
+  pages   = {576-581},
+  volume  = {19},
+  doi     = {10.1021/acs.nanolett.8b04616},
+  eprint  = {https://doi.org/10.1021/acs.nanolett.8b04616},
+  url     = {https://doi.org/10.1021/acs.nanolett.8b04616},
+}
+
+@Article{doi:10.1021/jacs.9b04649,
+  author  = {Calogero, Gaetano and Alcón, Isaac and Papior, Nick and Jauho, Antti-Pekka and Brandbyge, Mads},
+  journal = {Journal of the American Chemical Society},
+  title   = {Quantum Interference Engineering of Nanoporous Graphene for Carbon Nanocircuitry},
+  year    = {2019},
+  note    = {PMID: 31342738},
+  number  = {33},
+  pages   = {13081-13088},
+  volume  = {141},
+  doi     = {10.1021/jacs.9b04649},
+  eprint  = {https://doi.org/10.1021/jacs.9b04649},
+  url     = {https://doi.org/10.1021/jacs.9b04649},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

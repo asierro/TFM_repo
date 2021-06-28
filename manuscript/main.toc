@@ -1,0 +1,15 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\contentsline {chapter}{Declaration of Authorship}{iii}{section*.1}%
+\contentsline {chapter}{Abstract}{vii}{section*.2}%
+\contentsline {chapter}{Acknowledgements}{ix}{section*.3}%
+\contentsline {chapter}{\numberline {1}Theoretical and computational tools}{1}{chapter.14}%
+\contentsline {section}{\numberline {1.1}DFT with SIESTA}{1}{section.15}%
+\contentsline {subsection}{\numberline {1.1.1}Basics of DFT}{1}{subsection.16}%
+\contentsline {subsection}{\numberline {1.1.2}SIESTA}{1}{subsection.17}%
+\contentsline {section}{\numberline {1.2}Transport through NEGF}{1}{section.18}%
+\contentsline {subsection}{\numberline {1.2.1}Equilibrium Green's functions}{1}{subsection.19}%
+\contentsline {subsection}{\numberline {1.2.2}Keldysh formalism}{1}{subsection.20}%
+\contentsline {subsection}{\numberline {1.2.3}TranSIESTA and TBtrans}{1}{subsection.21}%
+\contentsline {subsection}{\numberline {1.2.4}sisl}{1}{subsection.22}%
+\contentsline {chapter}{Bibliography}{3}{appendix*.23}%
