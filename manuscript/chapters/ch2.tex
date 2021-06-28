@@ -15,26 +15,32 @@
 \newcommand{\option}[1]{\texttt{\itshape#1}}
 
 %----------------------------------------------------------------------------------------
-\section{DFT with SIESTA}
-Goal is to solve many-body problem through Schrödinger's equation.
+\section{Density Functional Theory}
+
+Density-functional theory (DFT) is an approach to study the electronic structure of many-body problems, which allows the computational treatment large and complex systems. In fact, one of the reasons why DFT has become an essential tool in many areas of physics including condensed-matter theory is the increasing availability and power of computational processing. DFT is mainly based on the fact that any property of a system of many interacting particles can be viewed as a functional of the ground state
+density [**martin]. The famous paper by Hohenberg and Kohn in 1964 [** in martin] laid the groundwork of modern DFT, while the formulation presented in a 1965 paper by Kohn and Sham [** in martin] has prevailed as one of the most useful approaches up to this day. In the following subsections we will present the basics of this method, and then review a specific implementation, namely SIESTA, which will be used throughout this work.
+
+
 \subsection{Basics of DFT}
+The goal is to solve the many-body problem through Schrödinger's equation.
+
 \subsection{SIESTA}
 summary: In this method the effect of
 the core electrons is described by soft norm-conserving
-pseudopotentials34 and the electronic structure of the valence
+pseudopotentials and the electronic structure of the valence
 electrons is expanded in a basis set of numerical atomic orbitals with finite range
 %----------------------------------------------------------------------------------------
 
-\section{Transport through NEGF}
-
-In this section the theory of nonequilibrium Green's functions (NEGF) will be presented, as the underlying theory of various programs that will be used (\textsc{TranSIESTA} *** and \textsc{TBrans}***) to study transport properties of the desired materials. Knowledge of (first- and second-quantized) quantum mechanics  will be assumed, and the starting point will be an equilibrium state, which will lay the foundations and the basic properties of Green's functions. We will then delve into NEGF through the Keldysh formalism, and afterwards explore a simple and conceptually useful reformulation of this theory by S. Datta \textit{et al}***. Finally, we will overview the implementation in \textsc{TranSIESTA}.
-
-
-\subsection{Equilibrium Green's functions}
-
-
-\subsection{Keldysh formalism}
-\subsection{TranSIESTA and TBtrans}
-\subsection{sisl}
+%\section{Transport through NEGF}
+%
+%In this section the theory of nonequilibrium Green's functions (NEGF) will be presented, as the underlying theory of various programs that will be used (\textsc{TranSIESTA} *** and \textsc{TBrans}***) to study transport properties of the desired materials. Knowledge of (first- and second-quantized) quantum mechanics  will be assumed, and the starting point will be an equilibrium state, which will lay the foundations and the basic properties of Green's functions. We will then delve into NEGF through the Keldysh formalism, and afterwards explore a simple and conceptually useful reformulation of this theory by S. Datta \textit{et al}***. Finally, we will overview the implementation in \textsc{TranSIESTA}.
+%
+%
+%\subsection{Equilibrium Green's functions}
+%
+%
+%\subsection{Keldysh formalism}
+%\subsection{TranSIESTA and TBtrans}
+%\subsection{sisl}
 
 
