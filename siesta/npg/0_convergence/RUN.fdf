@@ -1,0 +1,42 @@
+SystemLabel       NPG
+
+###########################
+#                         #
+# Include structural info #
+#                         #
+###########################
+
+%include STRUCT.fdf
+
+##########
+#        #
+# K-grid #
+#        #
+##########
+
+%block kgrid_Monkhorst_Pack
+  50 0 0 0
+  0 50 0 0
+  0 0 50 0
+%endblock kgrid_Monkhorst_Pack
+
+#############
+#           #
+# Basis set #
+#           #
+#############
+
+PAO.BasisSize	  DZP
+
+#######
+#     #
+# SCF #
+#     #
+#######
+
+XC.functional    GGA 
+XC.authors       PBE  
+DM.NumberPulay   5 
+DM.MixingWeight  0.25
+MaxSCFIterations 500
+

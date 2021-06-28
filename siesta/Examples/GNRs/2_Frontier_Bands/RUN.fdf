@@ -1,0 +1,57 @@
+SystemLabel       7-AGNR 
+
+MD.UseSaveXV T
+DM.UseSaveDM T
+
+###########################
+#                         #
+# Include structural info #
+#                         #
+###########################
+
+%include STRUCT_7AGNR.fdf
+
+##########
+#        #
+# K-grid #
+#        #
+##########
+
+%block kgrid_Monkhorst_Pack
+  1 0 0 0
+  0 81 0 0
+  0 0 1 0
+%endblock kgrid_Monkhorst_Pack
+
+#############
+#           #
+# Basis set #
+#           #
+#############
+
+PAO.BasisSize	  DZP
+
+#######
+#     #
+# SCF #
+#     #
+#######
+
+XC.functional    GGA 
+XC.authors       PBE  
+DM.NumberPulay   5 
+DM.MixingWeight  0.25
+MaxSCFIterations 200
+
+
+################
+#              #
+# Wavefunction #
+#              #
+################
+
+Write.Denchar T
+%block WaveFuncKPoints
+0.0 0.0 0.0 30 31  # not correct, just testing  # from iorb_VB to iorb_CB
+%endblock WaveFuncKPoints
+

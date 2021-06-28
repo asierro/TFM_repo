@@ -1,0 +1,33 @@
+SystemLabel     7-AGNR                                                                          
+Denchar.TypeOfRun     3D                                                                              
+Denchar.PlotCharge              F     # default value
+Denchar.PlotWaveFunctions              T
+SystemLabel     7-AGNR                                                                          
+Number_of_species              2
+%block Chemical_species_label
+   1    1   H
+   2    6   C
+%endblock Chemical_species_label
+SystemLabel     7-AGNR                                                                          
+Denchar.CoorUnits     Ang                                                                             
+Denchar.DensityUnits     Ele/Ang**3                                                                      
+Denchar.NumberPointsX            100
+Denchar.NumberPointsY            100
+Denchar.NumberPointsZ            100
+Denchar.MinX          9.448634389           Bohr
+# above item originally: Denchar.MinX          5.000000000     Ang       
+Denchar.MaxX          37.79453756           Bohr
+# above item originally: Denchar.MaxX          20.00000000     Ang       
+Denchar.MinY          0.000000000           Bohr
+# above item originally: Denchar.MinY          0.000000000     Ang       
+Denchar.MaxY          56.69180633           Bohr
+# above item originally: Denchar.MaxY          30.00000000     Ang       
+Denchar.MinZ          28.34590317           Bohr
+# above item originally: Denchar.MinZ          15.00000000     Ang       
+Denchar.MaxZ          66.14044072           Bohr
+# above item originally: Denchar.MaxZ          35.00000000     Ang       
+Denchar.PlaneGeneration     NormalVector               # default value
+SystemLabel     7-AGNR                                                                          
+SystemLabel     7-AGNR                                                                          
+SystemLabel     7-AGNR                                                                          
+SystemLabel     7-AGNR                                                                          

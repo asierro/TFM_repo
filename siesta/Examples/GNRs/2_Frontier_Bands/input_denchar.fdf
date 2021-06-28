@@ -1,0 +1,38 @@
+#  *************************************************************************
+#                     Input variables for Denchar
+#  (besides SystemLabel, NumberOfSpecies and ChemicalSpecies, defined above)
+#  *************************************************************************
+
+SystemLabel        7-AGNR 
+
+NumberOfSpecies    2
+
+%block ChemicalSpeciesLabel
+  1    1   H
+  2    6   C
+%endblock ChemicalSpeciesLabel
+
+Denchar.TypeOfRun      3D
+
+Denchar.PlotWaveFunctions   T
+
+Denchar.CoorUnits       Ang           # Format for coordinate of the points
+                                       # Ang
+
+Denchar.DensityUnits   Ele/Ang**3     # Units of Charge Density
+                                       # Ele/Ang**3
+
+Denchar.MinX            5.0  Ang      # Minimum coord of the window in X-dir
+Denchar.MaxX           20.00  Ang      # Maximum coord of the window in X-dir
+
+Denchar.MinY           0.0  Ang      # Minimum coord of the window in Y-dir
+Denchar.MaxY            30.0  Ang      # Maximum coord of the window in Y-dir
+
+Denchar.MinZ           15.0  Ang      # Minimum coord of the window in Z-dir
+Denchar.MaxZ           35.0  Ang      # Maximum coord of the window in Z-dir
+
+Denchar.NumberPointsX    100            # Number of points in X-axis
+Denchar.NumberPointsY    100            # Number of points in Y-axis
+Denchar.NumberPointsZ    100            # Number of points in Z-axis
+
+

@@ -1,0 +1,69 @@
+SystemLabel       7-AGNR 
+
+MD.UseSaveXV T
+DM.UseSaveDM T
+
+###########################
+#                         #
+# Include structural info #
+#                         #
+###########################
+
+%include STRUCT_7AGNR.fdf
+
+##########
+#        #
+# K-grid #
+#        #
+##########
+
+%block kgrid_Monkhorst_Pack
+  1 0 0 0
+  0 81 0 0
+  0 0 1 0
+%endblock kgrid_Monkhorst_Pack
+
+#############
+#           #
+# Basis set #
+#           #
+#############
+
+PAO.BasisSize	  DZP
+
+#######
+#     #
+# SCF #
+#     #
+#######
+
+XC.functional    GGA 
+XC.authors       PBE  
+DM.NumberPulay   5 
+DM.MixingWeight  0.25
+MaxSCFIterations 200
+
+
+#######
+#     #
+# DOS #
+#     #
+#######
+
+%block ProjectedDensityOfStates
+-15.00 5.00 0.100 500 eV
+%endblock ProjectedDensityOfStates
+
+
+##################
+#                #
+# Band structure #
+#                #
+##################
+
+BandLinesScale pi/a
+%block BandLines
+1 0.0000000000 -0.5000000000 0.0000000000
+200 0.0000000000 0.5000000000 0.0000000000
+%endblock BandLines
+

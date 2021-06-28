@@ -1,0 +1,1108 @@
+SystemName           # default value
+SystemLabel     NPG                                                                             
+MPI.Nprocs.SIESTA        16     # default value
+SpinPolarized              F     # default value
+NonCollinearSpin              F     # default value
+SpinOrbit              F     # default value
+#:block? SpinPolarized              F
+#:defined? SpinPolarized              F
+#:block? NonCollinearSpin              F
+#:defined? NonCollinearSpin              F
+#:block? SpinOrbit              F
+#:defined? SpinOrbit              F
+Spin     none                                 # default value
+TimeReversalSymmetry              T     # default value
+DebugObjects.Node         0     # default value
+DebugObjects              F     # default value
+XML.Write              F     # default value
+timer_report_threshold          0.000000000         # default value
+UseParallelTimer              T     # default value
+UseTreeTimer              F     # default value
+alloc_report_level         0     # default value
+alloc_report_threshold          0.000000000         # default value
+xc.functional     GGA                                                                             
+xc.authors     PBE                                                                             
+MM.Cutoff          30.00000000     Bohr     # default value
+MM.UnitsEnergy     eV     # default value
+MM.UnitsDistance     Ang     # default value
+WriteIonPlotFiles              F     # default value
+Atom.Debug.KB.Generation              F     # default value
+KB.New.Reference.Orbitals              F     # default value
+user-basis              F     # default value
+user-basis-netcdf              F     # default value
+#:block? LDAU.proj              F
+#:defined? LDAU.proj              F
+Number_of_species              2
+%block Chemical_species_label
+  1 6 C
+  2 1 H
+%endblock Chemical_species_label
+ReparametrizePseudos              F     # default value
+Restricted.Radial.Grid              T     # default value
+Rmax.Radial.Grid          0.000000000         # default value
+PAO.BasisSize     DZP                                                                             
+PAO.BasisType     split          # default value
+PAO.SoftDefault              F     # default value
+PAO.SoftInnerRadius         0.9000000000         # default value
+PAO.SoftPotential          40.00000000         # default value
+PAO.SplitNorm         0.1500000000         # default value
+PAO.SplitNormH         -1.000000000         # default value
+%block PAO.Basis
+ C 4
+ n=2 0 2
+ 0.000 0.000
+ n=2 1 2 P
+ #:(Backspace to) |n=2 1 2 P|
+ n=2 1 2 P
+ 0.000 0.000
+ n=3 0 1
+ #:(Backspace to) |n=3 0 1|
+ n=3 0 1
+ 10.000
+ n=3 1 1
+ #:(Backspace to) |n=3 1 1|
+ n=3 1 1
+ 10.000
+%endblock PAO.Basis
+%endblock PAO.Basis
+LDAU.ProjectorGenerationMethod         2     # default value
+LDAU.EnergyShift         0.5000000000E-01 Ry     # default value
+LDAU.CutoffNorm         0.9000000000         # default value
+PAO.SoftDefault              F     # default value
+PAO.SoftInnerRadius         0.9000000000         # default value
+PAO.SoftPotential          40.00000000         # default value
+LDAU.ThresholdTol         0.1000000000E-01     # default value
+LDAU.PopTol         0.1000000000E-02     # default value
+LDAU.PotentialShift              F     # default value
+LDAU.FirstIteration              F     # default value
+FilterCutoff          0.000000000     Ry     # default value
+FilterTol          0.000000000     Ry     # default value
+KB.Rmax          6.000000000     Bohr     # default value
+PAO.EnergyShift         0.1000000000E-01         Ry
+# above item originally: PAO.EnergyShift         0.1000000000E-01 Ry        
+PAO.SplitTailNorm              F     # default value
+PAO.FixSplitTable              F     # default value
+PAO.NewSplitCode              F     # default value
+PAO.Filter              F     # default value
+PAO.Keep.Findp.Bug              F     # default value
+PAO.Filter              F     # default value
+PAO.Filter              F     # default value
+PAO.Filter              F     # default value
+PAO.Filter              F     # default value
+PAO.Filter              F     # default value
+PAO.OldStylePolorbs              T     # default value
+PAO.SplitTailNorm              F     # default value
+PAO.FixSplitTable              F     # default value
+PAO.NewSplitCode              F     # default value
+PAO.Filter              F     # default value
+Vna.Filter              F     # default value
+FilterCutoff          0.000000000     Ry     # default value
+FilterTol          0.000000000     Ry     # default value
+KB.Rmax          6.000000000     Bohr     # default value
+PAO.EnergyShift         0.1000000000E-01         Ry
+# above item originally: PAO.EnergyShift         0.1000000000E-01 Ry        
+PAO.SplitTailNorm              F     # default value
+PAO.FixSplitTable              F     # default value
+PAO.NewSplitCode              F     # default value
+PAO.Filter              F     # default value
+PAO.Filter              F     # default value
+PAO.OldStylePolorbs              T     # default value
+PAO.SplitTailNorm              F     # default value
+PAO.FixSplitTable              F     # default value
+PAO.NewSplitCode              F     # default value
+PAO.Filter              F     # default value
+Vna.Filter              F     # default value
+PAO.BasisType     split          # default value
+Atom-Setup-Only              F     # default value
+UseStructFile              F     # default value
+MD.UseStructFile              F     # default value
+LatticeConstant          1.889726878           Bohr
+# above item originally: LatticeConstant          1.000000000     Ang       
+#:block? LatticeParameters              F
+#:block? LatticeVectors              T
+%block LatticeVectors
+  31.97365791 0.00000000 0.00000000
+  0.00000000 8.52000000 0.00000000
+  0.00000000 0.00000000 50.00000000
+%endblock LatticeVectors
+AtomicCoordinatesFormat     Ang                                                                             
+NumberOfAtoms            100
+ZM.UnitsLength     Bohr           # default value
+ZM.UnitsAngle     rad            # default value
+ZM.ForceTolLength         0.1555740000E-02 Ry/Bohr     # default value
+ZM.ForceTolAngle         0.3565490000E-02 Ry/rad     # default value
+ZM.MaxDisplLength         0.2000000000     Bohr     # default value
+ZM.MaxDisplAngle         0.3000000000E-02 rad     # default value
+ZM.CalcAllForces              F     # default value
+%block AtomicCoordinatesAndAtomicSpecies
+   0.00000000  7.10000000  0.00000000 1 #   1: C
+   1.22975607  6.39000000  0.00000000 1 #   2: C
+   1.22975607  4.97000000  0.00000000 1 #   3: C
+   0.00000000  4.26000000  0.00000000 1 #   4: C
+   1.22975607  2.13000000  0.00000000 1 #   5: C
+   1.22975607  0.71000000  0.00000000 1 #   6: C
+   2.45951215  7.10000000  0.00000000 1 #   7: C
+   3.68926822  6.39000000  0.00000000 1 #   8: C
+   3.68926822  4.97000000  0.00000000 1 #   9: C
+   2.45951215  4.26000000  0.00000000 1 #  10: C
+   2.45951215  2.84000000  0.00000000 1 #  11: C
+   3.68926822  2.13000000  0.00000000 1 #  12: C
+   3.68926822  0.71000000  0.00000000 1 #  13: C
+   2.45951215  0.00000000  0.00000000 1 #  14: C
+   4.91902429  7.10000000  0.00000000 1 #  15: C
+   6.14878037  6.39000000  0.00000000 1 #  16: C
+   6.14878037  4.97000000  0.00000000 2 #  17: H
+   4.91902429  4.26000000  0.00000000 2 #  18: H
+   4.91902429  2.84000000  0.00000000 2 #  19: H
+   6.14878037  2.13000000  0.00000000 2 #  20: H
+   6.14878037  0.71000000  0.00000000 1 #  21: C
+   4.91902429  0.00000000  0.00000000 1 #  22: C
+   7.37853644  7.10000000  0.00000000 1 #  23: C
+   8.60829251  6.39000000  0.00000000 1 #  24: C
+   8.60829251  4.97000000  0.00000000 1 #  25: C
+   7.37853644  4.26000000  0.00000000 2 #  26: H
+   8.60829251  0.71000000  0.00000000 2 #  27: H
+   7.37853644  0.00000000  0.00000000 1 #  28: C
+   9.83804859  7.10000000  0.00000000 1 #  29: C
+  11.06780466  6.39000000  0.00000000 1 #  30: C
+  11.06780466  4.97000000  0.00000000 1 #  31: C
+   9.83804859  4.26000000  0.00000000 1 #  32: C
+   9.83804859  2.84000000  0.00000000 2 #  33: H
+  11.06780466  2.13000000  0.00000000 2 #  34: H
+  11.06780466  0.71000000  0.00000000 2 #  35: H
+   9.83804859  0.00000000  0.00000000 2 #  36: H
+  12.29756073  7.10000000  0.00000000 1 #  37: C
+  13.52731681  6.39000000  0.00000000 1 #  38: C
+  13.52731681  4.97000000  0.00000000 1 #  39: C
+  12.29756073  4.26000000  0.00000000 1 #  40: C
+  12.29756073  2.84000000  0.00000000 1 #  41: C
+  13.52731681  2.13000000  0.00000000 1 #  42: C
+  13.52731681  0.71000000  0.00000000 1 #  43: C
+  12.29756073  0.00000000  0.00000000 1 #  44: C
+  14.75707288  7.10000000  0.00000000 1 #  45: C
+  15.98682895  6.39000000  0.00000000 1 #  46: C
+  15.98682895  4.97000000  0.00000000 1 #  47: C
+  14.75707288  4.26000000  0.00000000 1 #  48: C
+  14.75707288  2.84000000  0.00000000 1 #  49: C
+  15.98682895  2.13000000  0.00000000 1 #  50: C
+  15.98682895  0.71000000  0.00000000 1 #  51: C
+  14.75707288  0.00000000  0.00000000 1 #  52: C
+  17.21658503  7.10000000  0.00000000 1 #  53: C
+  18.44634110  6.39000000  0.00000000 1 #  54: C
+  18.44634110  4.97000000  0.00000000 1 #  55: C
+  17.21658503  4.26000000  0.00000000 1 #  56: C
+  17.21658503  2.84000000  0.00000000 1 #  57: C
+  18.44634110  2.13000000  0.00000000 1 #  58: C
+  18.44634110  0.71000000  0.00000000 1 #  59: C
+  17.21658503  0.00000000  0.00000000 1 #  60: C
+  19.67609717  7.10000000  0.00000000 1 #  61: C
+  20.90585325  6.39000000  0.00000000 1 #  62: C
+  20.90585325  4.97000000  0.00000000 1 #  63: C
+  19.67609717  4.26000000  0.00000000 1 #  64: C
+  19.67609717  2.84000000  0.00000000 1 #  65: C
+  20.90585325  2.13000000  0.00000000 2 #  66: H
+  20.90585325  0.71000000  0.00000000 2 #  67: H
+  19.67609717  0.00000000  0.00000000 1 #  68: C
+  22.13560932  7.10000000  0.00000000 1 #  69: C
+  23.36536539  6.39000000  0.00000000 1 #  70: C
+  23.36536539  4.97000000  0.00000000 1 #  71: C
+  22.13560932  4.26000000  0.00000000 1 #  72: C
+  22.13560932  2.84000000  0.00000000 2 #  73: H
+  23.36536539  0.71000000  0.00000000 2 #  74: H
+  22.13560932  0.00000000  0.00000000 2 #  75: H
+  24.59512147  7.10000000  0.00000000 1 #  76: C
+  25.82487754  6.39000000  0.00000000 1 #  77: C
+  25.82487754  4.97000000  0.00000000 2 #  78: H
+  24.59512147  4.26000000  0.00000000 2 #  79: H
+  25.82487754  2.13000000  0.00000000 2 #  80: H
+  25.82487754  0.71000000  0.00000000 1 #  81: C
+  24.59512147  0.00000000  0.00000000 1 #  82: C
+  27.05463361  7.10000000  0.00000000 1 #  83: C
+  28.28438969  6.39000000  0.00000000 1 #  84: C
+  28.28438969  4.97000000  0.00000000 1 #  85: C
+  27.05463361  4.26000000  0.00000000 2 #  86: H
+  27.05463361  2.84000000  0.00000000 2 #  87: H
+  28.28438969  2.13000000  0.00000000 1 #  88: C
+  28.28438969  0.71000000  0.00000000 1 #  89: C
+  27.05463361  0.00000000  0.00000000 1 #  90: C
+  29.51414576  7.10000000  0.00000000 1 #  91: C
+  30.74390183  6.39000000  0.00000000 1 #  92: C
+  30.74390183  4.97000000  0.00000000 1 #  93: C
+  29.51414576  4.26000000  0.00000000 1 #  94: C
+  29.51414576  2.84000000  0.00000000 1 #  95: C
+  30.74390183  2.13000000  0.00000000 1 #  96: C
+  30.74390183  0.71000000  0.00000000 1 #  97: C
+  29.51414576  0.00000000  0.00000000 1 #  98: C
+  31.97365791  2.84000000  0.00000000 1 #  99: C
+  31.97365791  0.00000000  0.00000000 1 # 100: C
+%endblock AtomicCoordinatesAndAtomicSpecies
+MD.UseSaveXV              F     # default value
+MD.UseSaveZM              F     # default value
+WriteCoorInitial              T     # default value
+MD.TypeOfRun     CG                                                                              
+MD.TypeOfRun     CG                                                                              
+MaxBondDistance          6.000000000     Bohr     # default value
+LatticeConstant          1.889726878           Bohr
+# above item originally: LatticeConstant          1.000000000     Ang       
+Output-Structure-Only              F     # default value
+WriteCoorXmol              F     # default value
+#:physical? MaxWalltime              F
+MaxWalltime         0.1797693135+309     # default value
+#:physical? MaxWalltime.Slack              F
+MaxWalltime.Slack          5.000000000         # default value
+HSetupOnly              F     # default value
+LongOutput              F     # default value
+WriteDenchar              F     # default value
+WriteMullikenPop         0     # default value
+WriteOrbMom              F     # default value
+WriteHirshfeldPop              F     # default value
+WriteVoronoiPop              F     # default value
+PartialChargesAtEveryGeometry              F     # default value
+PartialChargesAtEveryScfStep              F     # default value
+Compat.Matel.NRTAB              F     # default value
+MeshCutoff          400.0000000             Ry
+# above item originally: MeshCutoff          400.0000000     Ry        
+NetCharge          0.000000000         # default value
+MinSCFIterations         0     # default value
+MaxSCFIterations            500
+SCF.MustConverge              T     # default value
+#:block? TS.MixH              F
+#:defined? TS.MixH              F
+#:block? MixHamiltonian              F
+#:defined? MixHamiltonian              F
+#:block? MixCharge              F
+#:defined? MixCharge              F
+TS.MixH              T     # default value
+MixHamiltonian              T     # default value
+MixCharge              F     # default value
+SCF.Mix     Hamiltonian     # default value
+Compat-pre-v4-DM-H              F     # default value
+SCF.MixAfterConvergence              F     # default value
+SCF.Recompute-H-After-Scf              F     # default value
+DM.NumberPulay              5
+DM.NumberBroyden         0     # default value
+DM.FIRE.Mixing              F     # default value
+DM.MixSCF1              T     # default value
+SCF.Mix.First              T     # default value
+DM.PulayOnFile              F     # default value
+DM.MixingWeight         0.2500000000    
+DM.OccupancyTolerance         0.1000000000E-11     # default value
+DM.NumberKick         0     # default value
+DM.KickMixingWeight         0.5000000000         # default value
+DM.RequireHarrisConvergence              F     # default value
+SCF.Harris.Converge              F     # default value
+DM.HarrisTolerance         0.7349806700E-05 Ry     # default value
+SCF.Harris.Tolerance         0.7349806700E-05 Ry     # default value
+SCF.DM.Converge              T     # default value
+DM.Tolerance         0.1000000000E-03     # default value
+SCF.DM.Tolerance         0.1000000000E-03     # default value
+SCF.EDM.Converge              F     # default value
+SCF.EDM.Tolerance         0.7349806700E-04 Ry     # default value
+SCF.H.Converge              T
+SCF.H.Tolerance         0.7349798845E-05         Ry
+# above item originally: SCF.H.Tolerance         0.1000000000E-03 eV        
+DM.RequireEnergyConvergence              F     # default value
+SCF.FreeE.Converge              F     # default value
+DM.EnergyTolerance         0.7349806700E-05 Ry     # default value
+SCF.FreeE.Tolerance         0.7349806700E-05 Ry     # default value
+MonitorForcesInSCF              F     # default value
+SCF.MonitorForces              F     # default value
+UseSaveData              F     # default value
+DM.UseSaveDM              F     # default value
+NeglNonOverlapInt              F     # default value
+SolutionMethod     diagon     # default value
+ElectronicTemperature         0.1900000000E-02 Ry     # default value
+FixSpin              F     # default value
+Spin.Fix              F     # default value
+ON.MaxNumIter      1000     # default value
+ON.etol         0.1000000000E-07     # default value
+ON.eta          0.000000000     Ry     # default value
+ON.eta_alpha          0.000000000     Ry     # default value
+ON.eta_beta          0.000000000     Ry     # default value
+On.RcLWF          9.500000000     Bohr     # default value
+ON.UseSaveLWF              F     # default value
+ON.functional     kim     # default value
+ON.ChemicalPotentialUse              F     # default value
+ON.ChemicalPotential              F     # default value
+ON.ChemicalPotentialRc          9.500000000     Bohr     # default value
+ON.ChemicalPotentialTemperature         0.5000000000E-01 Ry     # default value
+ON.ChemicalPotentialOrder       100     # default value
+MD.VariableCell              T
+compat-pre-v4-dynamics              F     # default value
+MD.TypeOfRun     CG                                                                              
+MD.UseSaveCG              F     # default value
+Optim.Broyden              F     # default value
+#:block? Optim.Broyden              F
+#:defined? Optim.Broyden              F
+MD.NumCGsteps         0     # default value
+MD.Steps           1000
+MD.MaxCGDispl         0.2000000000     Bohr     # default value
+MD.MaxDispl         0.2000000000     Bohr     # default value
+MD.MaxForceTol         0.3889348769E-03    Ry/Bohr
+# above item originally: MD.MaxForceTol         0.1000000000E-01 eV/Ang    
+MD.MaxStressTol         0.6797730000E-04 Ry/Bohr**3     # default value
+GeometryMustConverge              F     # default value
+MD.InitialTimeStep         1     # default value
+#:defined? MD.Steps              T
+MD.FinalTimeStep      1000     # default value
+MD.LengthTimeStep          1.000000000     fs     # default value
+MD.Quench              F     # default value
+MD.FireQuench              F     # default value
+MD.InitialTemperature          0.000000000     K     # default value
+MD.TargetTemperature          0.000000000     K     # default value
+MD.TargetPressure          0.000000000     Ry/Bohr**3     # default value
+MD.NoseMass          100.0000000     Ry*fs**2     # default value
+MD.ParrinelloRahmanMass          100.0000000     Ry*fs**2     # default value
+MD.AnnealOption     TemperatureAndPressure     # default value
+MD.TauRelax          100.0000000     fs     # default value
+MD.BulkModulus         0.6797730000E-02 Ry/Bohr**3     # default value
+MD.FCDispl         0.4000000000E-01 Bohr     # default value
+MD.FCfirst         1     # default value
+MD.FClast       100     # default value
+UseSpatialDecomposition              F     # default value
+UseDomainDecomposition              F     # default value
+SCF.Mix.Spin     all     # default value
+Mixer.Debug              F     # default value
+Mixer.Debug.MPI              F     # default value
+DM.NumberPulay              5
+DM.NumberBroyden         0     # default value
+DM.MixingWeight         0.2500000000    
+DM.NumberKick         0     # default value
+DM.KickMixingWeight         0.5000000000         # default value
+SCF.LinearMixingAfterPulay              F     # default value
+SCF.MixingWeightAfterPulay         0.2500000000         # default value
+SCF.Mixer.History         5     # default value
+SCF.Mixer.Weight         0.2500000000         # default value
+SCF.Mixer.Kick         0     # default value
+SCF.Mixer.Kick.Weight         0.5000000000         # default value
+SCF.Mixer.Restart         0     # default value
+SCF.Mixer.Restart.Save         1     # default value
+SCF.Mixer.Method     Pulay     # default value
+SCF.Mixer.Variant     original     # default value
+SCF.Mixer.Linear.After        -1     # default value
+SCF.Mixer.Linear.After.Weight         0.2500000000         # default value
+#:block? ChargeGeometries              F
+#:defined? ChargeGeometries              F
+#:block? ChargeGeometries              F
+#:defined? ChargeGeometries              F
+Harris_functional              F     # default value
+ForceAuxCell              F     # default value
+#:block? Optim.Broyden.History.Steps              F
+#:defined? Optim.Broyden.History.Steps              F
+#:block? Optim.Broyden.Cycle.On.Maxit              F
+#:defined? Optim.Broyden.Cycle.On.Maxit              F
+#:block? Optim.Broyden.Variable.Weight              F
+#:defined? Optim.Broyden.Variable.Weight              F
+#:block? Optim.Broyden.Debug              F
+#:defined? Optim.Broyden.Debug              F
+#:block? Optim.Broyden.Initial.Inverse.Jacobian              F
+#:defined? Optim.Broyden.Initial.Inverse.Jacobian              F
+WriteKpoints              F     # default value
+WriteForces              F     # default value
+WriteDM              T     # default value
+WriteDM.End.Of.Cycle              T     # default value
+WriteH              F     # default value
+WriteH.End.Of.Cycle              F     # default value
+WriteDM.NetCDF              F     # default value
+WriteDM.History.NetCDF              F     # default value
+WriteDMHS.NetCDF              F     # default value
+WriteDMHS.History.NetCDF              F     # default value
+SCF.Read.Charge.NetCDF              F     # default value
+SCF.Read.Deformation.Charge.NetCDF              F     # default value
+Write.TSHS.History              F     # default value
+SaveInitialChargeDensity              F     # default value
+AnalyzeChargeDensityOnly              F     # default value
+UseNewDiagk              F     # default value
+WriteBands              F     # default value
+WriteKbands              F     # default value
+WriteEigenvalues              F     # default value
+WriteCoorStep              F     # default value
+WriteMDhistory              F     # default value
+WriteMDXmol              T     # default value
+WriteOrbitalIndex              T     # default value
+Write.Graphviz     none     # default value
+WriteCoorStep              F     # default value
+SaveHS              F     # default value
+ReInitialiseDM              T     # default value
+DM.AllowReuse              T     # default value
+DM.AllowExtrapolation              T     # default value
+DM.History.Depth         1     # default value
+DM.NormalizationTolerance         0.1000000000E-04     # default value
+DM.NormalizeDuringSCF              T     # default value
+MullikenInSCF              F     # default value
+SpinInSCF              F     # default value
+WarningMinimumAtomicDistance          1.000000000     Bohr     # default value
+BornCharge              F     # default value
+ChangeKgridInMD              F     # default value
+MD.RelaxCellOnly              F     # default value
+MD.RemoveIntraMolecularPressure              F     # default value
+COOP.Write              F     # default value
+SaveRho              F     # default value
+SaveDeltaRho              F     # default value
+SaveRhoXC              F     # default value
+SaveElectrostaticPotential              F     # default value
+SaveNeutralAtomPotential              F     # default value
+SaveTotalPotential              F     # default value
+SaveIonicCharge              F     # default value
+SaveBaderCharge              F     # default value
+SaveTotalCharge              F     # default value
+Siesta2Wannier90.WriteMmn              F     # default value
+Siesta2Wannier90.WriteUnk              F     # default value
+Siesta2Wannier90.WriteAmn              F     # default value
+Siesta2Wannier90.WriteEig              F     # default value
+#:block? Siesta2Wannier90.NumberOfBandsUp              F
+#:defined? Siesta2Wannier90.NumberOfBandsUp              F
+#:block? Siesta2Wannier90.NumberOfBandsDown              F
+#:defined? Siesta2Wannier90.NumberOfBandsDown              F
+#:block? Siesta2Wannier90.NumberOfBands              F
+#:defined? Siesta2Wannier90.NumberOfBands              F
+Siesta2Wannier90.NumberOfBandsUp         0     # default value
+Siesta2Wannier90.NumberOfBandsDown         0     # default value
+Siesta2Wannier90.NumberOfBands         0     # default value
+CDF.Save              F     # default value
+CDF.Compress         0     # default value
+CDF.MPI              F     # default value
+CDF.Read.Parallel              F     # default value
+DM.AllowReuse              T     # default value
+DM.AllowExtrapolation              T     # default value
+DM.AllowExtrapolation              F     # default value
+RcSpatial          0.000000000     Bohr     # default value
+ProcessorGridX         1     # default value
+ProcessorGridY         1     # default value
+ProcessorGridZ         1     # default value
+processorY         4     # default value
+blocksize        24     # default value
+NumberOfEigenStates      1460     # default value
+#:block? SpinSpiral              F
+#:defined? SpinSpiral              F
+TimeReversalSymmetryForKpoints              T     # default value
+%block kgrid_Monkhorst_Pack
+   15 0 0
+   0 51 0 0
+   0 0 1 0
+%endblock kgrid_Monkhorst_Pack
+Diag.ParallelOverK              F     # default value
+Diag.ProcessorY         4     # default value
+Diag.BlockSize        24     # default value
+Diag.Use2D              T     # default value
+Diag.UpperLower     lower     # default value
+Diag.DivideAndConquer              T     # default value
+Diag.NoExpert              F     # default value
+Diag.Algorithm     Divide-and-Conquer     # default value
+Diag.AbsTol         0.1000000000E-15     # default value
+Diag.OrFac         0.1000000000E-05     # default value
+Diag.Memory          1.000000000         # default value
+#:block? ProjectedDensityOfStates              F
+#:block? BandLines              F
+#:defined? BandLines              F
+#:block? BandPoints              F
+#:defined? BandPoints              F
+LongOutput              F     # default value
+WriteWaveFunctions              F     # default value
+#:block-line-count? MetaForce (iirrr)   0
+%block Geometry.Constraints
+ cell-angle gamma
+%endblock Geometry.Constraints
+%block Geometry.Constraints
+ cell-angle gamma
+%endblock Geometry.Constraints
+#:block? TS.BufferAtomsLeft              F
+#:defined? TS.BufferAtomsLeft              F
+#:block? TS.BufferAtomsRight              F
+#:defined? TS.BufferAtomsRight              F
+#:list? TS.Atoms.Buffer              F
+TS.HS.Save              F     # default value
+TS.DE.Save              F     # default value
+TS.onlyS              F     # default value
+TS.S.Save              F     # default value
+AtomicCoordinatesFormat     Ang                                                                             
+AtomCoorFormatOut     Ang                        # default value
+LatticeConstant          1.889726878           Bohr
+# above item originally: LatticeConstant          1.000000000     Ang       
+debug-folding              F     # default value
+Sonly              F     # default value
+Sonly              F     # default value
+Debug.DHSCF              F     # default value
+MeshSubDivisions         2     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+DirectPhi              F     # default value
+SimulateDoping              F     # default value
+SlabDipoleCorrection              F     # default value
+Read-H-from-file              F     # default value
+SingleExcitation              F     # default value
+OccupationFunction     FD     # default value
+OccupationFunction     FD     # default value
+compute-forces              T     # default value
+#:list? Grid.CellSampling              F
+MD.ConstantVolume              F     # default value
+MD.PreconditionVariableCell          9.448634400     Bohr     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value
+compute-forces              T     # default value
+debug-folding              F     # default value
+Sonly              F     # default value
+UseDIISforDMExtrapolation              T     # default value
+UseSVDExperimental              F     # default value
+UseSVD              T     # default value
+Sonly              F     # default value
+PROCS_PER_NODE         4     # default value
+PROCS_PER_NODE         4     # default value
+Read-H-from-file              F     # default value

@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH --partition=regular
+#SBATCH --job-name=TEST_SIESTA
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=20gb
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=4
+#SBATCH --time=10:00:00
+
+module load SIESTA
+
+mpirun -np $SLURM_NTASKS siesta < RUN.fdf >& OUTPUT 

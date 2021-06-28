@@ -1,0 +1,83 @@
+SystemLabel       graphene 
+
+#####################
+#                   #
+# Species and atoms #
+#                   #
+#####################
+
+NumberOfAtoms      2 
+NumberOfSpecies    1   
+
+%block ChemicalSpeciesLabel
+  1   6  C 
+%endblock ChemicalSpeciesLabel
+
+########################
+#                      #
+# Define periodic cell #
+#                      #
+########################
+
+LatticeConstant       2.4674 Ang
+
+# %block LatticeVectors
+#   a1x        a1y         0.00000000
+#   a2x        a2y         0.00000000
+#   0.00000000 0.00000000  6.0 
+# %endblock LatticeVectors
+
+%block LatticeParameters
+1.0 1.0 10.0 90 90 120
+%endblock LatticeParameters
+
+%block kgrid.MonkhorstPack
+81 0 0 0.5
+0 81 0 0.5
+0 0 1 0.5
+%endblock kgrid.MonkhorstPack
+
+######################
+#                    #
+# Atomic coordinates #
+#                    #
+######################
+
+AtomicCoordinatesFormat  Ang    # Changed from ScaledCartesian
+
+%block AtomicCoordinatesAndAtomicSpecies
+ 0.0000  0.0000  0.0000  1
+ 0.0000  1.4245  0.0000  1
+%endblock AtomicCoordinatesAndAtomicSpecies
+
+
+#############
+#           #
+# Basis set #
+#           #
+#############
+
+PAO.BasisSize	  DZP
+
+#######
+#     #
+# SCF #
+#     #
+#######
+
+XC.functional    GGA 
+XC.authors       PBE  
+DM.NumberPulay   5 
+DM.MixingWeight  0.25
+MaxSCFIterations 200
+
+
+#######
+#     #
+# DOS #
+#     #
+#######
+
+%block ProjectedDensityOfStates
+-15.00 5.00 0.100 500 eV
+%endblock ProjectedDensityOfStates

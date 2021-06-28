@@ -1,0 +1,41 @@
+SystemName          Graphene
+SystemLabel         gr
+NumberOfAtoms       2
+NumberOfSpecies     1
+
+MeshCutoff 250. Ry
+
+%block ChemicalSpeciesLabel
+ 1  6  C
+%endblock ChemicalSpeciesLabel
+
+LatticeConstant 2.4674 Ang
+
+%block LatticeParameters
+1.0 1.0 10.0 90 90 120
+%endblock LatticeParameters
+
+AtomicCoordinatesFormat Ang
+
+%block AtomicCoordinatesAndAtomicSpecies
+ 0.0000  0.0000  0.0000  1
+ 0.0000  1.4245  0.0000  1    # See AtomicCoordinatesFormat
+%endblock AtomicCoordinatesAndAtomicSpecies
+
+%block kgrid.MonkhorstPack
+61 0 0 0.5
+0 61 0 0.5
+0 0 1 0.5
+%endblock kgrid.MonkhorstPack [61 61 1]
+
+# Calculate the band structure
+
+WaveFuncKPointsScale ReciprocalLatticeVectors
+
+%block BandLines
+1 0.0000000000 0.000000000 0.000000000 \Gamma
+50 -0.333333333 0.666666667 0.000000000 K
+50 0.000000000 0.500000000 0.000000000 M
+50 0.0000000000 0.000000000 0.000000000 \Gamma
+%endblock BandLines
+

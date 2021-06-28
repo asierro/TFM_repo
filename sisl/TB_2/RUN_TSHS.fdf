@@ -1,0 +1,21 @@
+TBT.HS DEVICE.nc
+
+TBT.Directory ./run_500_TSHS
+
+TBT.k [500 1 1]
+
+TBT.DOS.Gf true
+TBT.DOS.A true
+
+%block TBT.Elec.Left
+  HS ELEC.TSHS
+  semi-inf-direction -A2
+  electrode-position 1
+%endblock TBT.Elec.Left
+
+%block TBT.Elec.Right
+  HS ELEC.TSHS
+  semi-inf-direction +A2
+  electrode-position end -1
+%endblock TBT.Elec.Right
+

@@ -1,0 +1,90 @@
+SystemLabel       NPG
+
+###########################
+#                         #
+# Include structural info #
+#                         #
+###########################
+
+%include STRUCT.fdf
+
+##########
+#        #
+# K-grid #
+#        #
+##########
+
+Mesh.Cutoff 400 Ry
+
+%block kgrid_Monkhorst_Pack
+  15 0 0
+  0 51 0 0
+  0 0 1 0
+%endblock kgrid_Monkhorst_Pack
+
+#############
+#           #
+# Basis set #
+#           #
+#############
+
+PAO.BasisSize	  DZP
+PAO.EnergyShift 0.01 Ry
+
+%block PAO.basis
+C 4
+n=2 0 2
+0.000 0.000
+n=2 1 2 P
+0.000 0.000
+n=3 0 1
+10.000
+n=3 1 1
+10.000
+%endblock PAO.basis
+
+#######
+#     #
+# SCF #
+#     #
+#######
+
+XC.functional    GGA 
+XC.authors       PBE  
+DM.NumberPulay   5 
+DM.MixingWeight  0.25
+MaxSCFIterations 500
+
+###############
+#             #
+# Convergence #
+# criterion   #
+#             #
+###############
+
+SCF.H.Converge T
+SCF.H.Tolerance 0.0001 eV
+
+##############
+#            #
+# Relaxation #
+#            #
+##############
+
+MD.TypeOfRun CG
+MD.MaxForceTol 0.01 eV/Ang
+MD.Steps 1000
+MD.VariableCell T
+
+%block Geometry.Constraints
+cell-angle gamma
+%endblock Geometry.Constraints
+
+################
+#              #
+# Run          #
+# continuation #
+#              #
+################
+
+

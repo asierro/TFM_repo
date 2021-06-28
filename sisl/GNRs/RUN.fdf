@@ -1,0 +1,13 @@
+%include STRUCT.fdf
+SystemLabel agnr7
+PAO.BasisSize SZP
+MeshCutoff 250. Ry
+CDF.Save true
+CDF.Compress 9
+SaveHS true
+SaveRho true
+%block kgrid.MonkhorstPack
+  101  1 1 0.
+   0 1 0 0.
+   0  0 1 0.
+%endblock

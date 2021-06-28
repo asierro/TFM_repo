@@ -1,0 +1,85 @@
+TBT.Verbosity         5     # default value
+SystemName           # default value
+SystemLabel     siesta     # default value
+CDF.Compress         0     # default value
+TBT.CDF.Compress         0     # default value
+TBT.Directory     ./run_500                                                                       
+timer_report_threshold          0.000000000         # default value
+alloc_report_level         0     # default value
+alloc_report_threshold          0.000000000         # default value
+TS.Voltage          0.000000000     Ry     # default value
+TBT.Voltage          0.000000000     Ry     # default value
+TBT.HS     DEVICE.nc                                                                       
+SpinPolarized              F     # default value
+NonCollinearSpin              F     # default value
+SpinOrbit              F     # default value
+#:block? SpinPolarized              F
+#:defined? SpinPolarized              F
+#:block? NonCollinearSpin              F
+#:defined? NonCollinearSpin              F
+#:block? SpinOrbit              F
+#:defined? SpinOrbit              F
+Spin     none                                 # default value
+TimeReversalSymmetry              T     # default value
+#:block? TBT.Atoms.Buffer              F
+#:defined? TBT.Atoms.Buffer              F
+#:block? TS.BufferAtomsLeft              F
+#:defined? TS.BufferAtomsLeft              F
+#:block? TS.BufferAtomsRight              F
+#:defined? TS.BufferAtomsRight              F
+#:list? TS.Atoms.Buffer              F
+TBT.DivideAndConquer              F     # default value
+TBT.Normalize              T     # default value
+ElectronicTemperature         0.1900000000E-02 Ry     # default value
+TS.ElectronicTemperature         0.1900000000E-02 Ry     # default value
+TBT.ElectronicTemperature         0.1900000000E-02 Ry     # default value
+TS.Elecs.Coord.Eps         0.1889726878E-02 Bohr     # default value
+TBT.Elecs.Coord.Eps         0.1889726878E-02 Bohr     # default value
+TS.Elecs.Bulk              T     # default value
+TBT.Elecs.Bulk              T     # default value
+TS.Elecs.Eta         0.7349806700E-04 Ry     # default value
+TBT.Elecs.Eta         0.7349806700E-04 Ry     # default value
+TS.Elecs.Accuracy         0.7349806700E-14 Ry     # default value
+TBT.Elecs.Accuracy         0.7349806700E-14 Ry     # default value
+TBT.Elecs.Out-of-core              F     # default value
+TS.Elecs.GF.ReUse              T     # default value
+TBT.Elecs.GF.ReUse              T     # default value
+TBT.Elecs.GF.Only              F     # default value
+#:block? TBT.Elec.Left.HS              F
+#:defined? TBT.Elec.Left.HS              F
+TBT.Elec.Left.Bloch.A1         1     # default value
+TBT.Elec.Left.Bloch.A2         1     # default value
+TBT.Elec.Left.Bloch.A3         1     # default value
+#:block? TBT.Elec.Left.GF              F
+#:defined? TBT.Elec.Left.GF              F
+%block TBT.Elec.Left
+TBT.Elec.Left.UsedAtoms        -1     # default value
+   HS ELEC.TSHS
+   semi-inf-direction -A2
+   electrode-position 1
+%endblock TBT.Elec.Left
+#:block? TBT.Elec.Right.HS              F
+#:defined? TBT.Elec.Right.HS              F
+TBT.Elec.Right.Bloch.A1         1     # default value
+TBT.Elec.Right.Bloch.A2         1     # default value
+TBT.Elec.Right.Bloch.A3         1     # default value
+#:block? TBT.Elec.Right.GF              F
+#:defined? TBT.Elec.Right.GF              F
+%block TBT.Elec.Right
+TBT.Elec.Right.UsedAtoms        -1     # default value
+   HS ELEC.TSHS
+   semi-inf-direction +A2
+   electrode-position end -1
+%endblock TBT.Elec.Right
+TBT.k.File     NONE     # default value
+SpinSpiral              F     # default value
+TBT.Symmetry.TimeReversal              T     # default value
+#:list? TBT.k              T
+#:list? TBT.k              T
+TBT.Progress          5.000000000         # default value
+TBT.SolutionMethod     BTD     # default value
+TS.BTD.Optimize     speed     # default value
+TBT.BTD.Optimize     speed     # default value
+TS.BTD.Spectral     propagation     # default value
+TBT.BTD.Spectral     propagation     # default value
+TBT.T.Elecs.All              F     # default value

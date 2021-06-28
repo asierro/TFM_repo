@@ -1,0 +1,220 @@
+ATM Version 4.2.7 (revno 100)                               
+ ATM4.2.7  28-APR-21        Oxygen                                       &v&d
+------------------------------------------------------------
+
+ O  pseudopotential generation
+ -----------------------------
+
+ correlation = ca   nonspin-polarized
+
+ nuclear charge             =  8.000000
+ number of core orbitals    =  1
+ number of valence orbitals =  4
+ electronic charge          =  8.000000
+ ionic charge               =  0.000000
+
+
+ input data for orbitals
+
+  i    n    l    s     j     occ
+
+  1    1    0   0.0   0.0    2.0000
+  2    2    0   0.0   0.0    2.0000
+  3    2    1   0.0   0.0    4.0000
+  4    3    2   0.0   0.0    0.0000
+  5    4    3   0.0   0.0    0.0000
+
+
+ radial grid parameters
+
+ r(1) = .0 , r(2) =0.390E-05 , ... , r(1030) = 119.469
+ a =  6.000  b =  80.000
+
+Setting up initial charge
+Setting up ionic potential
+
+ n = 1  l = 0  s = 0.0
+        a extr         2.008
+        r extr         0.130
+        r zero    
+        r 90/99 %      0.361   0.589
+
+ n = 2  l = 0  s = 0.0
+        a extr         0.422  -0.957
+        r extr         0.102   0.875
+        r zero         0.278
+        r 90/99 %      1.860   2.845
+
+ n = 2  l = 1  s = 0.0
+        a extr         0.844
+        r extr         0.813
+        r zero    
+        r 90/99 %      2.215   3.699
+
+ n = 3  l = 2  s = 0.0
+        a extr         0.203
+        r extr       111.600
+        r zero    
+        r 90/99 %    117.985 119.469
+        WARNING:  This orbital is not bound!
+
+ n = 4  l = 3  s = 0.0
+        a extr         0.220
+        r extr       111.575
+        r zero    
+        r 90/99 %    117.985 119.469
+        WARNING:  This orbital is not bound!
+
+ Total number of iterations needed for electron screening potential is 16
+
+
+
+ O  output data for orbitals
+ ----------------------------
+
+ nl    s      occ         eigenvalue    kinetic energy      pot energy
+
+ 1s   0.0    2.0000     -37.51780051      57.51264003    -121.29858775    
+ 2s   0.0    2.0000      -1.74241352       6.39191941     -20.40607558  &v
+ 2p   0.0    4.0000      -0.67658877       5.10407341     -17.71926890  &v
+ 3d   0.0    0.0000       0.00000000       0.00140753      -0.15694337  &v
+ 4f   0.0    0.0000       0.00000000       0.00244001      -0.15176338  &v
+---------------------------- &v
+
+
+ total energies
+ --------------
+
+ sum of eigenvalues        =      -81.22678313
+ kinetic energy from ek    =      148.22541253
+ el-ion interaction energy =     -354.28640227
+ el-el  interaction energy =       72.65017636
+ vxc    correction         =      -20.46614131
+ virial correction         =        0.71295910
+ exchange + corr energy    =      -15.52784575
+ kinetic energy from ev    =      148.22540773
+ potential energy          =     -297.16407166
+ ---------------------------------------------
+ total energy              =     -148.93866394
+
+
+ virial theorem(nonrelativistic)
+ --------------
+
+ kinetic energy  *  2      =      296.45081545
+ potential energy          =     -297.16407166
+ virial correction         =        0.71295910
+ ---------------------------------------------
+ virial sum                =       -0.00029712
+
+
+ O  pseudopotential generation: Troullier-Martins                       
+
+
+  2s  down (pseudized)
+  2p  down (pseudized)
+  3d  down (pseudized)
+  4f  down (pseudized)
+ nl    s    eigenvalue      rc          cdrc       delta                       
+
+ Core radius ( 1.15) outside wfn extremum ( 0.87)
+ 1s   0.0   -1.742414    1.142007    0.567903    0.241142
+ Core radius ( 1.15) outside wfn extremum ( 0.81)
+ 2p   0.0   -0.676589    1.142007    0.522402    1.714477
+ 3d   0.0    0.000000    1.142007    0.000000  -13.321697
+ 4f   0.0    0.000000    1.142007    0.000000  -18.844504
+
+
+Vps rcut point moved out to rc:   1.1278  1.1420
+Vps rcut point moved out to rc:   1.1138  1.1420
+Vps rcut point moved out to rc:   1.1138  1.1420
+Vps rcut point moved out to rc:   1.1000  1.1420
+
+ n = 2  l = 0  s = 0.0
+        a extr         0.952
+        r extr         0.901
+        r zero    
+        r 90/99 %      1.860   2.845
+
+ n = 2  l = 1  s = 0.0
+        a extr         0.862
+        r extr         0.743
+        r zero    
+        r 90/99 %      2.215   3.699
+
+ n = 3  l = 2  s = 0.0
+        a extr         0.203
+        r extr       111.600
+        r zero    
+        r 90/99 %    117.985 119.469
+        WARNING:  This orbital is not bound!
+
+ n = 4  l = 3  s = 0.0
+        a extr         0.220
+        r extr       111.575
+        r zero    
+        r 90/99 %    117.985 119.469
+        WARNING:  This orbital is not bound!
+
+
+ test of eigenvalues
+
+ rcut :
+  2s   1.14  -1.74241
+  2p   1.14  -0.67659
+  3d   1.14   0.00000
+  4f   1.14   0.00000
+
+
+
+ l    vps(0)    vpsmin      at r
+
+ s   -12.258   -15.547     0.737
+ p   -36.963   -36.963     0.000
+ d   -28.174   -28.174     0.000
+ f   -25.605   -25.605     0.000
+
+
+ O  output data for orbitals
+ ----------------------------
+
+ nl    s      occ         eigenvalue    kinetic energy      pot energy
+
+ 2s   0.0    2.0000      -1.74241286       1.52290291     -11.13795635  &v
+ 2p   0.0    4.0000      -0.67658828       4.73802762     -13.02659666  &v
+ 3d   0.0    0.0000       0.00000000       0.00140753      -0.11770753  &v
+ 4f   0.0    0.0000       0.00000000       0.00244001      -0.11382254  &v
+---------------------------- &v
+
+
+ total energies
+ --------------
+
+ sum of eigenvalues        =       -6.19117885
+ kinetic energy from ek    =       21.99791628
+ el-ion interaction energy =      -74.38229934
+ el-el  interaction energy =       27.22494653
+ vxc    correction         =       -8.25668379
+ virial correction         =        0.43230583
+ exchange + corr energy    =       -6.30058930
+ kinetic energy from ev    =       21.99791122
+ potential energy          =      -53.45794211
+ ---------------------------------------------
+ total energy              =      -31.46003089
+
+
+ virial theorem(nonrelativistic)
+ --------------
+
+ kinetic energy  *  2      =       43.99582244
+ potential energy          =      -53.45794211
+ virial correction         =        0.43230583
+ ---------------------------------------------
+ virial sum                =       -9.02981385
+ The Fourier(q^2/(4pi*zion)*V(q)) absolute area for l=0 is   4.306073
+ The Fourier(q^2/(4pi*zion)*V(q)) absolute area for l=1 is   6.740325
+ The Fourier(q^2/(4pi*zion)*V(q)) absolute area for l=2 is   4.599180
+ The Fourier(q^2/(4pi*zion)*V(q)) absolute area for l=3 is   4.030678
+
+
+ The total time for the calculation is      0.22084 seconds

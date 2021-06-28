@@ -1,0 +1,13 @@
+%include STRUCT.fdf
+SystemLabel siesta_2
+PAO.BasisSize SZP
+MeshCutoff 250. Ry
+CDF.Save true
+CDF.Compress 9
+SaveHS true
+SaveRho true
+%block kgrid.MonkhorstPack
+  61  1 1 0.
+   1 61 1 0.
+   0  0 1 0.
+%endblock
