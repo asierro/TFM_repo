@@ -22,7 +22,62 @@ density [**martin]. The famous paper by Hohenberg and Kohn in 1964 [** in martin
 
 
 \subsection{Basics of DFT}
-The goal is to solve the many-body problem through Schrödinger's equation.
+The main problem to be solved is the many-body time-independent Schrödinger's equation, in the spin-unpolarized case:
+\begin{equation}
+\bm H \ket{\Psi(\{\bm r\},\{\bm R\})} = E \ket{\Psi(\{\bm r\},\{\bm R\})},
+\end{equation}
+
+where \(\{\bm r\}\) and \(\{\bm R\}\) are the electron and ion position vectors, respectively. The most basic Hamiltonian contains a kinetic term plus a potential energy term describing two particle interactions: electron-ion, electron-electron and ion-ion [** martin]:
+\begin{equation}
+\begin{split}
+\bm{H} &= \bm T_{\mathrm e} + \bm V_{\mathrm{en}}+\bm V_{\mathrm{ee}}+\bm T_n+\bm V_{\mathrm{nn}}\\
+&= -\frac{\hbar^2}{2m_{\mathrm{e}}}\sum_i\nabla_i^2-\sum_{i,I}\frac{Z_Ie^2}{\abs{\bm r_i-\bm R_i}} + \frac 1 2 \sum_{i\neq j}\frac{e^2}{\abs{\bm r_i-\bm r_j}}\\
+&\quad-\sum_I\frac{\hbar^2}{2M_I}\nabla_I^2+\frac 1 2 \sum_{I\neq J}\frac{Z_IZ_Je^2}{\abs{\bm R_I-\bm R_J}},
+\end{split}
+\end{equation}
+
+which after the well-known Born-Oppenheimer approximation [** martin], whereby electrons are adiabatically separated from ions owing to their large mass difference, can be replaced with
+\begin{equation}
+\bm{H}\equiv\bm H_{\mathrm e} = \bm T_{\mathrm e} + \bm V_{\mathrm{en}}+\bm V_{\mathrm{ee}},
+\end{equation}
+
+
+so that the corresponding electron eigenfunctions only depend on \(\{\bm R\}\) parametrically. As the name implies, DFT is based upon electron density rather than the explicit wavefunctions, and it does so through two theorems first proved by Hohenberg and Kohn [** martin], which we will now describe. The ground-state wavefunction satisfies\footnote{Note that we write \(\bm V_{\mathrm{ext}}\) instead of the electron-ion potential for generality, but the former usually includes the latter.}
+\begin{equation}
+\bm H \ket{\Psi_0}=(\bm T_{\mathrm e} + \bm V_{\mathrm{ext}}+\bm V_{\mathrm{ee}})\ket{\Psi_0}=E_0\ket{\Psi_0},
+\end{equation}
+
+so along with the ground-state energy it is determined by the external potential Therefore, so is the density, since the wavefunction is a unique functional of this quantity by the relation [** Solyom]
+
+\begin{equation}
+	n_{\mathrm{e}}(\bm{r})=N_{\mathrm{e}} \int \mathrm{d} \bm{r}_{2} \cdots \int \mathrm{d} \bm{r}_{N_{\mathrm{e}}}\left|\Psi\left(\bm{r}, \bm{r}_{2}, \ldots, \bm{r}_{N_{\mathrm{e}}}\right)\right|^{2}
+\end{equation}
+
+where \(N_{\mathrm{e}}\) is the total number of electrons. The first Hohenberg-Kohn theorem states that this relationship between the external potential and the density is bilateral.
+
+\begin{theorem}
+The ground-state wavefunction \(\ket{\Psi_0}\), and hence the ground-state expectation values of any observable, is a unique functional of the ground-state density \(n_{\mathrm e}(\bm{r})\).
+\end{theorem}
+
+Thus, \(n_{\mathrm e}(\bm r)\) univocally determines \(\bm V_{\mathrm{ext}}\), and so we can write the following functional relation
+\begin{equation}
+	E\left[n_{\mathrm{e}}(\bm{r})\right]=F\left[n_{\mathrm{e}}(\bm{r})\right]+\int V_{\mathrm{ext}}(\bm{r}) n_{\mathrm{e}}(\bm{r}) \mathrm{d} \bm{r},
+\end{equation}
+
+where \(F\) is the Hohenberg-Kohn functional defined by [** papi]
+\begin{equation}
+\begin{split}
+F\left[n_{\mathrm{e}}(\bm{r})\right]&=\expval{\bm T_{\mathrm e}+\bm V_{\mathrm{ee}}}{\Psi_0}=\bm T_{\mathrm e}\left[n_{\mathrm{e}}(\bm{r})\right]+\bm E_{\mathrm{ee}}\left[n_{\mathrm{e}}(\bm{r})\right]\\
+&=\bm T_{\mathrm e}\left[n_{\mathrm{e}}(\bm{r})\right]+\bm E_{\mathrm{H}}\left[n_{\mathrm{e}}(\bm{r})\right]+\bm E_{\mathrm{Q}}\left[n_{\mathrm{e}}(\bm{r})\right],
+\end{split}
+\end{equation}
+
+where we detach from the electron-electron interaction energy the Hartree term, which describes the classical self-interaction of the electron density:
+\begin{equation}
+E_{\mathrm{H}}\left[n_{\mathrm{e}}(\bm{r})\right]=\frac {e^2} 2 \int\D\bm r\D\bm{r}'\frac{n_{\mathrm{e}}(\bm{r})n_{\mathrm{e}}(\bm{r}')}{\abs{\bm{r} - \bm{r}'}},
+\end{equation}
+
+and express the rest as a non-classical part. %bla bla bla 2nd theorem
 
 \subsection{SIESTA}
 summary: In this method the effect of

@@ -32,6 +32,31 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
 %----------------------------------------------------------------------------------------
+%	CUSTOM PACKAGES
+%----------------------------------------------------------------------------------------
+
+\usepackage{bm}
+\usepackage{physics}
+\usepackage{amsmath}
+
+%----------------------------------------------------------------------------------------
+%	CUSTOM COMMANDS
+%----------------------------------------------------------------------------------------
+
+\newcommand{\D}[0]{\mathrm{d}}
+\newcommand{\me}{\mathrm{e}}
+\newcommand{\mi}{\mathrm{i}}
+\newcommand{\oa}{\hat{a}}
+\newcommand{\oad}{\hat{a}^\dagger}
+\newcommand{\h}[1]{\hat{#1}}
+\newcommand{\pd}[2]{\frac{\partial{#1}}{\partial{#2}}}
+\newcommand{\deriv}[2]{\frac{\D{#1}}{\D{#2}}}
+\newcommand{\repr}{\,\dot{=}\,}
+\newcommand\m[1]{\begin{pmatrix}#1\end{pmatrix}}
+
+\newtheorem{theorem}{Theorem}
+
+%----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
 %----------------------------------------------------------------------------------------
 
