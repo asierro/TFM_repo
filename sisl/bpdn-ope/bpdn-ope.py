@@ -53,7 +53,7 @@ N = sisl.Atom(7)
 O = sisl.Atom(8)
 
 # Geometry object for the pyridil (w/o nitro group)
-a_list=[N, C, C, C, C, C, H, H]
+a_list = [N, C, C, C, C, C, H, H]
 pyridyl_atoms = sisl.Atoms(atoms=a_list, na=8)
 pyridyl_sc = sisl.SuperCell([50., 50., 50.,]) # TODO: set to this at end
 # pyridyl_sc = sisl.SuperCell([15., 6., 50.,])
@@ -92,7 +92,7 @@ ope_coords.append(next_coord(ope_coords[4], -60., 1.103))
 ope_coords.append(next_coord(ope_coords[6], 60., 1.103))
 ope_coords.append(next_coord(ope_coords[7], 120., 1.103))
 # HERE I DEFINE THE END BIT
-# in this case an H atoms
+# in this case an H atom
 # Remember to change a_list3 and na accordingly
 ope_coords.append(next_coord(ope_coords[5], 0., 1.103))
 
@@ -103,9 +103,9 @@ ope_coords.append(next_coord(ope_coords[5], 0., 1.103))
 a_list3 = [C, C, C, C, C, C, C, C, H, H, H, H, H]
 ope_atoms = sisl.Atoms(atoms=a_list3, na=13)
 ope_sc = sisl.SuperCell([5., 5., 5.,])
-nitro = sisl.Geometry(ope_coords, atoms=ope_atoms, sc=ope_sc)
+phenyl = sisl.Geometry(ope_coords, atoms=ope_atoms, sc=ope_sc)
 
-half_bpdn = nitro_pyridyl.add(nitro, offset=nitro_pyridyl.axyz()[2])
+half_bpdn = nitro_pyridyl.add(phenyl, offset=nitro_pyridyl.axyz()[2])
 
 # ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
 # sisl.plot(half_bpdn); plt.show()

@@ -39,4 +39,4 @@ dp_pp.atoms.replace(H_list, H)
 # plt.gca().set_aspect('equal', adjustable='box'); sisl.plot(dp_pp); plt.show()
 
 # dp_pp = dp_pp.tile(2, 1).tile(2,0)
-# plt.gca().set_aspect('equal', adjustable='box'); sisl.plot(dp_pp, s=20); plt.show()
+plt.gca().set_aspect('equal', adjustable='box'); sisl.plot(dp_pp, s=20); plt.show()

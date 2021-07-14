@@ -61,14 +61,15 @@ The ground-state wavefunction \(\ket{\Psi_0}\), and hence the ground-state expec
 
 Thus, \(n_{\mathrm e}(\bm r)\) univocally determines \(\bm V_{\mathrm{ext}}\), and so we can write the following functional relation
 \begin{equation}
-	E\left[n_{\mathrm{e}}(\bm{r})\right]=F\left[n_{\mathrm{e}}(\bm{r})\right]+\int V_{\mathrm{ext}}(\bm{r}) n_{\mathrm{e}}(\bm{r}) \mathrm{d} \bm{r},
+	\label{en-fal}
+	E\left[n_{\mathrm{e}}(\bm{r})\right]=F\left[n_{\mathrm{e}}(\bm{r})\right]+\int\mathrm{d} \bm{r}\, V_{\mathrm{ext}}(\bm{r}) n_{\mathrm{e}}(\bm{r}),
 \end{equation}
 
 where \(F\) is the Hohenberg-Kohn functional defined by [** papi]
 \begin{equation}
 \begin{split}
-F\left[n_{\mathrm{e}}(\bm{r})\right]&=\expval{\bm T_{\mathrm e}+\bm V_{\mathrm{ee}}}{\Psi_0}=\bm T_{\mathrm e}\left[n_{\mathrm{e}}(\bm{r})\right]+\bm E_{\mathrm{ee}}\left[n_{\mathrm{e}}(\bm{r})\right]\\
-&=\bm T_{\mathrm e}\left[n_{\mathrm{e}}(\bm{r})\right]+\bm E_{\mathrm{H}}\left[n_{\mathrm{e}}(\bm{r})\right]+\bm E_{\mathrm{Q}}\left[n_{\mathrm{e}}(\bm{r})\right],
+F\left[n_{\mathrm{e}}(\bm{r})\right]&=\expval{\bm T_{\mathrm e}+\bm V_{\mathrm{ee}}}{\Psi_0}=T_{\mathrm e}\left[n_{\mathrm{e}}(\bm{r})\right]+E_{\mathrm{ee}}\left[n_{\mathrm{e}}(\bm{r})\right]\\
+&=T_{\mathrm e}\left[n_{\mathrm{e}}(\bm{r})\right]+E_{\mathrm{H}}\left[n_{\mathrm{e}}(\bm{r})\right]+E_{\mathrm{Q}}\left[n_{\mathrm{e}}(\bm{r})\right],
 \end{split}
 \end{equation}
 
@@ -77,7 +78,53 @@ where we detach from the electron-electron interaction energy the Hartree term, 
 E_{\mathrm{H}}\left[n_{\mathrm{e}}(\bm{r})\right]=\frac {e^2} 2 \int\D\bm r\D\bm{r}'\frac{n_{\mathrm{e}}(\bm{r})n_{\mathrm{e}}(\bm{r}')}{\abs{\bm{r} - \bm{r}'}},
 \end{equation}
 
-and express the rest as a non-classical part. %bla bla bla 2nd theorem
+and express the rest as a non-classical part. Without prior knowledge of the ground-state density, one may find it using the second Hohenberg-Kohn theorem, which is based on the variational principle.
+
+\begin{theorem}
+The energy as a functional of some trial density takes its minimum at the true ground-state density.
+\end{theorem}
+
+Thus, the ground-state energy satisfies
+\begin{equation}
+E_0=\min E[n_{\mathrm e}(\bm r)],\quad \mathrm{with}\quad \int \D\bm r\, n_{\mathrm e}(\bm{r})=N_e.
+\end{equation}
+
+However, this minimization cannot be easily carried out in practice, due to the many-body nature of the problem which hinders finding the form of the Hohenberg-Kohn functional. Moreover, even though the density is in principle sufficient to extract any other property of the material, there is no feasible algorithm to do it in the exact case [** martin]. In order to circumvent this problem, Kohn and Sham proposed a way to approximate this functional[** in martin]. The main idea is to replace the interacting system with a non-interacting one, where a functional for the kinetic energy is known, and which contains an effective one-particle potential \(V_{\mathrm{eff}}\) such that the original density is reproduced. Therefore, the individual particles in this auxiliary problem satisfy
+\begin{equation}
+\label{ks-eq}
+\left(-\frac1 2+\nabla^2+V_{\mathrm{eff}}(\bm r)\right)\psi^{\mathrm{KS}}_i=\epsilon_i \psi^{\mathrm{KS}}_i,
+\end{equation}
+
+so that the total auxiliary wavefunction \(\ket{\Psi_{\mathrm{KS}}}\) is given by the Slater determinant of these one-particle wavefunctions. The density is then given by
+\begin{equation}
+	n_{\mathrm{e}}(\bm r)=\sum^{N_{\mathrm e}}_{i=1}\abs{\psi_i^{\mathrm{KS}}(\bm r)}^2,
+\end{equation}
+
+and the kinetic energy functional in this system is now
+\begin{equation}
+T_{\mathrm{KS}}=\expval{T}{\Psi_{\mathrm{KS}}}=\frac1 2\sum_{i=1}^{N_{\mathrm e}}\int\D\bm r\abs{\nabla\psi_i^{\mathrm{KS}}(\bm r)}^2.
+\end{equation}
+
+This is of course different from the many body kinetic energy, because we have neglected many body effects. Since the density is the same in both problems, these can be taken into account via the so-called exchange-correlation energy, defined as
+\begin{equation}
+E_{\mathrm{xc}}[n_{\mr e}]=T_{\mr e}[n_{\mr e}]-T_{\mr{KS}}[n_{\mr e}]+E_{\mr Q}[n_{\mr e}].
+\end{equation}
+
+Thus, the Hohenberg-Kohn functional reads
+\begin{equation}
+F[n_{\mr e}]=T_{\mr{KS}}[n_{\mr e}]+E_{H}[n_{\mr e}]+E_{\mr{xc}}[n_{\mr e}],
+\end{equation}
+
+so the minimization of the energy functional \ref{en-fal} reveals that[**martin]
+\begin{equation}
+V_{\mathrm{eff}}=V_{\mr{ext}}(\bm r)+e^2\int\D\bm r'\frac{n_{\mr e}(\bm r')}{\abs{\bm r-\bm r'}}+V_{\mr{xc}}[n_{\mr e}],
+\end{equation}
+
+where the middle term is the Hartree potential \(V_{H}[n_{\mr e}]\). Then, if the exchange-correlation potential were known, the Kohn-Sham equation \ref{ks-eq} could be solved self-consistently, by using an initial guess of \(n_{\mr e}\), calculating \(V_{\mr{eff}}\) with it, solving the Kohn-Sham equations to obtain the wavefunctions which define \(n_{\mr e}\), and so on until convergence is reached.\\
+
+However, the exact form for \(E_{\mr{xc}}\) is unknown[** martin], so DFT is reduced to finding the useful approximations. The simplest approximation is the local-density approximation (LDA)[**ks in kretz] which assumes \(E_{\mr{xc}}\) only depends on the density locally, that is, the density never simultaneously evaluated at two points (\(\bm r\) and \(bm r'\)) inside the integral. Another widely used approximation is the generalized-gradient approximation (GGA)[**martin], where the gradient is also allowed to appear inside the integral, which introduces some non-locality. Throughout this work we will be using the PBE[** in kretz] flavour of GGA.
+
+% exact Exc functionals actually not known, approximations lda gga... papior + kretz
 
 \subsection{SIESTA}
 summary: In this method the effect of

@@ -1,0 +1,20 @@
+np001=2  # Number of cores in atlas-001
+np002=2   # Number of cores in atlas-002
+
+if [ $np001 -gt 0 ]
+then
+    for i in {1..$np001}
+    do
+        echo $i
+        echo 'atlas-001'>> hostfile
+        echo 'echooooo'
+    done
+fi
+if [ $np002 -gt 0 ]
+then
+    for i in {1..$np002}
+    do
+        echo 'atlas-002' >> hostfile
+    done
+fi
+

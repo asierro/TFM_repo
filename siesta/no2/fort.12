@@ -1,0 +1,44 @@
+%YAML 1.2
+---
+
+siesta:
+  version: "4.1.5"
+  arch: "unknown"
+  compiler: "ifort (IFORT) 19.0.5.281 20190815"
+  fflags: "mpiifort -O2 -xhost -ip -fPIC -fp-model source"
+  fppflags: "-DFC_HAVE_ABORT -DMPI -DCDF -DNCDF -DNCDF_4 -DGRID_DP -DPHI_GRID_SP"
+  libs: "libncdf.a libfdict.a -L/scratch/scicomp/easybuild/CentOS/7.3.1611/Haswell/sofftware/netCDF-Fortran/4.5.2-iimpi-2019b/lib -lnetcdff -L/scratch/scicomp/easybuild/CentOS/7.3.1611/Haswell/software/cURL/7.66.0-GCCcore-8.3.0/lib -lcurl -L/scratch/scicomp/easybuild/CentOS/7.3.1611/Haswell/software/netCDF/4.7.1-iimpi-2019b/lib64 -lnetcdf -L/scratch/scicomp/easybuild/CentOS/7.3.1611/Haswell/software/HDF5/1.10.5-iimpi-2019b/lib -lhdf5hl_fortran -lhdf5_fortran -lhdf5_hl -lhdf5 -L/scratch/scicomp/easybuild/CentOS/7.3.1611/Haswell/software/imkl/2019.5.281-iimpi-2019b/mkl/lib/intel64 -lmkl_scalapack_lp64 -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_blacs_intelmpi_lp64 -liomp5 -lpthread -lm -ldl"
+  build: "mpi"
+  openmp: "no"
+  gemm3m: "no"
+  netcdf: "yes"
+  netcdf4: "yes"
+  netcdf4_mpi: "no"
+  metis: "no"
+  chess: "no"
+  elpa: "no"
+  flook: "no"
+  pexsi: "no"
+
+energies:
+  Ebs:          -0.19371055E+02
+  Eions:           0.11948247E+03
+  Ena:           0.13747011E+02
+  Ekin:           0.56945749E+02
+  Enl:          -0.15631197E+02
+  Eso:           0.00000000E+00
+  Edftu:           0.00000000E+00
+  DEna:           0.17731494E+00
+  DUscf:           0.52022919E-01
+  DUext:           0.00000000E+00
+  Exc:          -0.21756876E+02
+  Ecorrec:           0.00000000E+00
+  Emadel:           0.00000000E+00
+  Emeta:           0.00000000E+00
+  Emolmec:           0.00000000E+00
+  Ekinion:           0.00000000E+00
+  Eharris:          -0.85948449E+02
+  Etot:          -0.85948449E+02
+  FreeEng:          -0.85951083E+02
+
+...

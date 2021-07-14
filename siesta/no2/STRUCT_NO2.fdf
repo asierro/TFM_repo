@@ -1,0 +1,20 @@
+LatticeConstant 1.0 Ang
+%block LatticeVectors
+ 50.00000000 0.00000000 0.00000000
+ 0.00000000 50.00000000 0.00000000
+ 0.00000000 0.00000000 50.00000000
+%endblock LatticeVectors
+
+NumberOfAtoms 3
+AtomicCoordinatesFormat Ang
+%block AtomicCoordinatesAndAtomicSpecies
+ 25.00000000 25.00000000 25.00000000 1 # 1: N
+ 25.92150000 24.61170000 25.00000000 2 # 2: O
+ 24.07850000 24.61170000 25.00000000 2 # 3: O
+%endblock AtomicCoordinatesAndAtomicSpecies
+
+NumberOfSpecies 2
+%block ChemicalSpeciesLabel
+ 1 7 N
+ 2 8 O
+%endblock ChemicalSpeciesLabel
