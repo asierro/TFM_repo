@@ -134,5 +134,5 @@ npg = npg.remove(remove_list)
 # plt.close(f)
 # plt.clf()
 #
-# sisl.plot(npg, s=10); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
-# plt.tight_layout(); plt.show()
+sisl.plot(npg, s=10); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
+plt.tight_layout(); plt.show()

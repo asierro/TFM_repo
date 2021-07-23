@@ -2,7 +2,7 @@ import sisl
 import numpy as np
 import matplotlib.pyplot as plt
 
-zgnr8 = sisl.geom.zgnr(4).tile(19, 0).move([0, -10., 0])
+zgnr8 = sisl.geom.zgnr(4, bond=1.44).tile(19, 0).move([0, -10., 0])
 
 sc_x = zgnr8.cell[0, 0]
 sc_y = 8.52
@@ -18,9 +18,22 @@ H_list = [2, 6, 10, 7, 3,
           133, 130, 124, 121, 115, 111, 112, 116, 119, 125, 128, 134, 137]
 dp_pp.atoms.replace(H_list, H)
 
-# dp_pp = dp_pp.tile(2, 1).tile(2,0)
+dp_pp = dp_pp.tile(2, 1).tile(2,0)
 
-dp_pp.write('STRUCT_pp_alter.fdf')
+# dp_pp.write('STRUCT_pp_alter.fdf')
+
+coords = dp_pp.axyz()
+ats = list(dp_pp.iter_species())
+
+for ia, a, idx_specie in dp_pp.iter_species():
+    if idx_specie == 1:  # H to move
+        close = dp_pp.close(ia, R=1.45)
+        for ja in close: # C to move towards
+            if ats[ja][2] == 0:
+                dp_pp = dp_pp.move((1.44 - 1.105) * (coords[ja] - coords[ia]) / 1.44, atoms=ia)
+
+# by using ax.set_xlim, y_lim and atom_indices = True determine the position of the atom to move to (dp_pp.move),
+# then redefine the sc (calculate size mathematically) and remove outliers with the function I wrote.
 
 f = plt.figure()
 f.clear()

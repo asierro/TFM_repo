@@ -89,7 +89,10 @@ Thus, the ground-state energy satisfies
 E_0=\min E[n_{\mathrm e}(\bm r)],\quad \mathrm{with}\quad \int \D\bm r\, n_{\mathrm e}(\bm{r})=N_e.
 \end{equation}
 
-However, this minimization cannot be easily carried out in practice, due to the many-body nature of the problem which hinders finding the form of the Hohenberg-Kohn functional. Moreover, even though the density is in principle sufficient to extract any other property of the material, there is no feasible algorithm to do it in the exact case [** martin]. In order to circumvent this problem, Kohn and Sham proposed a way to approximate this functional[** in martin]. The main idea is to replace the interacting system with a non-interacting one, where a functional for the kinetic energy is known, and which contains an effective one-particle potential \(V_{\mathrm{eff}}\) such that the original density is reproduced. Therefore, the individual particles in this auxiliary problem satisfy
+However, this minimization cannot be easily carried out in practice, due to the many-body nature of the problem which hinders finding the form of the Hohenberg-Kohn functional. Moreover, even though the density is in principle sufficient to extract any other property of the material, there is no feasible algorithm to do it in the exact case [** martin]. 
+
+\subsubsection*{Kohn-Sham equations}
+In order to circumvent this problem, Kohn and Sham proposed a way to approximate this functional[** in martin]. The main idea is to replace the interacting system with a non-interacting one, where a functional for the kinetic energy is known, and which contains an effective one-particle potential \(V_{\mathrm{eff}}\) such that the original density is reproduced. Therefore, the individual particles in this auxiliary problem satisfy
 \begin{equation}
 \label{ks-eq}
 \left(-\frac1 2+\nabla^2+V_{\mathrm{eff}}(\bm r)\right)\psi^{\mathrm{KS}}_i=\epsilon_i \psi^{\mathrm{KS}}_i,
@@ -127,10 +130,53 @@ However, the exact form for \(E_{\mr{xc}}\) is unknown[** martin], so DFT is red
 % exact Exc functionals actually not known, approximations lda gga... papior + kretz
 
 \subsection{SIESTA}
-summary: In this method the effect of
-the core electrons is described by soft norm-conserving
-pseudopotentials and the electronic structure of the valence
-electrons is expanded in a basis set of numerical atomic orbitals with finite range
+SIESTA[** siesta paper] is an implementation of DFT that solves the Kohn-Sham equations. This code describes the effect of core electrons using soft norm-conserving pseudopotentials, and uses a basis set of numerical atomic orbitals with finite range to represent the electronic structure of valence electrons. All while keeping calculations of order \(N\) (\(\mathcal O(N)\)) with respect to system size (number of atoms).
+
+\subsubsection*{Pseudopotentials}
+The one particle KS equation presents the numerical difficulty of dealing accurately with both core and valence electrons. Core electrons are those that do not participate in chemical bonding. Core eigenvalues are much lower than valence eigenvalues, and their wavefuntions are highly localized around the nuclei, which make them chemically inert.\\
+
+Regarding valence electrons, the hermiticity of the Hamiltonian means their wavefunctions are orthogonal to the core wavefunctions. Therefore, the Fourier expansion of their wavefunction has a big contribution of short wavelengths near the nucleus, and in order to get a good approximation a large number of plane waves (or a denser real-space grid) would be needed, which makes calculations more expensive.\\
+
+In order to overcome this problem, the dynamics of the core electrons is ignored and their effect is replaced by an effective potential. The effect of core electrons on valence wavefunctions can then be eliminated by replacing the oscillating part near the nucleus by a smoother function. This is done by defining an adequate pseudopotential.\\
+
+Given a reference atomic configuration, Hammann \textit{et al} give a few requirements an adequate pseudopotential must meet[**Hamann], which ensure the smoothness and transferability of the pseudopotential. While satisfying these, the user has freedom to specify their desired pseudopotential. In this work, we will use GGA-PBE pseudopotentials from ***website.
+%\begin{enumerate}
+%\item All electron and pseudo valence eigenvalues agree for the chosen configuration.
+%\item All electron and pseudo valence wavefunctions agree beyond a chosen cutoff radius Rc.
+%\item The logarithmic derivatives of the all-electron and pseudo-wavefunctions agree at Rc
+%\item The integrals from 0 to r of the real and pseudo charge densities agree for r > Rc for each valence state (norm conservation).
+%\end{enumerate}
+
+
+Local and non-local parts -> reason... order n (telaviv pseudopotentials) so Ks eq with the kb projectos et is:
+
+\subsubsection*{Basis sets}
+tel-aviv basis sets.
+Expand in terms of a finite set of basis functions: (ks)
+
+Plane wave, advantage disadvantage
+
+Pseudo atomic orbitals, siesta
+phi R Ylm
+
+adv disdvantage. SIESTA -> any PAO (add abbrev) as long as it has that form and R is finite.
+
+Minimal basis, or single-z...
+
+Radial flexibility, multiple zeta. In this work we mainly use the DZP (add abbreviation) basis set... (explain what is double-zeta and why polarized)
+
+\subsubsection{Some internal details}
+very general matrix elements, integrals (-> fft -> repetition)
+Density matrix, used for many calculations
+scf convergence, mixing (pulay)
+
+Infinite periodic solids -> supercell + Bon-Von karman bc,
+k-dependent mat els, k point sampling, MonkHorst pack
+
+% Paragraph: forces
+% in equation 1.3 we have neglected the ion energy E_II, but we see it contributes to total energy, different {R_I} -> diff energies -> minimization to relax the structure
+% conjugate gradients
+
 %----------------------------------------------------------------------------------------
 
 %\section{Transport through NEGF}
