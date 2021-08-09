@@ -125,7 +125,7 @@ ang_a = 30
 for ang_a in range(0, 100, 10):
     for ang_b in range(0, 180, 10):
         print(ang_a, ang_b)
-        rotating_dn_dppp = rotate_dn_dppp(dn_dppp, ang_a, ang_a + ang_b, ang_a + 180, ang_a + ang_b + 180)
+        rotating_dn_dppp = rotate_dn_dppp(dn_dppp, ang_a, ang_a + ang_b, -ang_a, -ang_a - ang_b)
         # rotating_dppp.write('structures/STRUCT_{}_{}.fdf'.format(ang_a, ang_b))
         f = plt.figure()
         f.clear()

@@ -30,7 +30,7 @@ phenyl2R = [114, 121, 91, 125,
 # rotated1R = dp_pp_ortho.rotate(61.33, coords[115] - coords[117], atoms=phenyl1R, origo=coords[117], only='xyz')
 # rotated2R = dp_pp_ortho.rotate(118.23, coords[90] - coords[120], atoms=phenyl2R, origo=coords[120], only='xyz')
 
-# # sisl.plot(dp_pp_ortho, s=10); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
+# # sisl.plot(dp_pp_ortho, s=10, atom_indices=True); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
 # sisl.plot(rotated1R, s=10); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
 # plt.tight_layout(); plt.show()
 

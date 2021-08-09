@@ -1,0 +1,70 @@
+SystemLabel rot_dppp_0_0
+
+###########################
+#                         #
+# Include structural info #
+#                         #
+###########################
+
+%include STRUCT_0_0.fdf
+
+##########
+#        #
+# K-grid #
+#        #
+##########
+
+Mesh.Cutoff 400 Ry
+
+%block kgrid_Monkhorst_Pack
+  15 0 0
+  0 51 0 0
+  0 0 1 0
+%endblock kgrid_Monkhorst_Pack
+
+#############
+#           #
+# Basis set #
+#           #
+#############
+
+PAO.BasisSize	  DZP
+PAO.EnergyShift 0.01 Ry
+
+#######
+#     #
+# SCF #
+#     #
+#######
+
+DM.UseSaveDM T  # Use DM from previous run
+
+XC.functional    GGA 
+XC.authors       PBE  
+DM.NumberPulay   5 
+DM.MixingWeight  0.25
+MaxSCFIterations 500
+
+###############
+#             #
+# Convergence #
+# criterion   #
+#             #
+###############
+
+SCF.H.Converge T
+SCF.H.Tolerance 0.0001 eV
+
+##################
+#                #
+# Band structure #
+#                #
+##################
+
+BandLinesScale ReciprocalLatticeVectors
+%block BandLines
+1 0.5000000000 0.0000000000 0.0000000000
+100 0.0000000000 0.0000000000 0.0000000000
+400 0.0000000000 0.5000000000 0.0000000000
+%endblock BandLines
+

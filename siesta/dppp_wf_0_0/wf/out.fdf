@@ -1,0 +1,33 @@
+SystemLabel     rot_dppp_0_0                                                                    
+Denchar.TypeOfRun     3D                                                                              
+Denchar.PlotCharge              F     # default value
+Denchar.PlotWaveFunctions              T
+SystemLabel     rot_dppp_0_0                                                                    
+Number_of_species              2
+%block Chemical_species_label
+   1    1   H
+   2    6   C
+%endblock Chemical_species_label
+SystemLabel     rot_dppp_0_0                                                                    
+Denchar.CoorUnits     Ang                                                                             
+Denchar.DensityUnits     Ele/Ang**3                                                                      
+Denchar.NumberPointsX            300
+Denchar.NumberPointsY            100
+Denchar.NumberPointsZ            100
+Denchar.MinX          0.000000000           Bohr
+# above item originally: Denchar.MinX          0.000000000     Ang       
+Denchar.MaxX          89.69966571           Bohr
+# above item originally: Denchar.MaxX          47.46700000     Ang       
+Denchar.MinY          0.000000000           Bohr
+# above item originally: Denchar.MinY          0.000000000     Ang       
+Denchar.MaxY          16.42172657           Bohr
+# above item originally: Denchar.MaxY          8.690000000     Ang       
+Denchar.MinZ          0.000000000           Bohr
+# above item originally: Denchar.MinZ          0.000000000     Ang       
+Denchar.MaxZ          37.79453756           Bohr
+# above item originally: Denchar.MaxZ          20.00000000     Ang       
+Denchar.PlaneGeneration     NormalVector               # default value
+SystemLabel     rot_dppp_0_0                                                                    
+SystemLabel     rot_dppp_0_0                                                                    
+SystemLabel     rot_dppp_0_0                                                                    
+SystemLabel     rot_dppp_0_0                                                                    

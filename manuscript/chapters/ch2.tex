@@ -3,7 +3,7 @@
 \chapter{Theoretical and computational tools} % Main chapter title
 % Theory and programs?
 
-\label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+\label{ch2} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
 %----------------------------------------------------------------------------------------
 
@@ -115,11 +115,12 @@ E_{\mathrm{xc}}[n_{\mr e}]=T_{\mr e}[n_{\mr e}]-T_{\mr{KS}}[n_{\mr e}]+E_{\mr Q}
 
 Thus, the Hohenberg-Kohn functional reads
 \begin{equation}
-F[n_{\mr e}]=T_{\mr{KS}}[n_{\mr e}]+E_{H}[n_{\mr e}]+E_{\mr{xc}}[n_{\mr e}],
+F[n_{\mr e}]=T_{\mr{KS}}[n_{\mr e}]+E_{\mr H}[n_{\mr e}]+E_{\mr{xc}}[n_{\mr e}],
 \end{equation}
 
 so the minimization of the energy functional \ref{en-fal} reveals that[**martin]
 \begin{equation}
+\label{veff}
 V_{\mathrm{eff}}=V_{\mr{ext}}(\bm r)+e^2\int\D\bm r'\frac{n_{\mr e}(\bm r')}{\abs{\bm r-\bm r'}}+V_{\mr{xc}}[n_{\mr e}],
 \end{equation}
 
@@ -133,47 +134,113 @@ However, the exact form for \(E_{\mr{xc}}\) is unknown[** martin], so DFT is red
 SIESTA[** siesta paper] is an implementation of DFT that solves the Kohn-Sham equations. This code describes the effect of core electrons using soft norm-conserving pseudopotentials, and uses a basis set of numerical atomic orbitals with finite range to represent the electronic structure of valence electrons. All while keeping calculations of order \(N\) (\(\mathcal O(N)\)) with respect to system size (number of atoms).
 
 \subsubsection*{Pseudopotentials}
+% **cite telaviv?
 The one particle KS equation presents the numerical difficulty of dealing accurately with both core and valence electrons. Core electrons are those that do not participate in chemical bonding. Core eigenvalues are much lower than valence eigenvalues, and their wavefuntions are highly localized around the nuclei, which make them chemically inert.\\
 
 Regarding valence electrons, the hermiticity of the Hamiltonian means their wavefunctions are orthogonal to the core wavefunctions. Therefore, the Fourier expansion of their wavefunction has a big contribution of short wavelengths near the nucleus, and in order to get a good approximation a large number of plane waves (or a denser real-space grid) would be needed, which makes calculations more expensive.\\
 
 In order to overcome this problem, the dynamics of the core electrons is ignored and their effect is replaced by an effective potential. The effect of core electrons on valence wavefunctions can then be eliminated by replacing the oscillating part near the nucleus by a smoother function. This is done by defining an adequate pseudopotential.\\
 
-Given a reference atomic configuration, Hammann \textit{et al} give a few requirements an adequate pseudopotential must meet[**Hamann], which ensure the smoothness and transferability of the pseudopotential. While satisfying these, the user has freedom to specify their desired pseudopotential. In this work, we will use GGA-PBE pseudopotentials from ***website.
-%\begin{enumerate}
-%\item All electron and pseudo valence eigenvalues agree for the chosen configuration.
-%\item All electron and pseudo valence wavefunctions agree beyond a chosen cutoff radius Rc.
-%\item The logarithmic derivatives of the all-electron and pseudo-wavefunctions agree at Rc
-%\item The integrals from 0 to r of the real and pseudo charge densities agree for r > Rc for each valence state (norm conservation).
-%\end{enumerate}
+Given a reference atomic configuration, Hammann \textit{et al} give a few requirements an adequate pseudopotential must meet[**Hamann], which ensure the smoothness and transferability of the pseudopotential:
+\begin{enumerate}
+\item All-electron and pseudo-wavefunction valence eigenvalues must be the same.
+\item All-electron and pseudo-wavefunctions must be the same beyond a chosen cutoff radius \(R_{\mr c}\).
+\item The logarithmic derivatives of the all-electron and pseudo-wavefunctions must coincide at \(R_{\mr c}\).
+\item The integrals from \(0\) to \(R_{\mr c}\) of the real and pseudo charge densities must agree for \(r > R_{\mr c}\) for each valence state (norm conservation).
+\end{enumerate}
 
+While satisfying these, the user has freedom to specify their desired pseudopotential. In order to generate it, the radial Schrödinger equation for all electrons is solved for the given configuration:
+\begin{equation}
+\label{radial-sch}
+\qty[-\frac 1 2 \deriv{^2}{r^2}+\frac{l(l+1)}{2r^2}+V_{\mr{eff}}[n_{\mr e}](r)]u_{nl}(r)=\varepsilon_{nl}u_{nl}(r),
+\end{equation}
 
-Local and non-local parts -> reason... order n (telaviv pseudopotentials) so Ks eq with the kb projectos et is:
+where (dropping the KS superscript) \(\psi_{nlm}(\bm r)=\frac 1 r u_{nl}(r)Y_{lm}(\theta,\phi)\), and \(V_{\mr{eff}}\) is given by equation \ref{veff} with \(V_{\mr{ext}}=-Z/r\). Note that for a single atom \(V_{\mr{eff}}\) only has radial dependence. Next, the pseudo-wavefunctions \(u_{nl}^{\mr{PS}}(r)\) are created (the part where \(r < R_{\mr c}\)) following the previous specifications, or other similar parametrization schemes like Troullier-Martins [** in telaviv]. Now, one can use equation \ref{radial-sch}, after substituting these pseudo-wavefunctions, in order to solve for \(V_{\mr{eff}}\), which will now be \(l\)-dependent. The unscreened pseudopotential \(V^{\mr{PS}}_l\) is obtained by subtracting the Hartree and exchange-correlation potential (as in equation \ref{veff}) calculated only for the valence electrons with the pseudo-wavefunctions; that is, with the electron density given by
+\begin{equation}
+n(r)=\sum_{l}\abs{u_{nl}^{\mr{PS}}(r)}^2.
+\end{equation}
+
+The full pseudopotential will be the \(l\)-sum of the \(V^{\mr{PS}}_l\) pseudopotentials, which can be further separated into a local (\(l\) independent) part that represents the contributions of big \(l\) which are similar, and a non-local part which depends strongly on (small) \(l\):
+\begin{equation}
+\begin{split}
+V^{\mr{PS}}(\bm r) &= \sum_{lm}V_l^{\mr{PS}}(r)\dyad{lm}\\
+&=V_{\mr{local}}(r)+\sum_{lm}\delta V_l(r)\dyad{lm}
+\end{split}
+\end{equation}
+
+In SIESTA, the Kleinman-Bylander form[** in siestapaper] is used which greatly reduces the amount of integrals to be computed. The Hamiltonian used in SIESTA then reads
+\begin{equation}
+\label{hsiesta}
+	H=T+\sum_{I} V_{I}^{\mr{local}}(\bm{r})+\sum_{I} V_{I}^{\mr{KB}}+V_{\mr H}(\bm{r})+V_{\mr{xc}}(\bm{r}).
+\end{equation}
+
+In this work, we will use GGA-PBE pseudopotentials from ***website.
+
 
 \subsubsection*{Basis sets}
-tel-aviv basis sets.
-Expand in terms of a finite set of basis functions: (ks)
 
-Plane wave, advantage disadvantage
+In order to solve the Kohn-Sham differential equations numerically, these are turned into finite matrix equations by the use of basis sets. One can expand the KS wavefunction in terms of the wavefunctions in the basis set:
+\begin{equation}
+\psi_i(\bm r) \simeq \sum_\mu\phi_\mu(\bm r)c_{\mu,i},
+\end{equation}
 
-Pseudo atomic orbitals, siesta
-phi R Ylm
+where now we wish to obtain the \(c_{\mu,i}\) coefficients. Strict equality is achieved when the basis set is complete, which requires an infinite number of wavefunctions, so the goal is to span as much as possible of the whole Hilbert space with a finite basis set. Using this, the KS equation \(H\psi_i=\epsilon_i\psi_i\) becomes
+\begin{equation}
+\label{meq}	
+\sum_{\mu} H_{\nu \mu} c_{\mu, i}=\epsilon_{n} \sum_{\mu} S_{\nu \mu} c_{\mu, i},
+\end{equation}
 
-adv disdvantage. SIESTA -> any PAO (add abbrev) as long as it has that form and R is finite.
+where
+\begin{equation}
+	\begin{split}
+		&H_{\nu \mu} \equiv \int \mathrm{d} \bm{r}\, \phi_{\nu}^{*}(\mathbf{r}) H \phi_{\mu}(\bm{r}), \\
+		&S_{\nu \mu} \equiv \int \mathrm{d} \bm{r}\, \phi_{\nu}^{*}(\mathbf{r}) \phi_{\mu}(\bm{r})
+	\end{split}
+\end{equation}
 
-Minimal basis, or single-z...
+are the Hamiltonian and overlap matrices. Since the basis set is usually non-orthogonal (\(S_{\mu\nu}\neq\delta_{\mu\nu}\)), equation \ref{meq} defines a generalized eigenvalue problem to be solved numerically.
 
-Radial flexibility, multiple zeta. In this work we mainly use the DZP (add abbreviation) basis set... (explain what is double-zeta and why polarized)
+The most popular basis sets are either based on plane waves (for example, in Quantum Espresso[**]) or atomic-like orbitals, as is done in SIESTA. These are defined by a radial function times a spherical harmonic, and are usually (but not necessarily) centered around the nuclei [** siesta paper]:
+\begin{equation}
+	\phi_{Ilmn}(\bm{r})=\phi_{Iln}\left(r_{I}\right)Y_{lm}\left(\hat{\bm{r}}_{I}\right),
+\end{equation}
 
-\subsubsection{Some internal details}
-very general matrix elements, integrals (-> fft -> repetition)
-Density matrix, used for many calculations
-scf convergence, mixing (pulay)
+where \(\bm r_I=\bm r-\bm R_I\) and \(n\) labels different wavefunctions with the same angular dependence. Particularly in SIESTA, the radial function has finite support, so it is zero above a certain cutoff radius. This ensures the sparsity of the Hamiltonian and overlap matrices, and allows \(\mathcal{O}(N)\) calculations. Then, \(\phi_{Iln}\left(r_{I}\right)\) is defined numerically for discrete radial distances. A disadvantage of NAOs when compared to PWs is the lack of systematic convergence, which is done through the choice of basis sets.\\
 
-Infinite periodic solids -> supercell + Bon-Von karman bc,
-k-dependent mat els, k point sampling, MonkHorst pack
+Some of the most common basis sets are inherited from quantum chemistry. The minimal (or single-\(\zeta\)) basis uses atomic orbitals of at least partly occupied states, that is, actual numerical solutions of the single-particle KS for a free (pseudo-)atom. On top of this, a hard confining potential is added, which defines a cutoff radius for the basis wavefunctions. This potential bumps the orbital up in energy, and this energy shift which is related to the cutoff radius can be specified by the user.\\
 
-% Paragraph: forces
+In order to add some radial flexibility, multiple-\(\zeta\) basis sets are used, which have several wavefunctions with different radial part for each spherical harmonic. These radial functions are usually generated using the `split-valence' method [** siestapaper 35]. Further, to give some angular flexibility (to account for bond formation, for instance), higher angular momentum shells are used, which are obtained by a perturbative polarization of the an \(l\) orbital with an electric field, so that the form of the \(l+1\) is obtained [** siestapaper]. In this work, we will mostly use the double-\(\zeta\) polarized (DZP) basis.
+
+%** density matrix?
+
+\subsubsection*{Integrals}
+ The Hamiltonian \ref{hsiesta} can be rewritten in a more useful way, by noticing that the local potential plus the effect of valence electrons calculated for the free pseudo-atom goes asymptotically to zero, since the atom becomes neutral, and strictly to zero when the basis functions are zero beyond the cutoff radius [** siesta paper]. For each atom, we can write the density as  \(\rho_I=\rho_I^{\mr{atom}}+\delta\rho\), where \(\rho_I^{\mr{atom}}\) is the density of the aforementioned valence electrons. The Hartree potential is linear in the density, so summing the contributions from all atoms we can write it similarly as \(V_{\mr H}=V_{\mr H}^{\mr{atom}}+\delta V_{\mr H}\), we can define
+ \begin{equation}
+ V_I^{\mr{NA}}=V_I^{\mr local}+V_I^{\mr{atom}},\quad\mathrm{with}\quad\sum_IV_I^{\mr{atom}}=V_{\mr H},
+ \end{equation}
+
+whose terms will exactly cancel beyond the cutoff radius. \ref{hsiesta} can then be rewritten as
+\begin{equation}
+\label{hsiesta2}
+H=T+\sum_{I}V_{I}^{\mr{KB}}+V_I^{\mr{NA}}(\bm{r})+\delta V_{\mr H}(\bm r)+V_{\mr{xc}}(\bm{r}).
+\end{equation}
+
+The matrix elements of the first two terms of this equation, as well as the overlap integrals, can be calculated using so-called two-centered integrals. Owing to the cutoff radius of the basis functions, there is a maximum distance \(R_{\mr{max}}=r_1^{\mr c}+r_2^{\mr c}\) up to which the matrix elements are nonzero. Taking advantage of this, SIESTA calculates these integrals in reciprocal space using a special FFT[** siestapaper] and then tabulates and stores the values in a radial grid, so that later an interpolation can be made from that table.
+
+The last three potential terms of equation \ref{hsiesta2} depend on the position, so their matrix elements are calculated on a real-space grid whose fineness is controlled by an energy cutoff, corresponding to the maximum kinetic energy of the planewaves that can be represented in the grid without aliasing [** siestapaper]. The density matrix ******doit***** is essential to calculate \(\delta V_{\mr H}(\bm r)\) and \(V_{\mr{xc}}(\bm{r})\).
+
+% Explain density mat in subsubection Basis sets
+% Fourier transform (how to calculate deltaVH) -> repetition
+
+% linking with rrepetition... 
+%Infinite periodic solids -> supercell + Bon-Von karman bc,
+%k-dependent mat els, k point sampling, MonkHorst pack
+
+\subsubsection*{Self-consistent field cycle}
+SCF, mixing (pulay)
+
+\subsubsection{Forces and relaxation}
+Forces and relaxation
 % in equation 1.3 we have neglected the ion energy E_II, but we see it contributes to total energy, different {R_I} -> diff energies -> minimization to relax the structure
 % conjugate gradients
 
@@ -189,6 +256,9 @@ k-dependent mat els, k point sampling, MonkHorst pack
 %
 %\subsection{Keldysh formalism}
 %\subsection{TranSIESTA and TBtrans}
-%\subsection{sisl}
+%
+%
+\section{The \textsc{sisl} package}
+
 
 

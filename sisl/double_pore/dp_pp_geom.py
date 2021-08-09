@@ -32,8 +32,8 @@ dp_pp.atoms.replace(H_list, H)
 
 # dp_pp.write('STRUCT_pp_ortho.fdf')
 
-# sisl.plot(dp_pp, s=5); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
-# plt.tight_layout(); plt.show()
+sisl.plot(dp_pp, s=5); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
+plt.tight_layout(); plt.show()
 
 # sisl.plot(dp_pp, s=5); ax = plt.gca(); ax.set_aspect('equal', adjustable='box'); plt.tight_layout()
 # fig=plt.gcf(); w, h = fig.get_size_inches(); fig.set_size_inches(w * 2, h * 2); plt.savefig('final.pdf')
