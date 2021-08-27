@@ -364,7 +364,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 			{\huge\textit{\abstractname} \par}
 			\bigskip
 			{\normalsize \facname \par}% Faculty name
-			{\normalsize \deptname \par}% Department name
+%			{\normalsize \deptname \par}% Department name
 			\bigskip
 			{\normalsize \degreename\par}% Degree name
 			\bigskip
@@ -410,8 +410,8 @@ KOMA-script documentation for details.}]{fancyhdr}
 
 \usepackage{xcolor}
 \colorlet{mdtRed}{red!50!black}
-\newcommand{\acknowledgementname}{Acknowledgements}
-\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish} {\acknowledgementname}{Acknowledgements} % Acknowledgement text for English countries
+\newcommand{\acknowledgementname}{Preface}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish} {\acknowledgementname}{Preface} % Acknowledgement text for English countries
 \providecaptionname{german,ngerman,austrian,naustrian}{\acknowledgementname}{Danksagung} % Acknowledgement text for Germanic countries
 
 \ifbool{consistentlayout}{

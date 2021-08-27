@@ -1,23 +1,84 @@
 % Chapter 3
 
-\chapter{Study of nanoporous graphene}
+\chapter{Nanoporous graphene}
 
 \label{ch3}
 
-\section{Plain NPG}
-% general info (synthesis, properties)
-% bands
-% application
+
+Graphene is a two-dimensional sheet of sp\(^2\)-hybridized carbon\parencite{Allen2010}. The valence electronic structure of carbon is 2s\(^2\)2p\(^2\), but the sp\(^2\) bonds make up the sigma bands which are well below Fermi level. One 2p\(_z\) electron is left per carbon atom, forming \(\pi\) bonds through long range conjugation, which almost entirely constitute the crossing conduction and valence bands, giving graphene its semimetallic nature. The crossing happens at the so-called Dirac points, situated at the edge of the Brillouin zone at the K and K' points, and are responsible for many of graphene's electronic properties.\\
+
+**Fig of graphene geometry and bands\\
+
+Many applications, like graphene-based logic devices\parencite{Allen2010} require the introduction an appreciable band gap. One way to achieve this is quantum confinement in one direction, which leads us to graphene nanoribbons (GNRs). These are thin, one-dimensional strips of graphene, up to a few atoms wide, which introduce edges to graphene. The width and edge structure of the nanoribbons determine their electronic properties\parencite{Wakabayashi2010}. For instance, armchair-edged GNRs (AGNRs) exhibit width-dependent band gaps\parencite{Son2006}. AGNRs are conventionally classified by the number of dimer lines (\(N_a\)) across the width of the ribbon, and can be further classified into 3 families with differently behaved variation of band gaps:
+\begin{equation}
+N_a=\begin{cases}3p\\3p+1,\\3p+2\end{cases}\quad p\in\mathbb{N}.
+\end{equation}
+
+The \(N_a=3p+1\) family exhibits the most appreciable band gaps, within the range of \(\sim\)1-2eV for the thinnest ribbons\parencite{MerinoDiez2017, Deniz2017, Kharche2016}. Moreover, GNRs define a class of quantum wires\parencite{Wakabayashi2010}, as the band structure suggests, since its allows for efficient one-dimensional charge transport through its \(\pi\)-conjugated structure.\\
+
+GNRs has be grown with atomic precision by on-surface chemical reactions of suitable
+designed molecular precursors\parencite{Cai2010, Kretz2018}. The process involves several steps\parencite{Grill2007, Cai2010}: some molecular precursors with linker atoms (such as bromine) are deposited on a metallic surface and  heated to remove the linkers (thermal activation); the precursors in a radical state then covalently link to each other, thus forming polymer structures; next, hydrogen atoms are removed through cyclodehydrogenation, which is achieved via further thermal annealing and it leads to the formation of organic covalent structures such as GNRs.\\
+
+** Fig of GNRs...\\
+
+Nanoporous graphene (NPG) is a graphene sheet with periodically placed holes (pores), and can be seen as a 2D array of laterally bonded GNRs. This chapter aims to summarize the recent synthesis and characterization\parencite{Moreno2018} of NPG as well as review some of its properties. Additionally, we will deal with NPG which is structurally modified from the original, specifically the so-called double-pore nanoporous graphene, and its functionalization with nitro groups.
+
+
+\section{Electronic properties of NPG}
+
+A scheme for bottom-up formation of NPG was recently reported\parencite{Moreno2018, Kretz2018}, based on the above mentioned method of synthesis and characterization of covalently bonded carbon nanostructures.
+Applying the processes of Ullmann coupling and cyclodehydrogenation, a precursor labelled DP-DBBA (diphenyl-1'.10'-dibromo-9,9'-bianthracene) is used to synthesize so-called 7-13-AGNRs, which are AGNRs with a periodic modulation of the width between \(N_a=7\) and \(N_a=13\). In a third step, the ribbons are further heated to remove hydrogens and induce covalent inter-ribbon connections and thus give rise to NPG, through the process of dehydrogenative cross coupling.\\
+
+7-13-AGNR can be seen as a one-dimensional building block of the NPG array. Consequently, many of the electronic properties of the NPG can be anticipated from 7-13-AGNRs' electronic structure.
+Figure ** shows DFT bands of the 7-13-AGNR\parencite{Kretz2018}, where a few relevant bands have been highlighted. The valence and conduction bands (VB and CB, respectively) are dispersive in the \(\Gamma Z\) direction, along the backbone of the ribbon, and analyzing the wavefunction at the \(\Gamma\) point shows that\parencite{Kretz2018} these bands are confined in the 7-atom-wide central region of the ribbon, and have the same character as the dispersive valence and conduction bands of the 7-AGNR. These are \textit{longitudinal} bands. \textit{Transversal} 
+bands in the 7-13-AGNR are flat, and their wavefunction is localized within the 13-wide segment. Finally, there is a family of bands that are almost entirely localized in the coves, in the vacuum in between two 13-wide portions of the ribbon.\\
+
+As shown in figure ** NPG can have two different pore orientation depending on how the 7-13-AGNRs are linked. The unit cell or the parallel-pore NPG is much smaller an contains only ** atoms, but the NPG with the anti-parallel pores, which contains ** atoms, has an orthogonal unit cell, which aids the interpretation of band structures and cross-talk (see subsection \ref{crosstalk}).\\
+
+In fig. ** we calculate the bands of NPG using SIESTA, reproducing the results in refs. \parencite{Moreno2018, Kretz2018}. For this, the PBE exchange-correlation functional was used. The Brillouin was sampled with a \(15\times51\times1\) k-point Monkhorst-pack grid, while the SCF cycle was performed using Hamiltonian matrix elements as the criterion for self-consistency, and set the tolerance at \(1\times10^{-4}\)eV. For the structure relaxation, the maximum force tolerance was set to 0.01eV/\(\AA\). 50\(\AA\) of vaccuum was used between two copies of the NPG sheet due to periodic boundary conditions, and the mesh cutoff value (setting the accuracy of the real-space grid) was set to 400Ry. The basis set used was DZP, with an energy shift (setting the radial cutoff of the basis wavefunctions) of 0.01Ry. In this case, in order to represent higher, unoccupied bands more accurately, an extended basis set was used for the calculation of the band structure, including carbon 3s and 3p orbital as in ref. \parencite{Kretz2018}.\\
+
+
+From the band structure one can identify the several corresponding bands in the 7-13-AGNR that have the same character. We can find longitudinal bands dispersing in the \(\Gamma Z\) direction, such as CB and CB+1, which stay true to the 7-13-AGNR states and are localized in the backbone of the ribbons with no dispersion in the perpendicular direction; transversal bands that are dispersive in the \(\Gamma X\) direction, unlike the localized 7-13-AGNR band, and with no interaction between successive bridges; and nearly flat bands corresponding to the vacuum states, that in the case of NPG can be renamed pore state\parencite{Moreno2018, Kretz2018}. These electronic property calculations can be repeated for the parallel-pore NPG, which shows very similar longitudinal, transversal and pore states such that the anti-parallel calculation is deemed sufficient\cite{Kretz2018}.
+
+\subsection{Ribbon cross-talk}\label{crosstalk}
+An orthogonal unit cell in NPG, as is achieved in the anti-parallel pore case, essentially means we have two ribbons in it. If one considers a system with two disconnected 7-13-AGNRs, the eigenspectrum would be doubly degenerate. Now, if the systems are slowly connected from one side and allowed to interact, the degeneracy will break, leading to a lifting of the degeneracy, in a manner analogous to the formation of bonding and antibonding states in a diatomic molecule. When an ``infinite'' amount of 7-13-AGNRs are bonded laterally, and two ribbons are considered in the unit cell we will essentially have band folding in the \(\Gamma X\) direction, similarly to the case of a two-atom unit cell in a 1D chain\parencite{Papior2016}, and a lifted degeneracy in the \(\Gamma Z\) direction.\\
+**??
+
+\section{Charge transport in NPG}
+
+Recently, an study using \textit{ab-initio} and atomistic calculations was performed for near- and far-field electron transport in NPG\parencite{Calogero2019}, where it is predicted that electrons propagating in this material will exhibit the interference effect analogous to the Talbot effect\parencite{Talbot1836}, which occurs with light in coupled waveguides. It is known that masslell Dirac fermions, such as those found in graphene low-energies owing to its linear energy dispersion, show diffraction and interference phenomena analogous to light, such as the Talbot effect\parencite{Walls2016}. This effect can also be seen for plasmons in GNR arrays\parencite{Wang2017}. It was shown in ref. \parencite{Calogero2019} by Calogero \textit{et al} that this optical analogy persists in NPG.\\
+
+Calogero \textit{et al}\parencite{Calogero2019} studied the extent to which currents injected along an individual GNR channel in gated NPG via a scanning tunneling microscope (STM) probe would stay confined in the channel, by using a multiscale method based on DFT and nonequilibrium Green’s functions (NEGF). A contact region perturbed by the STM probe that is described by DFT  is linked to an unperturbed large-scale region described by an effective tight-binding (TB) model parametrized from DFT calculations, which enables current calculations for sample sizes that are relevant for experiments (\(>\)100nm). They found that the inter-GNR coupling disrupts the longitudinal confinement, and current splits into neighboring ribbons resulting in ``beams'' that diverge from the logitudinal direction at an angle that varies slightly with energy.\\
+
+The equation for weakly coupled channels that describes the Talbot effect is\parencite{Calogero2019} (\(y\) now corresponding to the longitudinal direction)
+\begin{equation}
+	\mi\deriv{\psi_n}{y}(y)+\kappa_c\qty[\psi_{n-1}(y)+\psi_{n+1}(y)]=0,
+\end{equation}
+
+where \(\psi_n\) is the wave amplitude of the \(n\)th element of the array of channels, and \(\kappa_c\) is an interchannel coupling coefficient. This equation is derived in the context of electromagnetic optics in coupled-waveguide theory, for lossless, isotropic waveguides in a narrow-band approximation\parencite{Yariv1984}. Its analytical solution, in the case where one channel is excited at a point (\(\psi_0(0)=\phi_0, \psi_{n\neq0}(0)=0\)) is\parencite{Jones1965}
+\begin{equation}
+\label{talbot_sol}
+\psi_n(y)=\phi_0\mi^nJ_n(2\kappa_cy).
+\end{equation}
+
+The interchannel coupling strength \(\kappa_c\) can be approximately calculated to be proportional to the difference between even and odd modes\parencite{Fan2014, Wang2017}, that is, the momentum difference between the two longitudinally propagating bands at a given energy (see fig. **), specifically
+\begin{equation}
+\kappa_c=\frac{\abs{k_1-k_2}}4
+\end{equation}
+
+Therefore, the \(\Delta k\) that can be observed in the band structure (as a result of a broken degeneracy caused by the ribbon cross-talk) can be used as a measure for the spread of the current injected into a single channel. In ref. \parencite{Calogero2019} equation \ref{talbot_sol} was fitted to their atomistic calculations and found a very high degree of accuracy, thus attributing the Talbot effect to the interaction of the two longitudinal Bloch states belonging to the two bands. Consequently one can see that the coupling
+strength \(\kappa_c\) could be fine-tuned, for instance, by a chemical design of the inter-ribbon bridges\parencite{Calogero2019}. This has led to experimental and theoretical investigations looking for modifications of the bridge structure\parencite{Calogero2019a} and candidates for bridge functionalization\parencite{Alcon2021}.\\
+
+That's just what was done in ref* where my they investigated a NPG with different bridge configurations using a phenyl in two different configurations...\\
+
+...Also what was done in the very recent where the phenyl was functionalized as a quinone, crating q-NPG, which changed the delta k curve as a function of energy, thus allowing for an electrochemical tuning of the interchannel coupling (and thus spread of the current), practically confining it into a single channel of allowing a wide spread.
 
 %----------------------------------------------------------------------------------------
 
 \section{Double-pore NPG}
-% general info (synthesis, 7-13, different configurations
-% \subsection{Ribbon crosstalk}
+General info (Kretz)\\
+synthesis (?????), phenylated, 7-13, different configurations (PP,PM,MM)\\
+Relaxed structure and bands, compare to NPG
 
-%----------------------------------------------------------------------------------------
 
-\section{Functionalized nanoporous graphene}
-% Hopes
-% Properties (whichever we get to)
 

@@ -16,5 +16,1942 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global}\enddatalist
+\datalist[entry]{none/global//global/global}
+  \entry{Martin2004}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MRM}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={Richard\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{MRM1}
+    \strng{fullhash}{MRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1017/CBO9780511805769
+    \endverb
+    \field{title}{Electronic Structure: Basic Theory and Practical Methods}
+    \field{year}{2004}
+  \endentry
+
+  \entry{Hohenberg1964}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HP}{%
+         family={Hohenberg},
+         familyi={H\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KW}{%
+         family={Kohn},
+         familyi={K\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{HPKW1}
+    \strng{fullhash}{HPKW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRev.136.B864
+    \endverb
+    \field{issue}{3B}
+    \field{pages}{B864\bibrangedash B871}
+    \field{title}{Inhomogeneous Electron Gas}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRev.136.B864
+    \endverb
+    \field{volume}{136}
+    \field{journaltitle}{Phys. Rev.}
+    \field{year}{1964}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Kohn1965}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KW}{%
+         family={Kohn},
+         familyi={K\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=SLJ}{%
+         family={Sham},
+         familyi={S\bibinitperiod},
+         given={L.\bibnamedelima J.},
+         giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{KWSLJ1}
+    \strng{fullhash}{KWSLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRev.140.A1133
+    \endverb
+    \field{issue}{4A}
+    \field{pages}{A1133\bibrangedash A1138}
+    \field{title}{Self-Consistent Equations Including Exchange and Correlation
+  Effects}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRev.140.A1133
+    \endverb
+    \field{volume}{140}
+    \field{journaltitle}{Phys. Rev.}
+    \field{year}{1965}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Solyom2010}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SJ}{%
+         family={Sólyom},
+         familyi={S\bibinitperiod},
+         given={Jenö},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag Berlin Heidelberg}%
+    }
+    \strng{namehash}{SJ1}
+    \strng{fullhash}{SJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Fundamentals of the Physics of Solids}
+    \field{volume}{3}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Papior2016}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=PNR}{%
+         family={Papior},
+         familyi={P\bibinitperiod},
+         given={Nick\bibnamedelima Rubens},
+         giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PNR1}
+    \strng{fullhash}{PNR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Computational Tools and Studies of Graphene Nanostructures}
+    \list{institution}{1}{%
+      {DTU Nanotech}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Perdew1996}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PJP}{%
+         family={Perdew},
+         familyi={P\bibinitperiod},
+         given={John\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BK}{%
+         family={Burke},
+         familyi={B\bibinitperiod},
+         given={Kieron},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=EM}{%
+         family={Ernzerhof},
+         familyi={E\bibinitperiod},
+         given={Matthias},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{PJP+1}
+    \strng{fullhash}{PJPBKEM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.77.3865
+    \endverb
+    \field{issue}{18}
+    \field{pages}{3865\bibrangedash 3868}
+    \field{title}{Generalized Gradient Approximation Made Simple}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.77.3865
+    \endverb
+    \field{volume}{77}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{1996}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Perdew1996a}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PJP}{%
+         family={Perdew},
+         familyi={P\bibinitperiod},
+         given={John\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BK}{%
+         family={Burke},
+         familyi={B\bibinitperiod},
+         given={Kieron},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yue},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{PJP+1}
+    \strng{fullhash}{PJPBKWY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevB.54.16533
+    \endverb
+    \field{issue}{23}
+    \field{pages}{16533\bibrangedash 16539}
+    \field{title}{Generalized gradient approximation for the
+  exchange-correlation hole of a many-electron system}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevB.54.16533
+    \endverb
+    \field{volume}{54}
+    \field{journaltitle}{Phys. Rev. B}
+    \field{year}{1996}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Soler2002}{article}{}
+    \name{author}{7}{}{%
+      {{hash=SJM}{%
+         family={Soler},
+         familyi={S\bibinitperiod},
+         given={Jos{\'{e}}\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=AE}{%
+         family={Artacho},
+         familyi={A\bibinitperiod},
+         given={Emilio},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=GJD}{%
+         family={Gale},
+         familyi={G\bibinitperiod},
+         given={Julian\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Garc{\'{\i}}a},
+         familyi={G\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Junquera},
+         familyi={J\bibinitperiod},
+         given={Javier},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=OP}{%
+         family={Ordej{\'{o}}n},
+         familyi={O\bibinitperiod},
+         given={Pablo},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SPD}{%
+         family={S{\'{a}}nchez-Portal},
+         familyi={S\bibinithyphendelim P\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{IOP} Publishing}%
+    }
+    \strng{namehash}{SJM+1}
+    \strng{fullhash}{SJMAEGJDGAJJOPSPD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We have developed and implemented a selfconsistent density functional
+  method using standard norm-conserving pseudopotentials and a flexible,
+  numerical linear combination of atomic orbitals basis set, which includes
+  multiple-zeta and polarization orbitals. Exchange and correlation are treated
+  with the local spin density or generalized gradient approximations. The basis
+  functions and the electron density are projected on a real-space grid, in
+  order to calculate the Hartree and exchange-correlation potentials and matrix
+  elements, with a number of operations that scales linearly with the size of
+  the system. We use a modified energy functional, whose minimization produces
+  orthogonal wavefunctions and the same energy and density as the Kohn-Sham
+  energy functional, without the need for an explicit orthogonalization.
+  Additionally, using localized Wannier-like electron wavefunctions allows the
+  computation time and memory required to minimize the energy to also scale
+  linearly with the size of the system. Forces and stresses are also calculated
+  efficiently and accurately, thus allowing structural relaxation and molecular
+  dynamics simulations.%
+    }
+    \verb{doi}
+    \verb 10.1088/0953-8984/14/11/302
+    \endverb
+    \field{number}{11}
+    \field{pages}{2745\bibrangedash 2779}
+    \field{title}{The {SIESTA} method forab initioorder-Nmaterials simulation}
+    \verb{url}
+    \verb https://doi.org/10.1088/0953-8984/14/11/302
+    \endverb
+    \field{volume}{14}
+    \field{journaltitle}{Journal of Physics: Condensed Matter}
+    \field{year}{2002}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Hamann1979}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HDR}{%
+         family={Hamann},
+         familyi={H\bibinitperiod},
+         given={D.\bibnamedelima R.},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Schl\"uter},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Chiang},
+         familyi={C\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{HDR+1}
+    \strng{fullhash}{HDRSMCC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.43.1494
+    \endverb
+    \field{issue}{20}
+    \field{pages}{1494\bibrangedash 1497}
+    \field{title}{Norm-Conserving Pseudopotentials}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.43.1494
+    \endverb
+    \field{volume}{43}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{1979}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Troullier1991}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TN}{%
+         family={Troullier},
+         familyi={T\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MJL}{%
+         family={Martins},
+         familyi={M\bibinitperiod},
+         given={Jos\'e\bibnamedelima Lu\'{\i}s},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{TNMJL1}
+    \strng{fullhash}{TNMJL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevB.43.1993
+    \endverb
+    \field{issue}{3}
+    \field{pages}{1993\bibrangedash 2006}
+    \field{title}{Efficient pseudopotentials for plane-wave calculations}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevB.43.1993
+    \endverb
+    \field{volume}{43}
+    \field{journaltitle}{Phys. Rev. B}
+    \field{year}{1991}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Kleinman1982}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KL}{%
+         family={Kleinman},
+         familyi={K\bibinitperiod},
+         given={Leonard},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BDM}{%
+         family={Bylander},
+         familyi={B\bibinitperiod},
+         given={D.\bibnamedelima M.},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{KLBDM1}
+    \strng{fullhash}{KLBDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.48.1425
+    \endverb
+    \field{issue}{20}
+    \field{pages}{1425\bibrangedash 1428}
+    \field{title}{Efficacious Form for Model Pseudopotentials}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.48.1425
+    \endverb
+    \field{volume}{48}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{1982}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Giannozzi2009}{article}{}
+    \name{author}{33}{}{%
+      {{hash=GP}{%
+         family={Giannozzi},
+         familyi={G\bibinitperiod},
+         given={Paolo},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Baroni},
+         familyi={B\bibinitperiod},
+         given={Stefano},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BN}{%
+         family={Bonini},
+         familyi={B\bibinitperiod},
+         given={Nicola},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Calandra},
+         familyi={C\bibinitperiod},
+         given={Matteo},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Car},
+         familyi={C\bibinitperiod},
+         given={Roberto},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Cavazzoni},
+         familyi={C\bibinitperiod},
+         given={Carlo},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Ceresoli},
+         familyi={C\bibinitperiod},
+         given={Davide},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CGL}{%
+         family={Chiarotti},
+         familyi={C\bibinitperiod},
+         given={Guido\bibnamedelima L},
+         giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Cococcioni},
+         familyi={C\bibinitperiod},
+         given={Matteo},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DI}{%
+         family={Dabo},
+         familyi={D\bibinitperiod},
+         given={Ismaila},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=CAD}{%
+         family={Corso},
+         familyi={C\bibinitperiod},
+         given={Andrea\bibnamedelima Dal},
+         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=dGS}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Gironcoli},
+         familyi={G\bibinitperiod},
+         given={Stefano},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Fabris},
+         familyi={F\bibinitperiod},
+         given={Stefano},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FG}{%
+         family={Fratesi},
+         familyi={F\bibinitperiod},
+         given={Guido},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Gebauer},
+         familyi={G\bibinitperiod},
+         given={Ralph},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GU}{%
+         family={Gerstmann},
+         familyi={G\bibinitperiod},
+         given={Uwe},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Gougoussis},
+         familyi={G\bibinitperiod},
+         given={Christos},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kokalj},
+         familyi={K\bibinitperiod},
+         given={Anton},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lazzeri},
+         familyi={L\bibinitperiod},
+         given={Michele},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MSL}{%
+         family={Martin-Samos},
+         familyi={M\bibinithyphendelim S\bibinitperiod},
+         given={Layla},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MN}{%
+         family={Marzari},
+         familyi={M\bibinitperiod},
+         given={Nicola},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Mauri},
+         familyi={M\bibinitperiod},
+         given={Francesco},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Mazzarello},
+         familyi={M\bibinitperiod},
+         given={Riccardo},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Paolini},
+         familyi={P\bibinitperiod},
+         given={Stefano},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pasquarello},
+         familyi={P\bibinitperiod},
+         given={Alfredo},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Paulatto},
+         familyi={P\bibinitperiod},
+         given={Lorenzo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Sbraccia},
+         familyi={S\bibinitperiod},
+         given={Carlo},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Scandolo},
+         familyi={S\bibinitperiod},
+         given={Sandro},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Sclauzero},
+         familyi={S\bibinitperiod},
+         given={Gabriele},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SAP}{%
+         family={Seitsonen},
+         familyi={S\bibinitperiod},
+         given={Ari\bibnamedelima P},
+         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Smogunov},
+         familyi={S\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=UP}{%
+         family={Umari},
+         familyi={U\bibinitperiod},
+         given={Paolo},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=WRM}{%
+         family={Wentzcovitch},
+         familyi={W\bibinitperiod},
+         given={Renata\bibnamedelima M},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{IOP} Publishing}%
+    }
+    \strng{namehash}{GP+1}
+  \strng{fullhash}{GPBSBNCMCRCCCDCGLCMDICADGSdFSFGGRGUGCKALMMSLMNMFMRPSPAPLSCSSSGSAPSAUPWRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    QUANTUM ESPRESSO is an integrated suite of computer codes for
+  electronic-structure calculations and materials modeling, based on
+  density-functional theory, plane waves, and pseudopotentials
+  (norm-conserving, ultrasoft, and projector-augmented wave). The acronym
+  ESPRESSO stands for opEn Source Package for Research in Electronic Structure,
+  Simulation, and Optimization. It is freely available to researchers around
+  the world under the terms of the GNU General Public License. QUANTUM ESPRESSO
+  builds upon newly-restructured electronic-structure codes that have been
+  developed and tested by some of the original authors of novel
+  electronic-structure algorithms and applied in the last twenty years by some
+  of the leading materials modeling groups worldwide. Innovation and efficiency
+  are still its main focus, with special attention paid to massively parallel
+  architectures, and a great effort being devoted to user friendliness. QUANTUM
+  ESPRESSO is evolving towards a distribution of independent and interoperable
+  codes in the spirit of an open-source project, where researchers active in
+  the field of electronic-structure calculations are encouraged to participate
+  in the project by contributing their own codes or by implementing their own
+  ideas into existing codes.%
+    }
+    \verb{doi}
+    \verb 10.1088/0953-8984/21/39/395502
+    \endverb
+    \field{number}{39}
+    \field{pages}{395502}
+    \field{title}{{QUANTUM} {ESPRESSO}: a modular and open-source software
+  project for quantum simulations of materials}
+    \verb{url}
+    \verb https://doi.org/10.1088/0953-8984/21/39/395502
+    \endverb
+    \field{volume}{21}
+    \field{journaltitle}{Journal of Physics: Condensed Matter}
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Huzinaga1984}{book}{}
+    \name{author}{1}{}{%
+      {{hash=tSH}{%
+         family={\textit{et al}},
+         familyi={t\bibinitperiod},
+         given={S.\bibnamedelima Huzinaga},
+         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Science}%
+    }
+    \strng{namehash}{tSH1}
+    \strng{fullhash}{tSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Gaussian basis sets for molecular calculations}
+    \field{year}{1984}
+  \endentry
+
+  \entry{Monkhorst1976}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MHJ}{%
+         family={Monkhorst},
+         familyi={M\bibinitperiod},
+         given={Hendrik\bibnamedelima J.},
+         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PJD}{%
+         family={Pack},
+         familyi={P\bibinitperiod},
+         given={James\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{MHJPJD1}
+    \strng{fullhash}{MHJPJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevB.13.5188
+    \endverb
+    \field{issue}{12}
+    \field{pages}{5188\bibrangedash 5192}
+    \field{title}{Special points for Brillouin-zone integrations}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevB.13.5188
+    \endverb
+    \field{volume}{13}
+    \field{journaltitle}{Phys. Rev. B}
+    \field{year}{1976}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Pulay1980}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PP}{%
+         family={Pulay},
+         familyi={P\bibinitperiod},
+         given={Péter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PP2}
+    \strng{fullhash}{PP2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{393\bibrangedash 398}
+    \field{title}{Convergence acceleration of iterative sequences. the case of
+  scf iteration}
+    \field{volume}{73}
+    \field{journaltitle}{Chemical Physics Letters}
+    \field{year}{1980}
+  \endentry
+
+  \entry{Pulay1982}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PP}{%
+         family={Pulay},
+         familyi={P\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PP1}
+    \strng{fullhash}{PP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Abstract An improved version of the direct inversion in the iterative
+  subspace algorithm is developed. The method is significantly more efficient
+  than the previous version, and is applicable to intrinsically divergent or
+  slowly convergent cases. Comparisons indicate that the method is superior to
+  the recently proposed quadratically convergent (QC–SCF) method of Bacskay.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1002/jcc.540030413
+    \endverb
+    \verb{eprint}
+    \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcc.540030413
+    \endverb
+    \field{number}{4}
+    \field{pages}{556\bibrangedash 560}
+    \field{title}{Improved SCF convergence acceleration}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.540030413
+    \endverb
+    \field{volume}{3}
+    \field{journaltitle}{Journal of Computational Chemistry}
+    \field{year}{1982}
+  \endentry
+
+  \entry{Feynman1939}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FRP}{%
+         family={Feynman},
+         familyi={F\bibinitperiod},
+         given={R.\bibnamedelima P.},
+         giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{FRP1}
+    \strng{fullhash}{FRP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRev.56.340
+    \endverb
+    \field{issue}{4}
+    \field{pages}{340\bibrangedash 343}
+    \field{title}{Forces in Molecules}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRev.56.340
+    \endverb
+    \field{volume}{56}
+    \field{journaltitle}{Phys. Rev.}
+    \field{year}{1939}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Hestenes1952}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HM}{%
+         family={Hestenes},
+         familyi={H\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Stiefel},
+         familyi={S\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HMSE1}
+    \strng{fullhash}{HMSE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{409\bibrangedash 435}
+    \field{title}{Methods of conjugate gradients for solving linear systems}
+    \field{volume}{49}
+    \field{journaltitle}{Journal of research of the National Bureau of
+  Standards}
+    \field{year}{1952}
+  \endentry
+
+  \entry{Papior2020}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=PN}{%
+         family={Papior},
+         familyi={P\bibinitperiod},
+         given={Nick},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PN1}
+    \strng{fullhash}{PN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.5281/zenodo.597181
+    \endverb
+    \field{title}{sisl: v0.11.0}
+    \verb{url}
+    \verb https://doi.org/10.5281/zenodo.597181
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{Allen2010}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MJARBKVCT}{%
+         family={Matthew J.\bibnamedelima Allen},
+         familyi={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  A\bibinitperiod},
+         suffix={Vincent C.\bibnamedelima Tung},
+         suffixi={V\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  T\bibinitperiod},
+         given={Richard B.\bibnamedelima Kaner},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim
+  K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJAVCTRBK1}
+    \strng{fullhash}{MJAVCTRBK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{132\bibrangedash 145}
+    \field{title}{Honeycomb Carbon: A Review of Graphene}
+    \field{volume}{110}
+    \field{journaltitle}{Chemical Reviews}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Wakabayashi2010}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WK}{%
+         family={Wakabayashi},
+         familyi={W\bibinitperiod},
+         given={Katsunori},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SKi}{%
+         family={Sasaki},
+         familyi={S\bibinitperiod},
+         given={Ken-ichi},
+         giveni={K\bibinithyphendelim i\bibinitperiod},
+      }}%
+      {{hash=ET}{%
+         family={Enoki},
+         familyi={E\bibinitperiod},
+         given={Toshiaki},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WK+1}
+    \strng{fullhash}{WKSKiET1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Electronic states of graphene nanoribbons and analytical
+  solutions}
+    \field{journaltitle}{Science and Technology of Advanced Materials}
+    \field{month}{01}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Son2006}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SYW}{%
+         family={Son},
+         familyi={S\bibinitperiod},
+         given={Young-Woo},
+         giveni={Y\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=CML}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Marvin\bibnamedelima L.},
+         giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=LSG}{%
+         family={Louie},
+         familyi={L\bibinitperiod},
+         given={Steven\bibnamedelima G.},
+         giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{SYW+1}
+    \strng{fullhash}{SYWCMLLSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.97.216803
+    \endverb
+    \field{issue}{21}
+    \field{pages}{216803}
+    \field{title}{Energy Gaps in Graphene Nanoribbons}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.97.216803
+    \endverb
+    \field{volume}{97}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{2006}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{MerinoDiez2017}{article}{}
+    \name{author}{10}{}{%
+      {{hash=MDN}{%
+         family={Merino-Díez},
+         familyi={M\bibinithyphendelim D\bibinitperiod},
+         given={Néstor},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=GLA}{%
+         family={Garcia-Lekue},
+         familyi={G\bibinithyphendelim L\bibinitperiod},
+         given={Aran},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CSE}{%
+         family={Carbonell-Sanromà},
+         familyi={C\bibinithyphendelim S\bibinitperiod},
+         given={Eduard},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Jingcheng},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Corso},
+         familyi={C\bibinitperiod},
+         given={Martina},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Colazzo},
+         familyi={C\bibinitperiod},
+         given={Luciano},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Sedona},
+         familyi={S\bibinitperiod},
+         given={Francesco},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SPD}{%
+         family={Sánchez-Portal},
+         familyi={S\bibinithyphendelim P\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PJI}{%
+         family={Pascual},
+         familyi={P\bibinitperiod},
+         given={Jose\bibnamedelima I.},
+         giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=dODG}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Oteyza},
+         familyi={O\bibinitperiod},
+         given={Dimas\bibnamedelima G.},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MDN+1}
+    \strng{fullhash}{MDNGLACSELJCMCLSFSPDPJIODGd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1021/acsnano.7b06765
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1021/acsnano.7b06765
+    \endverb
+    \field{note}{PMID: 29049879}
+    \field{number}{11}
+    \field{pages}{11661\bibrangedash 11668}
+    \field{title}{Width-Dependent Band Gap in Armchair Graphene Nanoribbons
+  Reveals Fermi Level Pinning on Au(111)}
+    \verb{url}
+    \verb https://doi.org/10.1021/acsnano.7b06765
+    \endverb
+    \field{volume}{11}
+    \field{journaltitle}{ACS Nano}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Deniz2017}{article}{}
+    \name{author}{10}{}{%
+      {{hash=DO}{%
+         family={Deniz},
+         familyi={D\bibinitperiod},
+         given={Okan},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=SSC}{%
+         family={Sánchez-Sánchez},
+         familyi={S\bibinithyphendelim S\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DT}{%
+         family={Dumslaff},
+         familyi={D\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=FX}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Xinliang},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=NA}{%
+         family={Narita},
+         familyi={N\bibinitperiod},
+         given={Akimitsu},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Müllen},
+         familyi={M\bibinitperiod},
+         given={Klaus},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KN}{%
+         family={Kharche},
+         familyi={K\bibinitperiod},
+         given={Neerav},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MV}{%
+         family={Meunier},
+         familyi={M\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=FR}{%
+         family={Fasel},
+         familyi={F\bibinitperiod},
+         given={Roman},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Ruffieux},
+         familyi={R\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DO+1}
+    \strng{fullhash}{DOSSCDTFXNAMKKNMVFRRP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1021/acs.nanolett.6b04727
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1021/acs.nanolett.6b04727
+    \endverb
+    \field{note}{PMID: 28301723}
+    \field{number}{4}
+    \field{pages}{2197\bibrangedash 2203}
+    \field{title}{Revealing the Electronic Structure of Silicon Intercalated
+  Armchair Graphene Nanoribbons by Scanning Tunneling Spectroscopy}
+    \verb{url}
+    \verb https://doi.org/10.1021/acs.nanolett.6b04727
+    \endverb
+    \field{volume}{17}
+    \field{journaltitle}{Nano Letters}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Kharche2016}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KN}{%
+         family={Kharche},
+         familyi={K\bibinitperiod},
+         given={Neerav},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MV}{%
+         family={Meunier},
+         familyi={M\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KNMV1}
+    \strng{fullhash}{KNMV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1021/acs.jpclett.6b00422
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1021/acs.jpclett.6b00422
+    \endverb
+    \field{note}{PMID: 27063190}
+    \field{number}{8}
+    \field{pages}{1526\bibrangedash 1533}
+    \field{title}{Width and Crystal Orientation Dependent Band Gap
+  Renormalization in Substrate-Supported Graphene Nanoribbons}
+    \verb{url}
+    \verb https://doi.org/10.1021/acs.jpclett.6b00422
+    \endverb
+    \field{volume}{7}
+    \field{journaltitle}{The Journal of Physical Chemistry Letters}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Cai2010}{article}{}
+    \name{author}{12}{}{%
+      {{hash=CJ}{%
+         family={Cai},
+         familyi={C\bibinitperiod},
+         given={Jinming},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Ruffieux},
+         familyi={R\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={Jaafar},
+         familyi={J\bibinitperiod},
+         given={Rached},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bieri},
+         familyi={B\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BT}{%
+         family={Braun},
+         familyi={B\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Blankenburg},
+         familyi={B\bibinitperiod},
+         given={Stephan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Muoth},
+         familyi={M\bibinitperiod},
+         given={Matthias},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SAP}{%
+         family={Seitsonen},
+         familyi={S\bibinitperiod},
+         given={Ari\bibnamedelima P},
+         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Saleh},
+         familyi={S\bibinitperiod},
+         given={Moussa},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FX}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Xinliang},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Müllen},
+         familyi={M\bibinitperiod},
+         given={Klaus},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=FR}{%
+         family={Fasel},
+         familyi={F\bibinitperiod},
+         given={Roman},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJ+1}
+    \strng{fullhash}{CJRPJRBMBTBSMMSAPSMFXMKFR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Graphene nanoribbons-narrow and straight-edged stripes of graphene, or
+  single-layer graphite-are predicted to exhibit electronic properties that
+  make them attractive for the fabrication of nanoscale electronic devices. In
+  particular, although the two-dimensional parent material graphene exhibits
+  semimetallic behaviour, quantum confinement and edge effects should render
+  all graphene nanoribbons with widths smaller than 10 nm semiconducting. But
+  exploring the potential of graphene nanoribbons is hampered by their limited
+  availability: although they have been made using chemical, sonochemical and
+  lithographic methods as well as through the unzipping of carbon nanotubes,
+  the reliable production of graphene nanoribbons smaller than 10 nm with
+  chemical precision remains a significant challenge. Here we report a simple
+  method for the production of atomically precise graphene nanoribbons of
+  different topologies and widths, which uses surface-assisted coupling of
+  molecular precursors into linear polyphenylenes and their subsequent
+  cyclodehydrogenation. The topology, width and edge periphery of the graphene
+  nanoribbon products are defined by the structure of the precursor monomers,
+  which can be designed to give access to a wide range of different graphene
+  nanoribbons. We expect that our bottom-up approach to the atomically precise
+  fabrication of graphene nanoribbons will finally enable detailed experimental
+  investigations of the properties of this exciting class of materials. It
+  should even provide a route to graphene nanoribbon structures with engineered
+  chemical and electronic properties, including the theoretically predicted
+  intraribbon quantum dots, superlattice structures and magnetic devices based
+  on specific graphene nanoribbon edge states.%
+    }
+    \verb{doi}
+    \verb 10.1038/nature09211
+    \endverb
+    \field{issn}{0028-0836}
+    \field{number}{7305}
+    \field{pages}{470—473}
+    \field{title}{Atomically precise bottom-up fabrication of graphene
+  nanoribbons}
+    \verb{url}
+    \verb https://doi.org/10.1038/nature09211
+    \endverb
+    \field{volume}{466}
+    \field{journaltitle}{Nature}
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Kretz2018}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=KB}{%
+         family={Kretz},
+         familyi={K\bibinitperiod},
+         given={Bernard},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KB1}
+    \strng{fullhash}{KB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Electronic and transport propertiesof 2D Dirac
+  materials:graphene and topological insulators}
+    \list{institution}{1}{%
+      {UPV-EHU}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Grill2007}{article}{}
+    \name{author}{6}{}{%
+      {{hash=GL}{%
+         family={Grill},
+         familyi={G\bibinitperiod},
+         given={Leonhard},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Dyer},
+         familyi={D\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Lafferentz},
+         familyi={L\bibinitperiod},
+         given={Leif},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Persson},
+         familyi={P\bibinitperiod},
+         given={Mats},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Peters},
+         familyi={P\bibinitperiod},
+         given={Maike},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Hecht},
+         familyi={H\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GL+1}
+    \strng{fullhash}{GLDMLLPMPMHS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1038/nnano.2007.346
+    \endverb
+    \field{pages}{687\bibrangedash 91}
+    \field{title}{Nano-architectures by covalent assembly of molecular building
+  blocks}
+    \field{volume}{2}
+    \field{journaltitle}{Nature nanotechnology}
+    \field{month}{11}
+    \field{year}{2007}
+  \endentry
+
+  \entry{Moreno2018}{article}{}
+    \name{author}{11}{}{%
+      {{hash=MC}{%
+         family={Moreno},
+         familyi={M\bibinitperiod},
+         given={C{\'e}sar},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=VVM}{%
+         family={Vilas-Varela},
+         familyi={V\bibinithyphendelim V\bibinitperiod},
+         given={Manuel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kretz},
+         familyi={K\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=GLA}{%
+         family={Garcia-Lekue},
+         familyi={G\bibinithyphendelim L\bibinitperiod},
+         given={Aran},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CMV}{%
+         family={Costache},
+         familyi={C\bibinitperiod},
+         given={Marius\bibnamedelima V.},
+         giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Paradinas},
+         familyi={P\bibinitperiod},
+         given={Markos},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Panighel},
+         familyi={P\bibinitperiod},
+         given={Mirko},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Ceballos},
+         familyi={C\bibinitperiod},
+         given={Gustavo},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=VSO}{%
+         family={Valenzuela},
+         familyi={V\bibinitperiod},
+         given={Sergio\bibnamedelima O.},
+         giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Pe{\~n}a},
+         familyi={P\bibinitperiod},
+         given={Diego},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mugarza},
+         familyi={M\bibinitperiod},
+         given={Aitor},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \strng{namehash}{MC+1}
+    \strng{fullhash}{MCVVMKBGLACMVPMPMCGVSOPDMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Nanosize pores in graphene can make its electronic properties more
+  favorable for transistor applications and may also be useful for molecular
+  separations. Moreno et al. used Ullmann coupling to polymerize a
+  dibromo-substituted diphenylbianthracene on a gold surface (see the
+  Perspective by Sinitskii). Cyclodehydrogenation of the resulting polymer
+  produced graphene nanoribbons, and cross-coupling of these structures created
+  a nanoporous graphene sheet with pore sizes of about 1 nanometer. Scanning
+  tunneling spectroscopy revealed an electronic structure in which
+  semiconductor bands with an energy gap of 1 electron volt coexist with
+  localized states created by the pores.Science, this issue p. 199; see also p.
+  154Nanosize pores can turn semimetallic graphene into a semiconductor and,
+  from being impermeable, into the most efficient molecular-sieve membrane.
+  However, scaling the pores down to the nanometer, while fulfilling the tight
+  structural constraints imposed by applications, represents an enormous
+  challenge for present top-down strategies. Here we report a bottom-up method
+  to synthesize nanoporous graphene comprising an ordered array of pores
+  separated by ribbons, which can be tuned down to the 1-nanometer range. The
+  size, density, morphology, and chemical composition of the pores are defined
+  with atomic precision by the design of the molecular precursors. Our
+  electronic characterization further reveals a highly anisotropic electronic
+  structure, where orthogonal one-dimensional electronic bands with an energy
+  gap of \~{}1 electron volt coexist with confined pore states, making the
+  nanoporous graphene a highly versatile semiconductor for simultaneous sieving
+  and electrical sensing of molecular species.%
+    }
+    \verb{doi}
+    \verb 10.1126/science.aar2009
+    \endverb
+    \verb{eprint}
+    \verb https://science.sciencemag.org/content/360/6385/199.full.pdf
+    \endverb
+    \field{issn}{0036-8075}
+    \field{number}{6385}
+    \field{pages}{199\bibrangedash 203}
+    \field{title}{Bottom-up synthesis of multifunctional nanoporous graphene}
+    \verb{url}
+    \verb https://science.sciencemag.org/content/360/6385/199
+    \endverb
+    \field{volume}{360}
+    \field{journaltitle}{Science}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Calogero2019}{article}{}
+    \name{author}{6}{}{%
+      {{hash=CG}{%
+         family={Calogero},
+         familyi={C\bibinitperiod},
+         given={Gaetano},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PNR}{%
+         family={Papior},
+         familyi={P\bibinitperiod},
+         given={Nick\bibnamedelima R.},
+         giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kretz},
+         familyi={K\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=GLA}{%
+         family={Garcia-Lekue},
+         familyi={G\bibinithyphendelim L\bibinitperiod},
+         given={Aran},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FT}{%
+         family={Frederiksen},
+         familyi={F\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Brandbyge},
+         familyi={B\bibinitperiod},
+         given={Mads},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CG+1}
+    \strng{fullhash}{CGPNRKBGLAFTBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1021/acs.nanolett.8b04616
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1021/acs.nanolett.8b04616
+    \endverb
+    \field{number}{1}
+    \field{pages}{576\bibrangedash 581}
+    \field{title}{Electron Transport in Nanoporous Graphene: Probing the Talbot
+  Effect}
+    \verb{url}
+    \verb https://doi.org/10.1021/acs.nanolett.8b04616
+    \endverb
+    \field{volume}{19}
+    \field{journaltitle}{Nano Letters}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Talbot1836}{article}{}
+    \name{author}{1}{}{%
+      {{hash=TH}{%
+         family={Talbot},
+         familyi={T\bibinitperiod},
+         given={H.F.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor & Francis}%
+    }
+    \strng{namehash}{TH1}
+    \strng{fullhash}{TH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1080/14786443608649032
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1080/14786443608649032
+    \endverb
+    \field{number}{56}
+    \field{pages}{401\bibrangedash 407}
+    \field{title}{Facts relating to optical science}
+    \verb{url}
+    \verb https://doi.org/10.1080/14786443608649032
+    \endverb
+    \field{volume}{9}
+    \field{journaltitle}{The London, Edinburgh, and Dublin Philosophical
+  Magazine and Journal of Science}
+    \field{year}{1836}
+  \endentry
+
+  \entry{Walls2016}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WJD}{%
+         family={Walls},
+         familyi={W\bibinitperiod},
+         given={Jamie\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hadad},
+         familyi={H\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJDHD1}
+    \strng{fullhash}{WJDHD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{26698}
+    \field{title}{The Talbot Effect for two-dimensional massless Dirac
+  fermions}
+    \field{volume}{6}
+    \field{journaltitle}{Scientific Reports}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Wang2017}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WL}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=JY}{%
+         family={Jia},
+         familyi={J\bibinitperiod},
+         given={Yonglei},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=JZ}{%
+         family={Ji},
+         familyi={J\bibinitperiod},
+         given={Zhichao},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {OSA}%
+    }
+    \keyw{Talbot and self-imaging effects; Infrared, far; Plasmonics; Array
+  waveguide devices; Coupled mode theory; Fresnel diffraction; Near field
+  scanning optical microscopy; Surface plasmon polaritons; Talbot effect}
+    \strng{namehash}{WL+1}
+    \strng{fullhash}{WLJYJZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Controllable manipulation of surface plasmon polaritons in discrete
+  waveguide arrays is critical in plasmonic applications. In this paper,
+  exploiting the coupled-mode theory with the tight-binding approximation, the
+  discrete plasmonic Talbot effect in the weak coupled single-mode graphene
+  ribbon arrays is investigated. The Talbot distance can be flexible, modulated
+  by the changing parameters (i.e., the carrier doping or array periods) of the
+  graphene ribbon arrays, and the significant subwavelength Talbot distances
+  (\&\#x03BB;/13) are obtained. In the configuration, the coupled-mode theory
+  with the tight-binding approximation is proved intensely efficient to
+  describe the propagation of surface plasmon supermodes. Thus, our analysis
+  can open a new avenue for developing graphene-based imaging devices and pave
+  a way for their potential applications.%
+    }
+    \verb{doi}
+    \verb 10.1364/AO.56.009998
+    \endverb
+    \field{number}{36}
+    \field{pages}{9998\bibrangedash 10002}
+    \field{title}{Discrete plasmonic Talbot effect in single-mode graphene
+  ribbon arrays}
+    \verb{url}
+    \verb http://ao.osa.org/abstract.cfm?URI=ao-56-36-9998
+    \endverb
+    \field{volume}{56}
+    \field{journaltitle}{Appl. Opt.}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Yariv1984}{book}{}
+    \name{author}{2}{}{%
+      {{hash=YA}{%
+         family={Yariv},
+         familyi={Y\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=YP}{%
+         family={Yeh},
+         familyi={Y\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Wiley Series in Pure}%
+      {Applied Optics; Wiley-Interscience}%
+    }
+    \strng{namehash}{YAYP1}
+    \strng{fullhash}{YAYP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Optical Waves in Crystals: Propagation and Control of Laser
+  Radiation}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \field{year}{1984}
+  \endentry
+
+  \entry{Jones1965}{article}{}
+    \name{author}{1}{}{%
+      {{hash=JAL}{%
+         family={Jones},
+         familyi={J\bibinitperiod},
+         given={Alan\bibnamedelima L.},
+         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Optical Society of America}%
+    }
+    \strng{namehash}{JAL1}
+    \strng{fullhash}{JAL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1364/JOSA.55.000261
+    \endverb
+    \field{issue}{3}
+    \field{title}{Coupling of Optical Fibers and Scattering in Fibers}
+    \field{volume}{55}
+    \field{journaltitle}{Journal of the Optical Society of America}
+    \field{year}{1965}
+  \endentry
+
+  \entry{Fan2014}{article}{}
+    \name{author}{5}{}{%
+      {{hash=FY}{%
+         family={Fan},
+         familyi={F\bibinitperiod},
+         given={Yang},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WB}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Bing},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Long},
+         familyi={L\bibinitperiod},
+         given={Hua},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Peixiang},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {OSA}%
+    }
+    \keyw{Talbot and self-imaging effects; Surface plasmons; Metamaterials;
+  Array waveguide devices; Coupled mode theory; Dielectric waveguides;
+  Diffraction limit; Surface plasmon polaritons; Talbot effect}
+    \strng{namehash}{FY+1}
+    \strng{fullhash}{FYWBWKLHLP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We theoretically investigate the plasmonic Talbot effect in monolayer
+  graphene sheet arrays (MGSAs) when surface plasmon polaritons (SPPs) between
+  graphene experience weak coupling. The Talbot effect occurs only when the
+  incident field has a pattern with a few selected periods. The Talbot distance
+  is found to decrease exponentially with the decreasing period of the MGSA and
+  can be as small as 1/20 of the incident wavelength. In addition, the Talbot
+  distance can be further reduced by increasing the chemical potential of
+  graphene or operating at longer wavelengths.%
+    }
+    \verb{doi}
+    \verb 10.1364/OL.39.003371
+    \endverb
+    \field{number}{12}
+    \field{pages}{3371\bibrangedash 3373}
+    \field{title}{Talbot effect in weakly coupled monolayer graphene sheet
+  arrays}
+    \verb{url}
+    \verb http://ol.osa.org/abstract.cfm?URI=ol-39-12-3371
+    \endverb
+    \field{volume}{39}
+    \field{journaltitle}{Opt. Lett.}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Calogero2019a}{article}{}
+    \name{author}{5}{}{%
+      {{hash=CG}{%
+         family={Calogero},
+         familyi={C\bibinitperiod},
+         given={Gaetano},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=AI}{%
+         family={Alcón},
+         familyi={A\bibinitperiod},
+         given={Isaac},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=PN}{%
+         family={Papior},
+         familyi={P\bibinitperiod},
+         given={Nick},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=JAP}{%
+         family={Jauho},
+         familyi={J\bibinitperiod},
+         given={Antti-Pekka},
+         giveni={A\bibinithyphendelim P\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Brandbyge},
+         familyi={B\bibinitperiod},
+         given={Mads},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CG+1}
+    \strng{fullhash}{CGAIPNJAPBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1021/jacs.9b04649
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1021/jacs.9b04649
+    \endverb
+    \field{note}{PMID: 31342738}
+    \field{number}{33}
+    \field{pages}{13081\bibrangedash 13088}
+    \field{title}{Quantum Interference Engineering of Nanoporous Graphene for
+  Carbon Nanocircuitry}
+    \verb{url}
+    \verb https://doi.org/10.1021/jacs.9b04649
+    \endverb
+    \field{volume}{141}
+    \field{journaltitle}{Journal of the American Chemical Society}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Alcon2021}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AI}{%
+         family={Alcón},
+         familyi={A\bibinitperiod},
+         given={Isaac},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Calogero},
+         familyi={C\bibinitperiod},
+         given={Gaetano},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PN}{%
+         family={Papior},
+         familyi={P\bibinitperiod},
+         given={Nick},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Brandbyge},
+         familyi={B\bibinitperiod},
+         given={Mads},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{density functional theory, electrochemical, engineering, graphene
+  nanoribbons, nanoporous graphene, quantum transport, spin filtering}
+    \strng{namehash}{AI+1}
+    \strng{fullhash}{AICGPNBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Abstract During the last decade, on-surface fabricated graphene nanoribbons
+  (GNRs) have gathered enormous attention due to their semiconducting
+  π-conjugated nature and atomically precise structure. A significant
+  breakthrough is the recent fabrication of nanoporous graphene (NPG) as a 2D
+  array of laterally bonded GNRs. This covalent integration of GNRs could
+  enable complex electronic functionality at the nanoscale; however, for that,
+  it is crucial to externally control the electronic coupling between GNRs
+  within NPGs, which, to date, has not been possible. Using quantum chemical
+  calculations and large-scale transport simulations, this study demonstrates
+  that such control is enabled in a newly designed quinone-NPG (q-NPG) thanks
+  to its GNRs inter-connections based on electroactive para-benzoquinone units.
+  As a result, the spatial distribution of injected currents in q-NPG may be
+  tuned, with sub-nanometer precision, via the application of external
+  electrostatic gates and electrochemical means. These results thus provide a
+  fundamental strategy to design organic nanodevices with built-in externally
+  tunable electronics and spintronics, which is key for future applications
+  such as bio-chemical nanosensing and carbon nanoelectronics.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1002/adfm.202104031
+    \endverb
+    \verb{eprint}
+    \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/adfm.202104031
+    \endverb
+    \field{pages}{2104031}
+    \field{title}{Electrochemical Control of Charge Current Flow in Nanoporous
+  Graphene}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202104031
+    \endverb
+    \field{journaltitle}{Advanced Functional Materials}
+    \field{year}{2021}
+  \endentry
+\enddatalist
 \endinput

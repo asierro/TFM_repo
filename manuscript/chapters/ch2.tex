@@ -1,24 +1,15 @@
 % Chapter 1
 
 \chapter{Theoretical and computational tools} % Main chapter title
-% Theory and programs?
+% Theory and programs
 
 \label{ch2} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-%----------------------------------------------------------------------------------------
-
-% Define some commands to keep the formatting separated from the content 
-\newcommand{\keyword}[1]{\textbf{#1}}
-\newcommand{\tabhead}[1]{\textbf{#1}}
-\newcommand{\code}[1]{\texttt{#1}}
-\newcommand{\file}[1]{\texttt{\bfseries#1}}
-\newcommand{\option}[1]{\texttt{\itshape#1}}
 
 %----------------------------------------------------------------------------------------
 \section{Density Functional Theory}
 
-Density-functional theory (DFT) is an approach to study the electronic structure of many-body problems, which allows the computational treatment large and complex systems. In fact, one of the reasons why DFT has become an essential tool in many areas of physics including condensed-matter theory is the increasing availability and power of computational processing. DFT is mainly based on the fact that any property of a system of many interacting particles can be viewed as a functional of the ground state
-density [**martin]. The famous paper by Hohenberg and Kohn in 1964 [** in martin] laid the groundwork of modern DFT, while the formulation presented in a 1965 paper by Kohn and Sham [** in martin] has prevailed as one of the most useful approaches up to this day. In the following subsections we will present the basics of this method, and then review a specific implementation, namely SIESTA, which will be used throughout this work.
+Density-functional theory (DFT) is an approach to study the electronic structure of many-body problems, which allows the computational treatment large and complex systems. In fact, one of the reasons why DFT has become an essential tool in many areas of physics including condensed-matter theory is the increasing availability and power of computational processing. DFT is mainly based on the fact that any property of a system of many interacting particles can be viewed as a functional of the ground state density\parencite{Martin2004}. The famous paper by Hohenberg and Kohn in 1964\parencite{Hohenberg1964} laid the groundwork of modern DFT, while the formulation presented in a 1965 paper by Kohn and Sham\parencite{Kohn1965} has prevailed as one of the most useful approaches up to this day. In the following subsections we will present the basics of this method, and then review a specific implementation, namely SIESTA, which will be used throughout this work.
 
 
 \subsection{Basics of DFT}
@@ -27,7 +18,7 @@ The main problem to be solved is the many-body time-independent Schrödinger's e
 \bm H \ket{\Psi(\{\bm r\},\{\bm R\})} = E \ket{\Psi(\{\bm r\},\{\bm R\})},
 \end{equation}
 
-where \(\{\bm r\}\) and \(\{\bm R\}\) are the electron and ion position vectors, respectively. The most basic Hamiltonian contains a kinetic term plus a potential energy term describing two particle interactions: electron-ion, electron-electron and ion-ion [** martin]:
+where \(\{\bm r\}\) and \(\{\bm R\}\) are the electron and ion position vectors, respectively. The most basic Hamiltonian contains a kinetic term plus a potential energy term describing two particle interactions: electron-ion, electron-electron and ion-ion\parencite{Martin2004}:
 \begin{equation}
 \begin{split}
 \bm{H} &= \bm T_{\mathrm e} + \bm V_{\mathrm{en}}+\bm V_{\mathrm{ee}}+\bm T_n+\bm V_{\mathrm{nn}}\\
@@ -36,18 +27,19 @@ where \(\{\bm r\}\) and \(\{\bm R\}\) are the electron and ion position vectors,
 \end{split}
 \end{equation}
 
-which after the well-known Born-Oppenheimer approximation [** martin], whereby electrons are adiabatically separated from ions owing to their large mass difference, can be replaced with
+which after the well-known Born-Oppenheimer approximation\parencite{Martin2004}, whereby electrons are adiabatically separated from ions owing to their large mass difference, can be replaced with
 \begin{equation}
+\label{bo}
 \bm{H}\equiv\bm H_{\mathrm e} = \bm T_{\mathrm e} + \bm V_{\mathrm{en}}+\bm V_{\mathrm{ee}},
 \end{equation}
 
 
-so that the corresponding electron eigenfunctions only depend on \(\{\bm R\}\) parametrically. As the name implies, DFT is based upon electron density rather than the explicit wavefunctions, and it does so through two theorems first proved by Hohenberg and Kohn [** martin], which we will now describe. The ground-state wavefunction satisfies\footnote{Note that we write \(\bm V_{\mathrm{ext}}\) instead of the electron-ion potential for generality, but the former usually includes the latter.}
+so that the corresponding electron eigenfunctions only depend on \(\{\bm R\}\) parametrically. As the name implies, DFT is based upon electron density rather than the explicit wavefunctions, and it does so through two theorems first proved by Hohenberg and Kohn\parencite{Martin2004}, which we will now describe. The ground-state wavefunction satisfies\footnote{Note that we write \(\bm V_{\mathrm{ext}}\) instead of the electron-ion potential for generality, but the former usually includes the latter.}
 \begin{equation}
 \bm H \ket{\Psi_0}=(\bm T_{\mathrm e} + \bm V_{\mathrm{ext}}+\bm V_{\mathrm{ee}})\ket{\Psi_0}=E_0\ket{\Psi_0},
 \end{equation}
 
-so along with the ground-state energy it is determined by the external potential Therefore, so is the density, since the wavefunction is a unique functional of this quantity by the relation [** Solyom]
+so along with the ground-state energy it is determined by the external potential Therefore, so is the density, since the wavefunction is a unique functional of this quantity by the relation\parencite{Solyom2010}
 
 \begin{equation}
 	n_{\mathrm{e}}(\bm{r})=N_{\mathrm{e}} \int \mathrm{d} \bm{r}_{2} \cdots \int \mathrm{d} \bm{r}_{N_{\mathrm{e}}}\left|\Psi\left(\bm{r}, \bm{r}_{2}, \ldots, \bm{r}_{N_{\mathrm{e}}}\right)\right|^{2}
@@ -65,7 +57,7 @@ Thus, \(n_{\mathrm e}(\bm r)\) univocally determines \(\bm V_{\mathrm{ext}}\), a
 	E\left[n_{\mathrm{e}}(\bm{r})\right]=F\left[n_{\mathrm{e}}(\bm{r})\right]+\int\mathrm{d} \bm{r}\, V_{\mathrm{ext}}(\bm{r}) n_{\mathrm{e}}(\bm{r}),
 \end{equation}
 
-where \(F\) is the Hohenberg-Kohn functional defined by [** papi]
+where \(F\) is the Hohenberg-Kohn functional defined by\parencite{Papior2016}
 \begin{equation}
 \begin{split}
 F\left[n_{\mathrm{e}}(\bm{r})\right]&=\expval{\bm T_{\mathrm e}+\bm V_{\mathrm{ee}}}{\Psi_0}=T_{\mathrm e}\left[n_{\mathrm{e}}(\bm{r})\right]+E_{\mathrm{ee}}\left[n_{\mathrm{e}}(\bm{r})\right]\\
@@ -75,6 +67,7 @@ F\left[n_{\mathrm{e}}(\bm{r})\right]&=\expval{\bm T_{\mathrm e}+\bm V_{\mathrm{e
 
 where we detach from the electron-electron interaction energy the Hartree term, which describes the classical self-interaction of the electron density:
 \begin{equation}
+\label{hartree}
 E_{\mathrm{H}}\left[n_{\mathrm{e}}(\bm{r})\right]=\frac {e^2} 2 \int\D\bm r\D\bm{r}'\frac{n_{\mathrm{e}}(\bm{r})n_{\mathrm{e}}(\bm{r}')}{\abs{\bm{r} - \bm{r}'}},
 \end{equation}
 
@@ -89,10 +82,10 @@ Thus, the ground-state energy satisfies
 E_0=\min E[n_{\mathrm e}(\bm r)],\quad \mathrm{with}\quad \int \D\bm r\, n_{\mathrm e}(\bm{r})=N_e.
 \end{equation}
 
-However, this minimization cannot be easily carried out in practice, due to the many-body nature of the problem which hinders finding the form of the Hohenberg-Kohn functional. Moreover, even though the density is in principle sufficient to extract any other property of the material, there is no feasible algorithm to do it in the exact case [** martin]. 
+However, this minimization cannot be easily carried out in practice, due to the many-body nature of the problem which hinders finding the form of the Hohenberg-Kohn functional. Moreover, even though the density is in principle sufficient to extract any other property of the material, there is no feasible algorithm to do it in the exact case \parencite{Martin2004}. 
 
 \subsubsection*{Kohn-Sham equations}
-In order to circumvent this problem, Kohn and Sham proposed a way to approximate this functional[** in martin]. The main idea is to replace the interacting system with a non-interacting one, where a functional for the kinetic energy is known, and which contains an effective one-particle potential \(V_{\mathrm{eff}}\) such that the original density is reproduced. Therefore, the individual particles in this auxiliary problem satisfy
+In order to circumvent this problem, Kohn and Sham proposed a way to approximate this functional\parencite{Kohn1965}. The main idea is to replace the interacting system with a non-interacting one, where a functional for the kinetic energy is known, and which contains an effective one-particle potential \(V_{\mathrm{eff}}\) such that the original density is reproduced. Therefore, the individual particles in this auxiliary problem satisfy
 \begin{equation}
 \label{ks-eq}
 \left(-\frac1 2+\nabla^2+V_{\mathrm{eff}}(\bm r)\right)\psi^{\mathrm{KS}}_i=\epsilon_i \psi^{\mathrm{KS}}_i,
@@ -100,12 +93,12 @@ In order to circumvent this problem, Kohn and Sham proposed a way to approximate
 
 so that the total auxiliary wavefunction \(\ket{\Psi_{\mathrm{KS}}}\) is given by the Slater determinant of these one-particle wavefunctions. The density is then given by
 \begin{equation}
-	n_{\mathrm{e}}(\bm r)=\sum^{N_{\mathrm e}}_{i=1}\abs{\psi_i^{\mathrm{KS}}(\bm r)}^2,
+	n_{\mathrm{e}}(\bm r)=\sum^{N_{\mathrm e}}_{i=1}f_i\abs{\psi_i^{\mathrm{KS}}(\bm r)}^2,
 \end{equation}
 
-and the kinetic energy functional in this system is now
+where \(f_i=1\) for occupied states, and the kinetic energy functional in this system is now
 \begin{equation}
-T_{\mathrm{KS}}=\expval{T}{\Psi_{\mathrm{KS}}}=\frac1 2\sum_{i=1}^{N_{\mathrm e}}\int\D\bm r\abs{\nabla\psi_i^{\mathrm{KS}}(\bm r)}^2.
+T_{\mathrm{KS}}=\expval{T}{\Psi_{\mathrm{KS}}}=\frac1 2\sum_{i=1}^{N_{\mathrm e}}f_i\int\D\bm r\abs{\nabla\psi_i^{\mathrm{KS}}(\bm r)}^2.
 \end{equation}
 
 This is of course different from the many body kinetic energy, because we have neglected many body effects. Since the density is the same in both problems, these can be taken into account via the so-called exchange-correlation energy, defined as
@@ -118,7 +111,7 @@ Thus, the Hohenberg-Kohn functional reads
 F[n_{\mr e}]=T_{\mr{KS}}[n_{\mr e}]+E_{\mr H}[n_{\mr e}]+E_{\mr{xc}}[n_{\mr e}],
 \end{equation}
 
-so the minimization of the energy functional \ref{en-fal} reveals that[**martin]
+so the minimization of the energy functional \ref{en-fal} reveals that\parencite{Martin2004}
 \begin{equation}
 \label{veff}
 V_{\mathrm{eff}}=V_{\mr{ext}}(\bm r)+e^2\int\D\bm r'\frac{n_{\mr e}(\bm r')}{\abs{\bm r-\bm r'}}+V_{\mr{xc}}[n_{\mr e}],
@@ -126,12 +119,12 @@ V_{\mathrm{eff}}=V_{\mr{ext}}(\bm r)+e^2\int\D\bm r'\frac{n_{\mr e}(\bm r')}{\ab
 
 where the middle term is the Hartree potential \(V_{H}[n_{\mr e}]\). Then, if the exchange-correlation potential were known, the Kohn-Sham equation \ref{ks-eq} could be solved self-consistently, by using an initial guess of \(n_{\mr e}\), calculating \(V_{\mr{eff}}\) with it, solving the Kohn-Sham equations to obtain the wavefunctions which define \(n_{\mr e}\), and so on until convergence is reached.\\
 
-However, the exact form for \(E_{\mr{xc}}\) is unknown[** martin], so DFT is reduced to finding the useful approximations. The simplest approximation is the local-density approximation (LDA)[**ks in kretz] which assumes \(E_{\mr{xc}}\) only depends on the density locally, that is, the density never simultaneously evaluated at two points (\(\bm r\) and \(bm r'\)) inside the integral. Another widely used approximation is the generalized-gradient approximation (GGA)[**martin], where the gradient is also allowed to appear inside the integral, which introduces some non-locality. Throughout this work we will be using the PBE[** in kretz] flavour of GGA.
+However, the exact form for \(E_{\mr{xc}}\) is unknown\parencite{Martin2004}, so DFT is reduced to finding the useful approximations. The simplest approximation is the local-density approximation (LDA)\parencite{Kohn1965} which assumes \(E_{\mr{xc}}\) only depends on the density locally, that is, the density never simultaneously evaluated at two points (\(\bm r\) and \(bm r'\)) inside the integral. Another widely used approximation is the generalized-gradient approximation (GGA)\parencite{Martin2004}, where the gradient is also allowed to appear inside the integral, which introduces some non-locality. Throughout this work we will be using the PBE\parencite{Perdew1996,Perdew1996a} flavour of GGA.
 
 % exact Exc functionals actually not known, approximations lda gga... papior + kretz
 
 \subsection{SIESTA}
-SIESTA[** siesta paper] is an implementation of DFT that solves the Kohn-Sham equations. This code describes the effect of core electrons using soft norm-conserving pseudopotentials, and uses a basis set of numerical atomic orbitals with finite range to represent the electronic structure of valence electrons. All while keeping calculations of order \(N\) (\(\mathcal O(N)\)) with respect to system size (number of atoms).
+SIESTA\parencite{Soler2002} is an implementation of DFT that solves the Kohn-Sham equations. This code describes the effect of core electrons using soft norm-conserving pseudopotentials, and uses a basis set of numerical atomic orbitals with finite range to represent the electronic structure of valence electrons. All while keeping calculations of order \(N\) (\(\mathcal O(N)\)) with respect to system size (number of atoms).
 
 \subsubsection*{Pseudopotentials}
 % **cite telaviv?
@@ -141,7 +134,7 @@ Regarding valence electrons, the hermiticity of the Hamiltonian means their wave
 
 In order to overcome this problem, the dynamics of the core electrons is ignored and their effect is replaced by an effective potential. The effect of core electrons on valence wavefunctions can then be eliminated by replacing the oscillating part near the nucleus by a smoother function. This is done by defining an adequate pseudopotential.\\
 
-Given a reference atomic configuration, Hammann \textit{et al} give a few requirements an adequate pseudopotential must meet[**Hamann], which ensure the smoothness and transferability of the pseudopotential:
+Given a reference atomic configuration, Hamann \textit{et al} give a few requirements an adequate pseudopotential must meet\parencite{Hamann1979}, which ensure the smoothness and transferability of the pseudopotential:
 \begin{enumerate}
 \item All-electron and pseudo-wavefunction valence eigenvalues must be the same.
 \item All-electron and pseudo-wavefunctions must be the same beyond a chosen cutoff radius \(R_{\mr c}\).
@@ -155,7 +148,7 @@ While satisfying these, the user has freedom to specify their desired pseudopote
 \qty[-\frac 1 2 \deriv{^2}{r^2}+\frac{l(l+1)}{2r^2}+V_{\mr{eff}}[n_{\mr e}](r)]u_{nl}(r)=\varepsilon_{nl}u_{nl}(r),
 \end{equation}
 
-where (dropping the KS superscript) \(\psi_{nlm}(\bm r)=\frac 1 r u_{nl}(r)Y_{lm}(\theta,\phi)\), and \(V_{\mr{eff}}\) is given by equation \ref{veff} with \(V_{\mr{ext}}=-Z/r\). Note that for a single atom \(V_{\mr{eff}}\) only has radial dependence. Next, the pseudo-wavefunctions \(u_{nl}^{\mr{PS}}(r)\) are created (the part where \(r < R_{\mr c}\)) following the previous specifications, or other similar parametrization schemes like Troullier-Martins [** in telaviv]. Now, one can use equation \ref{radial-sch}, after substituting these pseudo-wavefunctions, in order to solve for \(V_{\mr{eff}}\), which will now be \(l\)-dependent. The unscreened pseudopotential \(V^{\mr{PS}}_l\) is obtained by subtracting the Hartree and exchange-correlation potential (as in equation \ref{veff}) calculated only for the valence electrons with the pseudo-wavefunctions; that is, with the electron density given by
+where (dropping the KS superscript) \(\psi_{nlm}(\bm r)=\frac 1 r u_{nl}(r)Y_{lm}(\theta,\phi)\), and \(V_{\mr{eff}}\) is given by equation \ref{veff} with \(V_{\mr{ext}}=-Z/r\). Note that for a single atom \(V_{\mr{eff}}\) only has radial dependence. Next, the pseudo-wavefunctions \(u_{nl}^{\mr{PS}}(r)\) are created (the part where \(r < R_{\mr c}\)) following the previous specifications, or other similar parametrization schemes like Troullier-Martins\parencite{Troullier1991}. Now, one can use equation \ref{radial-sch}, after substituting these pseudo-wavefunctions, in order to solve for \(V_{\mr{eff}}\), which will now be \(l\)-dependent. The unscreened pseudopotential \(V^{\mr{PS}}_l\) is obtained by subtracting the Hartree and exchange-correlation potential (as in equation \ref{veff}) calculated only for the valence electrons with the pseudo-wavefunctions; that is, with the electron density given by
 \begin{equation}
 n(r)=\sum_{l}\abs{u_{nl}^{\mr{PS}}(r)}^2.
 \end{equation}
@@ -168,7 +161,7 @@ V^{\mr{PS}}(\bm r) &= \sum_{lm}V_l^{\mr{PS}}(r)\dyad{lm}\\
 \end{split}
 \end{equation}
 
-In SIESTA, the Kleinman-Bylander form[** in siestapaper] is used which greatly reduces the amount of integrals to be computed. The Hamiltonian used in SIESTA then reads
+In SIESTA, the Kleinman-Bylander form\parencite{Kleinman1982} is used which greatly reduces the amount of integrals to be computed. The Hamiltonian used in SIESTA then reads
 \begin{equation}
 \label{hsiesta}
 	H=T+\sum_{I} V_{I}^{\mr{local}}(\bm{r})+\sum_{I} V_{I}^{\mr{KB}}+V_{\mr H}(\bm{r})+V_{\mr{xc}}(\bm{r}).
@@ -198,9 +191,27 @@ where
 	\end{split}
 \end{equation}
 
-are the Hamiltonian and overlap matrices. Since the basis set is usually non-orthogonal (\(S_{\mu\nu}\neq\delta_{\mu\nu}\)), equation \ref{meq} defines a generalized eigenvalue problem to be solved numerically.
+are the Hamiltonian and overlap matrices. Since the basis set is usually non-orthogonal (\(S_{\mu\nu}\neq\delta_{\mu\nu}\)), equation \ref{meq} defines a generalized eigenvalue problem to be solved numerically. This also changes how the electron density is calculated
+\begin{equation}
+\begin{split}
+\rho(\bm{r})&=\sum_{i}f_{i}\abs{\psi_{i}(\bm{r})}^{2}\\
+&=\sum_{i}f_{i}\sum_{\mu \nu} c_{\nu,i}^{*} \phi_{\nu}^{*}(\bm{r}) \phi_{\mu}(\bm{r}) c_{\mu,i}=\sum_{\mu \nu} \rho_{\mu \nu} \phi_{\nu}^{*}(\bm{r}) \phi_{\mu}(\bm{r}),
+\end{split}
+\end{equation}
 
-The most popular basis sets are either based on plane waves (for example, in Quantum Espresso[**]) or atomic-like orbitals, as is done in SIESTA. These are defined by a radial function times a spherical harmonic, and are usually (but not necessarily) centered around the nuclei [** siesta paper]:
+where a density matrix has been defined as
+\begin{equation}
+\label{densmat}
+\rho_{\mu \nu}=\sum_{i}f_i c_{\mu i} c_{i \nu},
+\end{equation}
+
+which satisfies the condition
+\begin{equation}
+	\int \D \bm{r}\, \rho(\bm{r})=\operatorname{Tr}[\bm\rho \bm{S}]
+=N_{\mr e}.
+\end{equation}
+
+The most popular basis sets are either based on plane waves (for example, in Quantum Espresso\parencite{Giannozzi2009}) or atomic-like orbitals, as is done in SIESTA. These are defined by a radial function times a spherical harmonic, and are usually (but not necessarily) centered around the nuclei\parencite{Soler2002}:
 \begin{equation}
 	\phi_{Ilmn}(\bm{r})=\phi_{Iln}\left(r_{I}\right)Y_{lm}\left(\hat{\bm{r}}_{I}\right),
 \end{equation}
@@ -209,14 +220,14 @@ where \(\bm r_I=\bm r-\bm R_I\) and \(n\) labels different wavefunctions with th
 
 Some of the most common basis sets are inherited from quantum chemistry. The minimal (or single-\(\zeta\)) basis uses atomic orbitals of at least partly occupied states, that is, actual numerical solutions of the single-particle KS for a free (pseudo-)atom. On top of this, a hard confining potential is added, which defines a cutoff radius for the basis wavefunctions. This potential bumps the orbital up in energy, and this energy shift which is related to the cutoff radius can be specified by the user.\\
 
-In order to add some radial flexibility, multiple-\(\zeta\) basis sets are used, which have several wavefunctions with different radial part for each spherical harmonic. These radial functions are usually generated using the `split-valence' method [** siestapaper 35]. Further, to give some angular flexibility (to account for bond formation, for instance), higher angular momentum shells are used, which are obtained by a perturbative polarization of the an \(l\) orbital with an electric field, so that the form of the \(l+1\) is obtained [** siestapaper]. In this work, we will mostly use the double-\(\zeta\) polarized (DZP) basis.
+In order to add some radial flexibility, multiple-\(\zeta\) basis sets are used, which have several wavefunctions with different radial part for each spherical harmonic. These radial functions are usually generated using the `split-valence' method\parencite{Huzinaga1984}. Further, to give some angular flexibility (to account for bond formation, for instance), higher angular momentum shells are used, which are obtained by a perturbative polarization of the an \(l\) orbital with an electric field, so that the form of the \(l+1\) is obtained\parencite{Soler2002}. In this work, we will mostly use the double-\(\zeta\) polarized (DZP) basis.
 
 %** density matrix?
 
 \subsubsection*{Integrals}
- The Hamiltonian \ref{hsiesta} can be rewritten in a more useful way, by noticing that the local potential plus the effect of valence electrons calculated for the free pseudo-atom goes asymptotically to zero, since the atom becomes neutral, and strictly to zero when the basis functions are zero beyond the cutoff radius [** siesta paper]. For each atom, we can write the density as  \(\rho_I=\rho_I^{\mr{atom}}+\delta\rho\), where \(\rho_I^{\mr{atom}}\) is the density of the aforementioned valence electrons. The Hartree potential is linear in the density, so summing the contributions from all atoms we can write it similarly as \(V_{\mr H}=V_{\mr H}^{\mr{atom}}+\delta V_{\mr H}\), we can define
+ The Hamiltonian \ref{hsiesta} can be rewritten in a more useful way, by noticing that the local potential plus the effect of valence electrons calculated for the free pseudo-atom goes asymptotically to zero, since the atom becomes neutral, and strictly to zero when the basis functions are zero beyond the cutoff radius\parencite{Soler2002}. For each atom, we can write the density as  \(\rho_I=\rho_I^{\mr{atom}}+\delta\rho\), where \(\rho_I^{\mr{atom}}\) is the density of the aforementioned valence electrons. The Hartree potential is linear in the density, so summing the contributions from all atoms we can write it similarly as \(V_{\mr H}=V_{\mr H}^{\mr{atom}}+\delta V_{\mr H}\), we can define
  \begin{equation}
- V_I^{\mr{NA}}=V_I^{\mr local}+V_I^{\mr{atom}},\quad\mathrm{with}\quad\sum_IV_I^{\mr{atom}}=V_{\mr H},
+ V_I^{\mr{NA}}=V_I^{\mr{local}}+V_I^{\mr{atom}},\quad\mathrm{with}\quad\sum_IV_I^{\mr{atom}}=V_{\mr H},
  \end{equation}
 
 whose terms will exactly cancel beyond the cutoff radius. \ref{hsiesta} can then be rewritten as
@@ -225,23 +236,62 @@ whose terms will exactly cancel beyond the cutoff radius. \ref{hsiesta} can then
 H=T+\sum_{I}V_{I}^{\mr{KB}}+V_I^{\mr{NA}}(\bm{r})+\delta V_{\mr H}(\bm r)+V_{\mr{xc}}(\bm{r}).
 \end{equation}
 
-The matrix elements of the first two terms of this equation, as well as the overlap integrals, can be calculated using so-called two-centered integrals. Owing to the cutoff radius of the basis functions, there is a maximum distance \(R_{\mr{max}}=r_1^{\mr c}+r_2^{\mr c}\) up to which the matrix elements are nonzero. Taking advantage of this, SIESTA calculates these integrals in reciprocal space using a special FFT[** siestapaper] and then tabulates and stores the values in a radial grid, so that later an interpolation can be made from that table.
+The matrix elements of the first two terms of this equation, as well as the overlap integrals, can be calculated using so-called two-centered integrals. Owing to the cutoff radius of the basis functions, there is a maximum distance \(R_{\mr{max}}=r_1^{\mr c}+r_2^{\mr c}\) up to which the matrix elements are nonzero. Taking advantage of this, SIESTA calculates these integrals in reciprocal space using a special FFT\parencite{Soler2002} and then tabulates and stores the values in a radial grid, so that later an interpolation can be made from that table.\\
 
-The last three potential terms of equation \ref{hsiesta2} depend on the position, so their matrix elements are calculated on a real-space grid whose fineness is controlled by an energy cutoff, corresponding to the maximum kinetic energy of the planewaves that can be represented in the grid without aliasing [** siestapaper]. The density matrix ******doit***** is essential to calculate \(\delta V_{\mr H}(\bm r)\) and \(V_{\mr{xc}}(\bm{r})\).
+The last three potential terms of equation \ref{hsiesta2} depend on the position, so their matrix elements are calculated on a real-space grid whose fineness is controlled by an energy cutoff, corresponding to the maximum kinetic energy of the planewaves that can be represented in the grid without aliasing\parencite{Soler2002}. The density matrix \ref{densmat} is essential to calculate \(\delta V_{\mr H}(\bm r)\) and \(V_{\mr{xc}}(\bm{r})\). In the case of \(\delta V_{\mr H}(\bm r)\), the Poisson equation
+\begin{equation}
+\nabla^{2} \delta V_{\mr H}(\bm{r})=-\frac{\delta \rho(\bm{r})}{\epsilon_{0}}
+\end{equation}
 
-% Explain density mat in subsubection Basis sets
-% Fourier transform (how to calculate deltaVH) -> repetition
+needs to be solved, which is done by applying a Fourier transform, for which periodic boundary conditions are used\parencite{Soler2002}. Thus, all systems in SIESTA are periodically repeated, and one must take this into account, for instance, when simulating isolated molecules.\\
 
-% linking with rrepetition... 
-%Infinite periodic solids -> supercell + Bon-Von karman bc,
-%k-dependent mat els, k point sampling, MonkHorst pack
+In the case of molecules or very large unit cells, the \(\Gamma\) point is enough to obtain the desired properties of the system. Nonetheless, in smaller systems Bloch states and \(k\)-points become vital and Brillouin-zone integrations have to be performed. This is handled in SIESTA by defining a supercell containing a few unit cells, namely those whose basis functions overlap any of those in the original unit cell. This supercell defines the usual problem with Born-von Karman boundary conditions. Then, grid integrals are computed without phase factors for \(\bm r\) inside the unit cell only, and stored. The \(k\)-dependent Hamiltonian is defined by folding the supercell Hamiltonian into the unit cell\parencite{Papior2016,Soler2002}:
+\begin{equation}
+	H_{\mu \nu}(\bm{k})=\sum_{\nu^{\prime} \equiv \nu} H_{\mu \nu^{\prime}} \me^{\mi \bm{k}\left(\bm{R}_{\nu^{\prime}}-\bm{R}_{\mu}\right)}.
+\end{equation}
 
-\subsubsection*{Self-consistent field cycle}
-SCF, mixing (pulay)
+The basis function coefficients are now defined with respect to Bloch states and so depend on the cell position within the supercell:
+\begin{equation}
+\psi_{i}(\bm{k}, \bm{r})=\sum_{\mu^{\prime}} \me^{\mi \bm{k} \bm{R}_{\mu^{\prime}}} \phi_{\mu^{\prime}}(\bm{r}) c_{\mu^{\prime} i}(\bm{k}).
+\end{equation}
 
-\subsubsection{Forces and relaxation}
-Forces and relaxation
-% in equation 1.3 we have neglected the ion energy E_II, but we see it contributes to total energy, different {R_I} -> diff energies -> minimization to relax the structure
+where unprimed indices run over the unit cell only, and \(\nu^{\prime} \equiv \nu\) indicate equivalent orbitals in different cells. The density matrix now contains a Brillouin zone integral, which is performed on a \(k\)-point grid. This grid is either defined by a real-space cutoff, or with Monkhorst-Pack\parencite{Monkhorst1976} generation, which may reduce the amount of inequivalent \(k\)-points by shifting the grid from \(\Gamma\).
+
+
+
+\subsubsection*{SCF cycle}
+The Kohn-Sham equations are solved through a self-consistent field cycle. An initial guess for the density matrix is supplied, the effective potential is calculated and the KS equation is solved as described before. Using the obtained coefficients, a new density matrix is calculated. Supplying this new density as the initial guess makes the cycle numerically divergent, so different schemes exist to mix the initial and final density matrices and get the cycle to converge.\\
+
+The most popular scheme is Pulay mixing\parencite{Pulay1980, Pulay1982}, where the next guess is formed using a linear combination of the last \(n\) iterations. The weights of the previous values are chosen so that the difference between then input and output densities is minimal.
+
+\subsubsection*{Forces and relaxation}
+In order to obtain the atomic forces using the Hellmann-Feynman theorem\parencite{Feynman1939}, an expression for the total energy is needed. If the system were non-interacting, this energy would just be
+\begin{equation}
+\begin{split}
+\sum_{i=1}^{N_{\mr e}}f_i \epsilon_{i} &=\sum_{\mu \nu} H_{\mu \nu} \rho_{\nu \mu}=T_{\mathrm{KS}}[\rho]+\int \mathrm{d} \bm{r}\, \rho(\bm{r})\, V_{\mathrm{KS}}(\bm{r}) \\
+&=T_{\mathrm{KS}}[\rho]+e^2\int \mathrm{d} \bm{r} \mathrm{d} \bm{r}^{\prime}\, \frac{\rho(\bm{r}) \rho\left(\bm{r}^{\prime}\right)}{\left|\bm{r}-\bm{r}^{\prime}\right|}+\int \mathrm{d} \bm{r}\, \rho(\bm{r}) V_{\mr{x c}}(\bm{r})+\int \mathrm{d} \bm{r} \rho(\bm{r}) V_{\mr{ext}}(\bm{r}),
+\end{split}
+\end{equation}
+
+This expression double-counts the Hartree energy (eq. \ref{hartree}), and miscounts the exchange-correlation energy. Moreover, in equation \ref{bo} we have neglected the ion energy \(E_{\mr{nn}}\), but we see it contributes to total energy in the sense that different \(\{R_I\}\) will give different energies. Therefore, we can write the total Kohn-Sham energy as
+\begin{equation}
+\begin{split}
+E_{\mr{KS}} =&\sum_{\mu \nu} H_{\mu \nu} \rho_{\nu \mu}-\frac{e^2}{2}\int \mathrm{d} \bm{r} \mathrm{d} \bm{r}^{\prime}\, \frac{\rho(\bm{r}) \rho\left(\bm{r}^{\prime}\right)}{\left|\bm{r}-\bm{r}^{\prime}\right|} -\int V_{\mr{xc}}(\bm{r}) \rho(\bm{r}) d^{3} \bm{r}\\
+&+ E_{\mr{xc}}[\rho]+\sum_{I<J} \frac{Z_{I} Z_{J}}{R_{I J}}.
+\end{split}
+\end{equation}
+
+SIESTA rewrites the total energy in terms of local and neutral-atom interactions in order to avoid long-term interactions, and then the forces are calculated by direct differentiation, such that the force on atom \(I\) is given by
+\begin{equation}
+\bm F_I=\pd{E_{\mr{KS}}}{\bm R_I}
+\end{equation}
+
+at constant \(c_{\mu i}\) and occupations \(f_i\). These forces can then be used to relax a structure, that is, find a configuration of the atom which experiences the least amount of total force. Based on the information provided by the forces, the atomic positions are changed, where the new, hopefully weaker forces are recalculated and the process is repeated. This minimization is carried out by the conjugate-gradients algorithm\parencite{Hestenes1952}.
+
+%***^ change this equation eps_xc -> Exc and then in a second line eps_xc (maybe) then say F=dE/dR_I etc, siesta rewrites this energy long range etc...., and method of conjugate gradients.
+
+
+
 % conjugate gradients
 
 %----------------------------------------------------------------------------------------
@@ -259,6 +309,9 @@ Forces and relaxation
 %
 %
 \section{The \textsc{sisl} package}
+
+\textsc{sisl}\parencite{Papior2020} is a Python library whose purpose is to handle (create and read), manipulate and analyse output from DFT programs, such as SIESTA. For that reason, it allows easy creation and manipulation of geometries, Hamiltonians, atomic information, (super)cells, wavefunctions, density matrices etc. Its usefulness partly lies on the fact that it can handle outputs of many different programs or objects of different formats, such as an user-defined tight-binding Hamiltonian or a DFT Hamiltonian from a SIESTA calculation, in a unified manner by using the same programming interface. \textsc{sisl} was used throughout this thesis in order to create the system geometries and SIESTA inputs, and occasionally to post-process output and create figures.
+
 
 
 

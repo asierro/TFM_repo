@@ -39,10 +39,14 @@ coords = dbdt.axyz()
 #     print(torsion_angle(new_coords[19], new_coords[14], new_coords[0], new_coords[5]))
 #     rotated.write('structures/STRUCT_{}.fdf'.format(angle))
 
-# sisl.plot(rotated, atom_indices=True); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
-# ax.set_xlim(right=20); ax.set_ylim(top=10)
-# plt.show()
+rotated = dbdt.rotate(60., coords[0] - coords[3], atoms=rot_atoms, origo=coords[3], only='xyz')
+rotated = rotated.rotate(90, [1.0, 0.0, 0.0], atoms=all_atoms, origo=coords[0], only='xyz')
+sisl.plot(rotated, atom_indices=True); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
+# sisl.plot(dbdt, atom_indices=True); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
+ax.set_xlim(right=20); ax.set_ylim(top=10)
+plt.show()
 
+'''
 for k, angle in enumerate(range(0, 360, 5)):
     rotated = dbdt.rotate(angle, coords[0] - coords[3], atoms=rot_atoms, origo=coords[3], only='xyz')
     # f = plt.figure()
@@ -76,9 +80,10 @@ for k, angle in enumerate(range(0, 360, 5)):
 
         v1 = -v0
         v2 = coords[0] - coords[14]; norm_v2 = np.linalg.norm(v2)
-        zmat_lines.append('1 2 1 0 ' + str(norm_v2) + ' ' + str(np.arccos(np.dot(v1, v2)/(norm_v2 * norm_v0))) + ' 0.0 '
-                          +
-                          '1 1 1\n')  # 3rd torsion atom
+        torsion3 = torsion_angle(new_coords[19] + np.array([0., 0., 1.]),
+                                 new_coords[19], new_coords[14], new_coords[0]) * np.pi / 180
+        zmat_lines.append('1 2 1 0 ' + str(norm_v2) + ' ' + str(np.arccos(np.dot(v1, v2)/(norm_v2 * norm_v0))) +
+                          ' ' + str(torsion3) + ' ' + '1 1 1\n')  # 3rd torsion atom
 
         v3 = -v2
         v4 = coords[5] - coords[0]; norm_v4 = np.linalg.norm(v4)
@@ -96,3 +101,4 @@ for k, angle in enumerate(range(0, 360, 5)):
                            '%endblock Zmatrix\n'])
 
         zmat_file.writelines(zmat_lines)
+'''

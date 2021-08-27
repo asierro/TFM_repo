@@ -2,7 +2,11 @@ This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: biblatex.bst
+A level-1 auxiliary file: chapters/ch1.aux
 A level-1 auxiliary file: chapters/ch2.aux
+A level-1 auxiliary file: chapters/ch3.aux
+A level-1 auxiliary file: chapters/ch4.aux
+A level-1 auxiliary file: chapters/ch5.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -18,49 +22,50 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 10460 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: TFM.bib
 Biblatex version: 3.16
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 1 entry,
+You've used 39 entries,
             6393 wiz_defined-function locations,
-            1202 strings with 8962 characters,
-and the built_in function-call counts, 2002 in all, are:
-= -- 74
-> -- 182
-< -- 1
-+ -- 161
-- -- 138
-* -- 33
-:= -- 484
+            1558 strings with 28020 characters,
+and the built_in function-call counts, 342886 in all, are:
+= -- 26919
+> -- 5568
+< -- 1508
++ -- 9266
+- -- 2381
+* -- 26406
+:= -- 39085
 add.period$ -- 0
-call.type$ -- 1
-change.case$ -- 0
-chr.to.int$ -- 46
-cite$ -- 0
-duplicate$ -- 11
-empty$ -- 105
-format.name$ -- 0
-if$ -- 330
+call.type$ -- 39
+change.case$ -- 822
+chr.to.int$ -- 73
+cite$ -- 76
+duplicate$ -- 34310
+empty$ -- 29479
+format.name$ -- 3395
+if$ -- 69112
 int.to.chr$ -- 0
-int.to.str$ -- 0
+int.to.str$ -- 104
 missing$ -- 0
-newline$ -- 20
-num.names$ -- 0
-pop$ -- 47
+newline$ -- 1813
+num.names$ -- 2060
+pop$ -- 14241
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 1183
 quote$ -- 0
-skip$ -- 79
+skip$ -- 8455
 stack$ -- 0
-substring$ -- 159
-swap$ -- 1
-text.length$ -- 20
+substring$ -- 49857
+swap$ -- 7305
+text.length$ -- 1137
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 22
+type$ -- 1312
 warning$ -- 0
-while$ -- 66
+while$ -- 5203
 width$ -- 0
-write$ -- 20
+write$ -- 1775

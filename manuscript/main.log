@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.6.25)  9 AUG 2021 18:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.6.25)  27 AUG 2021 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -776,7 +776,7 @@ with kernel methods
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 99.
+(scrhack)             need that hack, on input line 98.
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -801,46 +801,47 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip85
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 99.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 99.
-Package hyperref Info: Option `colorlinks' set `true' on input line 99.
-Package hyperref Info: Option `unicode' set `true' on input line 99.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 98.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 98.
+Package hyperref Info: Option `colorlinks' set `true' on input line 98.
+Package hyperref Info: Option `unicode' set `true' on input line 98.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 99.
+Package hyperref Info: Option `breaklinks' set `true' on input line 98.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 99
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 98
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) (./main.aux
-(./chapters/ch2.aux) (./chapters/ch3.aux))
+(./chapters/ch1.aux) (./chapters/ch2.aux) (./chapters/ch3.aux)
+(./chapters/ch4.aux) (./chapters/ch5.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
 
 (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
@@ -911,14 +912,14 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 99.
-Package scrbase Info: activating english \abbrevname on input line 99.
-Package scrbase Info: activating english \byname on input line 99.
-Package scrbase Info: activating english \acknowledgementname on input line 99.
+(scrlayer)             \begin{document} on input line 98.
+Package scrbase Info: activating english \abbrevname on input line 98.
+Package scrbase Info: activating english \byname on input line 98.
+Package scrbase Info: activating english \acknowledgementname on input line 98.
 
-Package scrbase Info: activating english \authorshipname on input line 99.
-Package scrbase Info: activating english \constantsname on input line 99.
-Package scrbase Info: activating english \symbolsname on input line 99.
+Package scrbase Info: activating english \authorshipname on input line 98.
+Package scrbase Info: activating english \constantsname on input line 98.
+Package scrbase Info: activating english \symbolsname on input line 98.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -944,10 +945,115 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
-(./main.bbl)
-Package biblatex Info: Reference section=0 on input line 99.
-Package biblatex Info: Reference segment=0 on input line 99.
-Package hyperref Info: Link coloring ON on input line 99.
+(./main.bbl
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 4
+1.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
+41.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
+41.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
+41.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
+41.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Hohenberg1964':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Kohn1965':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Perdew1996':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Perdew1996a':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Soler2002':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Hamann1979':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Troullier1991':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Kleinman1982':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Giannozzi2009':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Monkhorst1976':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Feynman1939':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Son2006':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Cai2010':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Wang2017':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Fan2014':
+(biblatex)                - Invalid format of field 'month'.
+
+)
+Package biblatex Info: Reference section=0 on input line 98.
+Package biblatex Info: Reference segment=0 on input line 98.
+Package hyperref Info: Link coloring ON on input line 98.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -959,44 +1065,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count451
 )
-LaTeX Info: Redefining \ref on input line 99.
-LaTeX Info: Redefining \pageref on input line 99.
-LaTeX Info: Redefining \nameref on input line 99.
+LaTeX Info: Redefining \ref on input line 98.
+LaTeX Info: Redefining \pageref on input line 98.
+LaTeX Info: Redefining \nameref on input line 98.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 9
-9.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-)
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-99.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-99.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-99.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-99.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
 1: section
 [1
 
@@ -1013,7 +1090,7 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 ]
 --------------------
- Acknowledgements
+ Preface
 --------------------
 1: section
 [5] [6
@@ -1048,119 +1125,298 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 ]
 1: section
-\openout2 = `chapters/ch2.aux'.
+\openout2 = `chapters/ch1.aux'.
 
-(./chapters/ch2.tex
+(./chapters/ch1.tex
 Chapter 1.
-
-Overfull \hbox (15.14836pt too wide) in paragraph at lines 39--40
-[]\T1/ppl/m/n/10.95 which af-ter the well-known Born-Oppenheimer ap-prox-i-ma-t
-ion [** mar-tin], whereby
- []
-
+)
 1: section
 [1
 
 
-] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+]
+\openout2 = `chapters/ch2.aux'.
 
- []
-
-
-Overfull \hbox (0.73245pt too wide) in paragraph at lines 134--135
-\T1/ppl/m/n/10.95 equa-tions. This code de-scribes the ef-fect of core elec-tro
-ns us-ing soft norm-conserving
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
-
- []
-
-
-Overfull \hbox (5.66553pt too wide) in paragraph at lines 140--141
-[]\T1/ppl/m/n/10.95 Regarding va-lence elec-trons, the her-mitic-ity of the Ham
-il-to-nian means their wave-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
-
- []
-
-
-Overfull \hbox (0.73254pt too wide) in paragraph at lines 148--149
-[]\T1/ppl/m/n/10.95 The log-a-rith-mic deriva-tives of the all-electron and pse
-udo-wavefunctions must
- []
-
-[4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-
- []
-
-[6])
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scsl' undefined
-(Font)              using `T1/ppl/m/sc' instead on input line 211.
-
-[7]
-\openout2 = `chapters/ch3.aux'.
-
- (./chapters/ch3.tex [8
+ (./chapters/ch2.tex [2
 
 
 
 
 ]
 Chapter 2.
+1: section
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+
+Overfull \hbox (5.66553pt too wide) in paragraph at lines 133--134
+[]\T1/ppl/m/n/10.95 Regarding va-lence elec-trons, the her-mitic-ity of the Ham
+il-to-nian means their wave-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+
+Overfull \hbox (0.73254pt too wide) in paragraph at lines 141--142
+[]\T1/ppl/m/n/10.95 The log-a-rith-mic deriva-tives of the all-electron and pse
+udo-wavefunctions must
+ []
+
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+
+ []
+
+[10])
+
+LaTeX Font Warning: Font shape `T1/ppl/m/scsl' undefined
+(Font)              using `T1/ppl/m/sc' instead on input line 218.
+
+[11]
+\openout2 = `chapters/ch3.aux'.
+
+ (./chapters/ch3.tex [12
+
+
+
+
+]
+Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
+14.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+
+Overfull \hbox (4.2914pt too wide) in paragraph at lines 19--21
+\T1/ppl/m/n/10.95 suit-able de-signed molec-u-lar pre-cur-sors[[][]26[][], [][]
+27[][]]. The pro-cess in-volves sev-eral steps[[][]26[][],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+1: section
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 38.
+
+Missing character: There is no Å in font pplr7t!
+
+LaTeX Warning: Command \r invalid in math mode on input line 38.
+
+Missing character: There is no Å in font pplr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+) [16]
+\openout2 = `chapters/ch4.aux'.
+
+ (./chapters/ch4.tex
+Chapter 4.
 )
 1: section
-[9]
+[17
 
-LaTeX Warning: Empty bibliography on input line 233.
 
-(./main.aux (./chapters/ch2.aux) (./chapters/ch3.aux))
+
+
+]
+\openout2 = `chapters/ch5.aux'.
+
+ (./chapters/ch5.tex [18
+
+
+
+
+]
+Chapter 5.
+)
+1: section
+[19] [20
+
+
+
+]
+Overfull \hbox (0.50896pt too wide) in paragraph at lines 240--240
+[]\T1/ppl/m/n/10.95 J. M. Soler, E. Ar-ta-cho, J. D. Gale, A. Gar-cía, J. Jun-q
+uera, P. Or-de-jón, and D. Sánchez-
+ []
+
+
+Overfull \hbox (5.31812pt too wide) in paragraph at lines 240--240
+[]\T1/ppl/m/n/10.95 P. Pu-lay, ^^P  Im-proved scf con-ver-gence ac-cel-er-a-tio
+n^^Q, [][]Jour-nal of Com-pu-ta-tional Chem-
+ []
+
+1: section
+[21]
+Overfull \hbox (18.11977pt too wide) in paragraph at lines 240--240
+[]\T1/ppl/m/n/10.95 R. B. K. Matthew J. Allen Vin-cent C. Tung, ^^P  Hon-ey-com
+b car-bon: a re-view of graphene^^Q,
+ []
+
+
+Overfull \hbox (11.93762pt too wide) in paragraph at lines 240--240
+[]\T1/ppl/m/n/10.95 O. Deniz, C. Sánchez-Sánchez, T. Dum-slaff, X. Feng, A. Nar
+ita, K. Müllen, N. Kharche,
+ []
+
+
+Overfull \hbox (0.13316pt too wide) in paragraph at lines 240--240
+\T1/ppl/m/n/10.95 in-ter-ca-lated arm-chair graphene nanorib-bons by scan-ning 
+tun-nel-ing spec-troscopy^^Q,
+ []
+
+
+Overfull \hbox (23.35675pt too wide) in paragraph at lines 240--240
+[]\T1/ppl/m/n/10.95 L. Grill, M. Dyer, L. Laf-fer-entz, M. Pers-son, M. Pe-ters
+, and S. Hecht, ^^P  Nano-architectures
+ []
+
+
+Overfull \hbox (3.20395pt too wide) in paragraph at lines 240--240
+\T1/ppl/m/n/10.95 up syn-the-sis of mul-ti-func-tional nanoporous graphene^^Q, 
+[][]Sci-ence \T1/ppl/b/n/10.95 360\T1/ppl/m/n/10.95 , 199^^U203 (2018)[][]. 
+ []
+
+
+Overfull \hbox (0.52365pt too wide) in paragraph at lines 240--240
+\T1/ppl/m/n/10.95 byge, ^^P  Elec-tron trans-port in nanoporous graphene: prob-
+ing the tal-bot ef-fect^^Q, [][]Nano
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+40.
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [22] [23] (./main.aux
+(./chapters/ch1.aux) (./chapters/ch2.aux) (./chapters/ch3.aux)
+(./chapters/ch4.aux) (./chapters/ch5.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 347FC6B800C9B8C933C383655086B616;1799.
+(rerunfilecheck)             Checksum: C0EFB6619894DFF855B19299B994BC7F;2948.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27717 strings out of 481176
- 557183 string characters out of 5914226
- 1090729 words of memory out of 5000000
- 44193 multiletter control sequences out of 15000+600000
- 475548 words of font info for 164 fonts, out of 8000000 for 9000
+ 28207 strings out of 481176
+ 569006 string characters out of 5914226
+ 1108966 words of memory out of 5000000
+ 44569 multiletter control sequences out of 15000+600000
+ 479906 words of font info for 177 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 98i,21n,102p,1818b,1736s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mat
-hpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (23 pages, 157304 bytes).
+ 98i,21n,102p,1818b,1831s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/asier/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600
+pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/m
+athpazo/fplmbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/f
+plmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
+palatino/uplri8a.pfb>
+Output written on main.pdf (37 pages, 215418 bytes).
 PDF statistics:
- 290 PDF objects out of 1000 (max. 8388607)
- 251 compressed objects within 3 object streams
- 78 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 612 PDF objects out of 1000 (max. 8388607)
+ 541 compressed objects within 6 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
