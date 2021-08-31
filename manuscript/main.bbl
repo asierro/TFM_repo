@@ -1953,5 +1953,160 @@
     \field{journaltitle}{Advanced Functional Materials}
     \field{year}{2021}
   \endentry
+
+  \entry{Solomon2010}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SCHTMVRMAGCH}{%
+         family={Solomon},
+         familyi={S\bibinitperiod},
+         suffix={Gemma C.;\bibnamedelima Herrmann},
+         suffixi={G\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+         given={Carmen; Hansen Thorsten; Mujica Vladimiro; Ratner
+  Mark\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  T\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  V\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{SGCHCHTMVRMA1}
+    \strng{fullhash}{SGCHCHTMVRMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1038/nchem.546
+    \endverb
+    \field{issn}{1755-4330,1755-4349}
+    \field{issue}{3}
+    \field{pages}{223\bibrangedash 228}
+    \field{title}{Exploring local currents in molecular junctions}
+    \verb{url}
+    \verb http://doi.org/10.1038/nchem.546
+    \endverb
+    \field{volume}{2}
+    \field{journaltitle}{Nature Chemistry}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Arroyo2013}{article}{}
+    \name{author}{8}{}{%
+      {{hash=ACR}{%
+         family={Arroyo},
+         familyi={A\bibinitperiod},
+         given={Carlos\bibnamedelima R.},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tarkuc},
+         familyi={T\bibinitperiod},
+         given={Simge},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FR}{%
+         family={Frisenda},
+         familyi={F\bibinitperiod},
+         given={Riccardo},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SJS}{%
+         family={Seldenthuis},
+         familyi={S\bibinitperiod},
+         given={Johannes\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=WCHM}{%
+         family={Woerde},
+         familyi={W\bibinitperiod},
+         given={Charlotte H.\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+      {{hash=ER}{%
+         family={Eelkema},
+         familyi={E\bibinitperiod},
+         given={Rienk},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GFC}{%
+         family={Grozema},
+         familyi={G\bibinitperiod},
+         given={Ferdinand\bibnamedelima C.},
+         giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=vdZHSJ}{%
+         prefix={van\bibnamedelima der},
+         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Zant},
+         familyi={Z\bibinitperiod},
+         given={Herre S.\bibnamedelima J.},
+         giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  J\bibinitperiod},
+      }}%
+    }
+    \keyw{break junctions, molecular electronics, quantum interference,
+  single-molecule transport}
+    \strng{namehash}{ACR+1}
+    \strng{fullhash}{ACRTSFRSJSWCHMERGFCZHSJvd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Molecular electronics: Charge transport through a single benzene ring is
+  studied using the mechanically controlled break-junction technique. The
+  low-bias conductance for a meta-coupled benzene ring is more than an order of
+  magnitude smaller than that of a para-coupled benzene ring. This difference
+  can be explained by a destructive quantum interference effects in the
+  meta-coupled benzene (see picture).%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1002/anie.201207667
+    \endverb
+    \verb{eprint}
+    \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/anie.201207667
+    \endverb
+    \field{number}{11}
+    \field{pages}{3152\bibrangedash 3155}
+    \field{title}{Signatures of Quantum Interference Effects on Charge
+  Transport Through a Single Benzene Ring}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.201207667
+    \endverb
+    \field{volume}{52}
+    \field{journaltitle}{Angewandte Chemie International Edition}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Shekhirev2018}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SPSAMZ}{%
+         family={Shekhirev},
+         familyi={S\bibinitperiod},
+         suffix={Mikhail;\bibnamedelima Zahl},
+         suffixi={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
+         given={Percy; Sinitskii\bibnamedelima Alexander},
+         giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMZPSA1}
+    \strng{fullhash}{SMZPSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1021/acsnano.8b04489
+    \endverb
+    \field{issn}{1936-0851,1936-086X}
+    \field{pages}{acsnano.8b04489}
+    \field{title}{Phenyl Functionalization of Atomically Precise Graphene
+  Nanoribbons for Engineering Inter-Ribbon Interactions and Graphene Nanopores}
+    \verb{url}
+    \verb http://doi.org/10.1021/acsnano.8b04489
+    \endverb
+    \field{journaltitle}{ACS Nano}
+    \field{year}{2018}
+  \endentry
 \enddatalist
 \endinput
