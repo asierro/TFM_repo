@@ -30,9 +30,11 @@ phenyl2R = [114, 121, 91, 125,
 # rotated1R = dp_pp_ortho.rotate(61.33, coords[115] - coords[117], atoms=phenyl1R, origo=coords[117], only='xyz')
 # rotated2R = dp_pp_ortho.rotate(118.23, coords[90] - coords[120], atoms=phenyl2R, origo=coords[120], only='xyz')
 
-# # sisl.plot(dp_pp_ortho, s=10, atom_indices=True); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
+sisl.plot(dp_pp_ortho, s=10, atom_indices=True); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
 # sisl.plot(rotated1R, s=10); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
-# plt.tight_layout(); plt.show()
+# plt.tight_layout()
+ax.set_xlim(5., 20.)
+plt.show()
 
 
 def rotate_phenyl(geom, which, angle):
@@ -64,6 +66,7 @@ def rotate_dppp(geom, ang1L, ang2L, ang1R, ang2R):
 # The other bridge will be rotated "antisymmetrically" in order for both ribbons to be equivalent.
 # Specifically one ribbon is rotated onto the other with a 180º x-axis rotation
 
+'''
 for ang_a in range(0, 95, 5):
     for ang_b in range(0, 95, 5):
         rotating_dppp = rotate_dppp(dp_pp_ortho, ang_a, ang_a + ang_b, ang_a + 180, ang_a + ang_b + 180)
@@ -75,3 +78,4 @@ for ang_a in range(0, 95, 5):
         # sisl.plot(rotating_dppp, s=10); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
         # plt.tight_layout()
         # plt.savefig('/home/asier/Documents/master/tfm/sisl/rotating_dppp/gif/rot_{}_{}.png'.format(ang_a, ang_b))
+'''

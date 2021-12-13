@@ -17,6 +17,133 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{Geim2007}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GKSAKN}{%
+         family={Geim},
+         familyi={G\bibinitperiod},
+         suffix={A.\bibnamedelima K.;\bibnamedelima Novoselov},
+         suffixi={A\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim
+  N\bibinitperiod},
+         given={K.\bibnamedelima S.},
+         giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{GAKNKS1}
+    \strng{fullhash}{GAKNKS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1038/nmat1849
+    \endverb
+    \field{issn}{1476-1122,1476-4660}
+    \field{issue}{3}
+    \field{pages}{183\bibrangedash 191}
+    \field{title}{The rise of graphene}
+    \verb{url}
+    \verb http://doi.org/10.1038/nmat1849
+    \endverb
+    \field{volume}{6}
+    \field{journaltitle}{Nature Materials}
+    \field{year}{2007}
+  \endentry
+
+  \entry{Houtsma2021}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HRSK}{%
+         family={Houtsma},
+         familyi={H\bibinitperiod},
+         given={R.\bibnamedelima S.\bibnamedelima Koen},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  K\bibinitperiod},
+      }}%
+      {{hash=dlRJ}{%
+         prefix={de\bibnamedelima la},
+         prefixi={d\bibinitperiod\bibinitdelim l\bibinitperiod},
+         family={Rie},
+         familyi={R\bibinitperiod},
+         given={Joris},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Stöhr},
+         familyi={S\bibinitperiod},
+         given={Meike},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The Royal Society of Chemistry}%
+    }
+    \strng{namehash}{HRSK+1}
+    \strng{fullhash}{HRSKRJdlSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Graphene nanoribbons hold great promise for future applications in
+  nanoelectronic devices{,} as they may combine the excellent electronic
+  properties of graphene with the opening of an electronic band gap – not
+  present in graphene but required for transistor applications. With a two-step
+  on-surface synthesis process{,} graphene nanoribbons can be fabricated with
+  atomic precision{,} allowing precise control over width and edge structure.
+  Meanwhile{,} a decade of research has resulted in a plethora of graphene
+  nanoribbons having various structural and electronic properties. This article
+  reviews not only the on-surface synthesis of atomically precise graphene
+  nanoribbons but also how their electronic properties are ultimately linked to
+  their structure. Current knowledge and considerations with respect to
+  precursor design{,} which eventually determines the final (electronic)
+  structure{,} are summarized. Special attention is dedicated to the electronic
+  properties of graphene nanoribbons{,} also in dependence on their width and
+  edge structure. It is exactly this possibility of precisely changing their
+  properties by fine-tuning the precursor design – offering tunability over a
+  wide range – which has generated this vast research interest{,} also in
+  view of future applications. Thus{,} selected device prototypes are presented
+  as well.%
+    }
+    \verb{doi}
+    \verb 10.1039/D0CS01541E
+    \endverb
+    \field{issue}{11}
+    \field{pages}{6541\bibrangedash 6568}
+    \field{title}{Atomically precise graphene nanoribbons: interplay of
+  structural and electronic properties}
+    \verb{url}
+    \verb http://dx.doi.org/10.1039/D0CS01541E
+    \endverb
+    \field{volume}{50}
+    \field{journaltitle}{Chem. Soc. Rev.}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Allen2010}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MJARBKVCT}{%
+         family={Matthew J.\bibnamedelima Allen},
+         familyi={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  A\bibinitperiod},
+         suffix={Vincent C.\bibnamedelima Tung},
+         suffixi={V\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  T\bibinitperiod},
+         given={Richard B.\bibnamedelima Kaner},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim
+  K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJAVCTRBK1}
+    \strng{fullhash}{MJAVCTRBK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{132\bibrangedash 145}
+    \field{title}{Honeycomb Carbon: A Review of Graphene}
+    \field{volume}{110}
+    \field{journaltitle}{Chemical Reviews}
+    \field{year}{2010}
+  \endentry
+
   \entry{Martin2004}{book}{}
     \name{author}{1}{}{%
       {{hash=MRM}{%
@@ -887,32 +1014,6 @@
     \verb https://doi.org/10.5281/zenodo.597181
     \endverb
     \field{year}{2020}
-  \endentry
-
-  \entry{Allen2010}{article}{}
-    \name{author}{1}{}{%
-      {{hash=MJARBKVCT}{%
-         family={Matthew J.\bibnamedelima Allen},
-         familyi={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
-  A\bibinitperiod},
-         suffix={Vincent C.\bibnamedelima Tung},
-         suffixi={V\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
-  T\bibinitperiod},
-         given={Richard B.\bibnamedelima Kaner},
-         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim
-  K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MJAVCTRBK1}
-    \strng{fullhash}{MJAVCTRBK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{1}
-    \field{pages}{132\bibrangedash 145}
-    \field{title}{Honeycomb Carbon: A Review of Graphene}
-    \field{volume}{110}
-    \field{journaltitle}{Chemical Reviews}
-    \field{year}{2010}
   \endentry
 
   \entry{Wakabayashi2010}{article}{}
@@ -1955,25 +2056,42 @@
   \endentry
 
   \entry{Solomon2010}{article}{}
-    \name{author}{1}{}{%
-      {{hash=SCHTMVRMAGCH}{%
+    \name{author}{5}{}{%
+      {{hash=SGC}{%
          family={Solomon},
          familyi={S\bibinitperiod},
-         suffix={Gemma C.;\bibnamedelima Herrmann},
-         suffixi={G\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
-  H\bibinitperiod},
-         given={Carmen; Hansen Thorsten; Mujica Vladimiro; Ratner
-  Mark\bibnamedelima A.},
-         giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
-  T\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
-  V\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
-  M\bibinitperiod\bibinitdelim A\bibinitperiod},
+         given={Gemma\bibnamedelima C},
+         giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Herrmann},
+         familyi={H\bibinitperiod},
+         given={Carmen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hansen},
+         familyi={H\bibinitperiod},
+         given={Thorsten},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MV}{%
+         family={Mujica},
+         familyi={M\bibinitperiod},
+         given={Vladimiro},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=RMA}{%
+         family={Ratner},
+         familyi={R\bibinitperiod},
+         given={Mark\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
       {Nature Publishing Group}%
     }
-    \strng{namehash}{SGCHCHTMVRMA1}
+    \strng{namehash}{SGC+1}
     \strng{fullhash}{SGCHCHTMVRMA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -2080,18 +2198,27 @@
   \endentry
 
   \entry{Shekhirev2018}{article}{}
-    \name{author}{1}{}{%
-      {{hash=SPSAMZ}{%
+    \name{author}{3}{}{%
+      {{hash=SM}{%
          family={Shekhirev},
          familyi={S\bibinitperiod},
-         suffix={Mikhail;\bibnamedelima Zahl},
-         suffixi={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
-         given={Percy; Sinitskii\bibnamedelima Alexander},
-         giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
-  A\bibinitperiod},
+         given={Mikhail},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ZP}{%
+         family={Zahl},
+         familyi={Z\bibinitperiod},
+         given={Percy},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sinitskii},
+         familyi={S\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SMZPSA1}
+    \strng{namehash}{SM+1}
     \strng{fullhash}{SMZPSA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -2107,6 +2234,42 @@
     \endverb
     \field{journaltitle}{ACS Nano}
     \field{year}{2018}
+  \endentry
+
+  \entry{Viljas2008}{article}{}
+    \name{author}{3}{}{%
+      {{hash=VJ}{%
+         family={Viljas},
+         familyi={V\bibinitperiod},
+         given={Janne},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PF}{%
+         family={Pauly},
+         familyi={P\bibinitperiod},
+         given={Fabian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cuevas},
+         familyi={C\bibinitperiod},
+         given={Juan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VJ+1}
+    \strng{fullhash}{VJPFCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevB.77.155119
+    \endverb
+    \field{title}{Modeling elastic and photoassisted transport in organic
+  molecular wires: Length dependence and current-voltage characteristics}
+    \field{volume}{77}
+    \field{journaltitle}{Physical Review B}
+    \field{month}{01}
+    \field{year}{2008}
   \endentry
 \enddatalist
 \endinput

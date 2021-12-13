@@ -54,7 +54,22 @@ plt.pcolormesh(ang2_list, ang1_list, E_arr, shading='nearest', cmap='inferno')
 # fig = plt.figure()
 # ax = fig.add_subplot(111, projection='3d')
 # ax.plot_surface(x, y, E_arr, cmap=cm.coolwarm, antialiased=False)
-plt.show()
+
+plt.rc('text', usetex=True)
+# plt.rc('font', family='Bitstream Vera Serif', size=16)
+plt.rc('font', family='serif', serif=['Palatino'], size=16)
+
+plt.xlabel(r'$\theta_{\mathrm{RL}}$ (degrees)')
+plt.ylabel(r'$\theta_{\mathrm{L}}$ (degrees)')
+ax=plt.gca(); ax.set_aspect('equal', adjustable='box')
+# fig = plt.gcf()
+cbar = plt.colorbar(pad=0.1)
+cbar.ax.yaxis.set_label_position('left')
+cbar.ax.set_ylabel(r'$\Delta E$ at $\Gamma$ (eV)', rotation=90)
+
+plt.savefig('2dmap.pdf', bbox_inches='tight')
+
+# plt.show()
 
 # The way it is programmed rn, the x-axis of the plot is the angle of the 2nd phenyl (wrt 1st phenyl)
 # (so y-axis is the angle of the 1st phenyl)

@@ -1,5 +1,6 @@
 import sisl
 import numpy as np
+from scipy import optimize
 import matplotlib.pyplot as plt
 
 '''
@@ -7,6 +8,17 @@ Rotate DNBP to different torsion angles and create SIESTA input for relaxation w
 angle b/n phenyls (via the ZMatrix), for all unique angles except for those which leave the nitro groups too close 
 together.
 '''
+
+
+def plotter():
+    # # rotated = dnbp.rotate(150., coords[2] - coords[17], atoms=rot_atoms, origo=coords[17], only='xyz')
+    # rotated = dnbp.rotate(-20., [1.0, 1.0, 0.0], atoms=all_atoms, origo=coords[0], only='xyz')
+    # new_coords = rotated.axyz()
+
+    # sisl.plot(rotated, atom_indices=True); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
+    sisl.plot(dnbp, atom_indices=True); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
+    ax.set_xlim(right=12); ax.set_ylim(top=10)
+    plt.show()
 
 
 def torsion_angle(p0, p1, p2, p3):
@@ -34,9 +46,77 @@ def too_close(coordinates):
             if np.linalg.norm(coordinates[i] - coordinates[j]) < 1.4:  # Nitro groups too close
                 return True
     if np.linalg.norm(coordinates[9] - coordinates[18]) < 1.1 or \
-       np.linalg.norm(coordinates[8] - coordinates[19]) < 1.1:  # nitrogen too close to hydrogen atom
+       np.linalg.norm(coordinates[8] - coordinates[19]) < 1.1:  # oxygen too close to hydrogen atom
         return True
     return False
+
+
+def half_torsion1(alpha, geom):
+    """
+    Returns the torsion angle b/n ats 5, 3, 2 and a point above 2 in the z direction, depending on rotation angle alpha
+    about the axis defined by coords[17]-coords[16].
+    :param geom: geometry of the DNBP (only this specific one works)
+    :param alpha: angle of rotation (in degrees (º))
+    :return: rotated geometry
+    """
+    geom_coords = geom.axyz()
+    rot_geom = geom.rotate(alpha, geom_coords[17] - geom_coords[16], origo=geom_coords[16], only='xyz')
+    rot_coords = rot_geom.axyz()
+    return torsion_angle(rot_coords[5], rot_coords[3], rot_coords[2], rot_coords[2] + [0., 0., 1.])
+
+
+def half_torsion2(alpha, geom):
+    """
+    Returns the torsion angle b/n ats 5, 3, 2 and a point above 2 in the z direction, depending on rotation angle alpha
+    about the axis defined by coords[17]-coords[16].
+    :param geom: geometry of the DNBP (only this specific one works)
+    :param alpha: angle of rotation (in degrees (º))
+    :return: rotated geometry
+    """
+    geom_coords = geom.axyz()
+    rot_geom = geom.rotate(alpha, geom_coords[17] - geom_coords[16], origo=geom_coords[16], only='xyz')
+    rot_coords = rot_geom.axyz()
+    return torsion_angle(rot_coords[3] + [0., 0., 1.], rot_coords[3], rot_coords[2], rot_coords[4])
+
+
+# One can check that half_torsion1+halftorsion2(-360º) = torsion angle
+
+
+def torsion_diff(alpha, geom):
+    return half_torsion2(alpha, geom) - half_torsion1(alpha, geom)
+
+
+def symmetrize(geom):
+    """
+    Rotate the DNBP geometry wrt axis defined by outer carbons, st the nitro groups lie symmetrically wrt E field (z
+    axis). For that we try to find the angle of rotation at which halftorsion1=halftorsion2.
+    :param geom: DNBP geometry (specifically this one)
+    :return: symmetrized DNBP geometry
+    """
+    geom_coords = geom.axyz()
+
+    root_results = optimize.root_scalar(torsion_diff, args=(geom,), x0=0., x1=10., xtol=0.1)
+    if not root_results.converged:
+        raise Exception("Root finder for symmetrization did not converge")
+    sol = root_results.root
+    if sol <= 0.:
+        sol += 180.  # This prevents the geometry from reaching the other solution
+
+    return geom.rotate(sol, geom_coords[17] - geom_coords[16], origo=geom_coords[16], only='xyz')
+
+
+def torsion_root(beta, geom):
+    """
+    Returns the torsion angle b/n ats 5, 3, 2 and 4, depending on the rotation of one nitrophenyl (rot_atoms) by an
+    angle beta. (This is to find the initial configuration)
+    :param geom: geometry of the DNBP (only this specific one works)
+    :param beta: angle of rotation of phenyl (in degrees (º))
+    :return: rotated geometry
+    """
+    geom_coords = geom.axyz()
+    rot_geom = geom.rotate(beta, geom_coords[2] - geom_coords[17], atoms=rot_atoms, origo=geom_coords[17], only='xyz')
+    rot_coords = rot_geom.axyz()
+    return torsion_angle(rot_coords[5], rot_coords[3], rot_coords[2], rot_coords[4])
 
 
 # dbdt_65 is actually DNBP (without thiols)
@@ -49,29 +129,38 @@ nitro1 = [7, 0, 9]
 nitro2 = [8, 1, 6]
 
 coords = dnbp.axyz()
-# full_rot = dbdt.rotate(90, [1.0, 0.0, 0.0], atoms=all_atoms, origo=coords[0], only='xyz')
 
-# # Rotate the dbdt from the relaxed position, the rotation vector goes from right to left.
-# for angle in range(0, 185, 5):
-#     rotated = dbdt.rotate(angle, coords[0] - coords[3], atoms=rot_atoms, origo=coords[3], only='xyz')
-#     new_coords = rotated.axyz()
-#     print(torsion_angle(new_coords[19], new_coords[14], new_coords[0], new_coords[5]))
-#     rotated.write('structures/STRUCT_{}.fdf'.format(angle))
-
-# rotated = dnbp.rotate(150., coords[2] - coords[17], atoms=rot_atoms, origo=coords[17], only='xyz')
-# # rotated = dnbp.rotate(-20., [1.0, 1.0, 0.0], atoms=all_atoms, origo=coords[0], only='xyz')
-# new_coords = rotated.axyz()
+# Rotate the whole DNBP st outermost carbons have the same z coord (so we can apply E-field correctly)
+vec = coords[17] - coords[16]
+ang = np.arctan2(vec[2], np.linalg.norm(vec[:2]))
+rot_vec = [-vec[1], vec[0], 0.]
+dnbp = dnbp.rotate(ang, rot_vec, origo=coords[16], only='xyz', rad=True)
+# coords = dnbp.axyz()
 #
-# sisl.plot(rotated, atom_indices=True); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
-sisl.plot(dnbp, atom_indices=True); ax = plt.gca(); ax.set_aspect('equal', adjustable='box')
-ax.set_xlim(right=12); ax.set_ylim(top=10)
-plt.show()
+# plotter()
 
-'''
+# # Save geometry for ang vs efield
+# savegeom = symmetrize(dnbp)
+# savegeom.write('STRUCT_aligned.fdf')
+
+# # Rotate nitrophenyl st the initial configuration has the two nitros lined up (this way, a rotation of 180º will be
+# # enough to cover all possible configurations
+# beta_root_results = optimize.root_scalar(torsion_root, args=(dnbp,), x0=-110., x1=-115., xtol=0.1)
+# beta = beta_root_results.root
+# dnbp = dnbp.rotate(beta, coords[2] - coords[17], atoms=rot_atoms, origo=coords[17], only='xyz')
+
+dnbp = symmetrize(dnbp)
+dnbp = symmetrize(dnbp)
+coords = dnbp.axyz()
+# plotter()
+
+
 k = 0
 ang_list = []
 for angle in range(0, 360, 5):
     rotated = dnbp.rotate(angle, coords[2] - coords[17], atoms=rot_atoms, origo=coords[17], only='xyz')
+    rotated = symmetrize(rotated)
+    rotated = symmetrize(rotated)
     # f = plt.figure()
     # f.clear()
     # plt.close(f)
@@ -83,8 +172,8 @@ for angle in range(0, 360, 5):
     if too_close(new_coords):
         # print('Too close!')
         continue
-    # print(str(angle) + ' ', torsion_angle(new_coords[5], new_coords[3], new_coords[2], new_coords[4]))
-
+    print(str(angle) + ' ', torsion_angle(new_coords[5], new_coords[3], new_coords[2], new_coords[4]))
+'''
     rotated.write('structures/STRUCT_{0:03d}.fdf'.format(angle))
     with open('structures/STRUCT_{0:03d}.fdf'.format(angle), 'r') as struct_file, \
          open('zmatrices/ZMATRIX_{0:03d}.fdf'.format(angle), 'w') as zmat_file, \
@@ -122,7 +211,10 @@ for angle in range(0, 360, 5):
             if coord_line not in [5 + 10, 3 + 10, 2 + 10, 4 + 10]:  # these atoms are in the molecule block
                 Nspecies = struct_lines[coord_line][-10:-9]
                 x_y_z = struct_lines[coord_line][1:-10]
-                zmat_lines.append(Nspecies + ' ' + x_y_z + '1 1 1\n')
+                if coord_line in [26, 27]:
+                    zmat_lines.append(Nspecies + ' ' + x_y_z + '1 1 0\n')
+                else:
+                    zmat_lines.append(Nspecies + ' ' + x_y_z + '1 1 1\n')
 
         zmat_lines.extend(['constants\n', 'ANG ' + str(float(torsion_lines[k].split()[1]) * np.pi / 180) + '\n',
                            '%endblock Zmatrix\n'])

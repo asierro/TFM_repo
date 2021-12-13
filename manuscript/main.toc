@@ -15,10 +15,10 @@
 \contentsline {section}{\numberline {3.2}Charge transport in NPG}{15}{section.66}%
 \contentsline {section}{\numberline {3.3}Double-pore NPG}{17}{section.70}%
 \contentsline {chapter}{\numberline {4}Results}{19}{chapter.71}%
-\contentsline {section}{\numberline {4.1}Para-para NPG}{19}{section.72}%
-\contentsline {section}{\numberline {4.2}Dinitro-biphenyl molecule}{19}{section.73}%
-\contentsline {section}{\numberline {4.3}Dinitro-PP-NPG}{19}{section.74}%
-\contentsline {chapter}{\numberline {5}Conclusions and outlook}{21}{chapter.75}%
-\contentsline {section}{\numberline {5.1}Conclusions}{21}{section.76}%
-\contentsline {section}{\numberline {5.2}Outlook}{21}{section.77}%
-\contentsline {chapter}{Bibliography}{23}{appendix*.78}%
+\contentsline {section}{\numberline {4.1}\textit {Para-para} NPG}{19}{section.72}%
+\contentsline {section}{\numberline {4.2}Dinitro-biphenyl molecule}{20}{section.74}%
+\contentsline {section}{\numberline {4.3}Dinitro-PP-NPG}{20}{section.75}%
+\contentsline {chapter}{\numberline {5}Conclusions and outlook}{21}{chapter.76}%
+\contentsline {section}{\numberline {5.1}Conclusions}{21}{section.77}%
+\contentsline {section}{\numberline {5.2}Outlook}{21}{section.78}%
+\contentsline {chapter}{Bibliography}{23}{appendix*.79}%

@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 '''
-Creation of dp_pp structure with different twist angles of the phenyl groups (based off of the relaxed structure)
+Slater-Koster tight-binding Hamiltonian to try to explain 75º minimum of delta E at gamma.
 '''
 
 XV_sile = sisl.get_sile('/home/asier/Documents/master/tfm/siesta/dp_pp/relax/NPG_PP-nonplanar.XV')
@@ -138,9 +138,10 @@ pz_vect_p4 = to_spherical(rodrigues(z, coords[54] - coords[84], (ang_b + 180.)*n
 a = 1.45  # avg lattice constant
 d_2nn = 2 * np.cos(30 * np.pi / 180) * a  # ~dist b/n 2nd neighbours
 t_pi = -2.7  # 2.682
-t_sigma = -.8726 # 0.371  # find better params?
-t_2nn = -0.2  # 0.0027  # 2NN hopping
+t_sigma = -.371 # .8726  # find better params?
+t_2nn = -.0027  # 0.2  # 2NN hopping
 q_pi = np.log(t_2nn / t_pi) / (1 - d_2nn / a)  # decay rate. Going to use q_sigma = q_pi for now
+q_sigma = 3.34 / 1.42 * q_pi
 
 for ia in rotating_dppp:
     idx, xyz, rij = rotating_dppp.close(ia, R=(0.1, maxR + 0.1), ret_xyz=True, ret_rij=True)
@@ -163,7 +164,7 @@ for ia in rotating_dppp:
     n_flat = vij_flat.dot(np.array([0., 1., 0.])) / np.sqrt((vij_flat ** 2).sum(axis=1))
 
     Vpp_pi = t_pi * np.exp(q_pi * (1 - rij / a))
-    Vpp_sigma = t_sigma * np.exp(q_pi * (1 - rij / a))
+    Vpp_sigma = t_sigma * np.exp(q_sigma * (1 - rij / a))
 
     for j, ja in enumerate(idx[1]):
         lmn = [l[j], m[j], n[j]]
